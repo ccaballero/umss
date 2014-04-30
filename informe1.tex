@@ -1,0 +1,177 @@
+\documentclass[letter,twoside,11pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\usepackage{graphicx}
+\usepackage{pstricks}
+
+\usepackage{anysize}
+\marginsize{3cm}{2cm}{2cm}{3cm}
+
+\usepackage{amsmath}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Laboratorio de Física Básica I}
+\fancyfoot[CO,CE]{\thepage\ de \pageref{LastPage}}
+
+\special{papersize=215.9mm,279.4mm}
+
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\Large UNIVERSIDAD MAYOR DE SAN SIMÓN}\\
+\vspace*{0.15cm}
+{\large FACULTAD DE CIENCIAS Y TECNOLOGÍA}\\
+\vspace*{0.10cm}
+DEPARTAMENTO DE FÍSICA\\
+\vspace*{3.0cm}
+{\Large \textbf{LABORATORIO DE FÍSICA BÁSICA I}}\\
+\vspace*{0.3cm}
+{\Large \textbf{PRACTICA No. 1}}\\
+\vspace*{3.5cm}
+{\Large \textbf{MEDICIONES DIRECTAS}}\\
+\end{center}
+
+\vspace*{6.0cm}
+\leftskip=7.95cm
+\noindent
+\textbf{Estudiantes:}\\
+1. Caballero Burgoa, Carlos Eduardo\\
+2. Caballero Burgoa, Carlos Eduardo\\
+\newline
+\textbf{Docente:}\\
+Ing. Oscar Garcia\\
+\newline
+\textbf{Horario del grupo:} Miercoles 15:45.\\
+\textbf{Fecha de realización:} 9 de Abril del 2014.\\
+\textbf{Fecha de entrega:} 30 de Abril del 2014.\\
+
+\end{titlepage}
+
+\blankpage
+
+\section{Resumen}
+\section{Objetivos}
+\begin{itemize}
+\item Medir diferentes magnitudes físicas: una medición y una serie de
+mediciones.
+\item Escribir los resultados de las mediciones.
+\end{itemize}
+
+\section{Fundamento teórico}
+Los resultados de las medidas nunca se corresponden con los valores reales de
+las magnitudes a medir, sino que, en mayor o menor extensión, son defectuosos,
+es decir, están afectados de error. Las causas que motivan tales desviaciones
+pueden ser debidas al observador, al aparato o incluso a las propias
+características del proceso de medida.
+
+Las mediciones directas son aquellos valores que se consiguen directamente con
+la escala de un instrumento. Se pueden realizar en una sola medición o en una
+serie de mediciones.
+
+Si las fuentes de error son únicamente de carácter aleatorio, es decir, si
+influyen unas veces por exceso y otras por defecto en el resultado de la medida,
+puede demostrarse que el valor que más se aproxima al verdadero valor es
+precisamente el valor medio. Ello es debido a que al promediar todos los
+resultados, los errores por exceso tenderán a compensarse con los errores por
+defecto y ello será tanto más cierto cuanto mayor sea el número de veces que se
+repita la medida.
+
+Si se realizan $n$ mediciones directas de una magnitud física, denotadas
+por:
+\begin{equation}
+    \{x_1,x_2,x_3,\cdots,x_i,\cdots,x_n\}
+\end{equation}
+
+Para calcular el valor representativo de esta serie de mediciones, se toma la
+media aritmetica:
+
+\begin{equation}
+    \bar{x} = \frac{x_1+x_2+\cdots+x_n}{n} = \frac{1}{n}\sum_{i=1}^{n} x_i
+\end{equation}
+
+Para determinar el error en la medición, se hace uso de la desviación estandar,
+que es una medida de dispersión usada en estadística que nos dice cuánto tienden
+a alejarse los valores concretos del promedio en una distribución.
+
+La desviación estándar ($\sigma$) es la raíz cuadrada de la varianza ($s^2$) de
+la distribución de probabilidad discreta, y puede calcularse con la siguiente
+formula:
+
+\begin{equation}
+    \sigma = \sqrt{s^2}
+\end{equation}
+Donde:
+\begin{equation}
+    s^2 = \frac{1}{n}\sum_{i=1}^{n} (x_i-\bar{x})^2
+\end{equation}
+
+Aunque esta fórmula es correcta, en la práctica interesa el realizar inferencias
+poblacionales, por lo que en el denominador en vez de $n$, se usa $n-1$ según la
+corrección de Bessel.
+
+\begin{equation}
+    \sigma_{n-1} = \sqrt{\frac{\sum_{i=1}^{n} (x_i-\bar{x})^2}{(n-1)}}
+\end{equation}
+
+El error de la medida, es igual a la desviación estándar dividida por la raiz
+cuadrada del número de mediciones.
+
+\begin{equation}
+    \sigma_x = \frac{\sigma_{n-1}}{\sqrt{n}}
+             = \sqrt{\frac{\sum_{i=1}^{n} (x_i-\bar{x})}{n(n-1)}}
+\end{equation}
+
+Se define a $[(\bar{x}-\sigma_x), (\bar{x}+\sigma_x)]$ como el intervalo de
+confianza en el que el valor verdadero de la medición puede encontrarse segun un
+porcentaje de confianza definido por el modelo de distribucion de probabilidad.
+
+Para el calculo del error $e_x$ de una serie de mediciones, es recomendable
+colocar el mayor entre el error de la obtenido anteriormente $\sigma_x$ y la
+precisión del instrumento de medida (P):
+
+\begin{equation}
+    e_x = \begin{cases}
+        \sigma_x, & \mbox{si }\sigma_x > P_{ins} \\
+        P,        & \mbox{si }\sigma_x < P_{ins}
+    \end{cases}
+\end{equation}
+
+Finalmente el resultado de las mediciones será:
+
+\begin{equation}
+    x = (\bar{x}\pm e_x)[u], E\%
+\end{equation}
+
+\section{Materiales y montaje experimental}
+\section{Descripción del procedimiento experimental}
+\section{Registro de datos}
+\section{Calculos y tablas}
+\section{Conclusiones}
+\section{Referencias biliográficas}
+Fisicanet
+http://fisicanet.com.ar/fisica/mediciones/ap01\_errores.php
+
+
+https://es.wikipedia.org/wiki/Desviaci%C3%B3n\_t%C3%ADpica
+
+\section{Respuestas al cuestionario}
+
+\end{document}
+
