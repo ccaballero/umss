@@ -1,0 +1,369 @@
+%\documentclass[letter,11pt]{article}
+\documentclass[letter,twoside,11pt]{article}
+
+\usepackage[spanish]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\usepackage{graphicx}
+\usepackage{pstricks}
+
+\usepackage{anysize}
+\marginsize{3cm}{2cm}{2cm}{3cm}
+
+\usepackage{amsmath}
+\usepackage{array}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Laboratorio de Física Básica I}
+\fancyfoot[CO,CE]{\thepage\ de \pageref{LastPage}}
+
+\special{papersize=215.9mm,279.4mm}
+
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+\begin{titlepage}
+\begin{center}
+{\Large UNIVERSIDAD MAYOR DE SAN SIMÓN}\\
+\vspace*{0.15cm}
+{\large FACULTAD DE CIENCIAS Y TECNOLOGÍA}\\
+\vspace*{0.10cm}
+DEPARTAMENTO DE FÍSICA\\
+\vspace*{3.0cm}
+{\Large \textbf{LABORATORIO DE FÍSICA BÁSICA I}}\\
+\vspace*{0.3cm}
+{\Large \textbf{PRACTICA No. 2}}\\
+\vspace*{3.5cm}
+{\Large \textbf{MEDICIONES INDIRECTAS Y PROPAGACIÓN DE ERRORES}}\\
+\end{center}
+
+\vspace*{6.0cm}
+\leftskip=7.95cm
+\noindent
+\textbf{Estudiantes:}\\
+1. Caballero Burgoa, Carlos Eduardo.\\
+2. Caballero Velarde, José Enrique.\\
+3. Camacho Cuenca, Cinthya Paola.\\
+\newline
+\textbf{Docente:}\\
+Ing. Oscar Garcia\\
+\newline
+\textbf{Horario del grupo:} Miércoles 15:45.\\
+\textbf{Fecha de realización:} 7 de Mayo del 2014.\\
+\textbf{Fecha de entrega:} 14 de Mayo del 2014.\\
+
+\end{titlepage}
+
+\blankpage
+
+\section{Resumen}
+En la practica anterior, se ha visto el procedimiento apropiado para realizar
+mediciones directas para propiedades físicas del distintos objetos, además del
+método para el calculo del error de dichas mediciones.
+
+Pero además existen otras propiedades que no pueden ser medidas directamente con
+instrumentos, para realizar mediciones sobre este tipo de propiedades se debe
+utilizar una \emph{medición indirecta}, al momento de calcular el valor de una
+medición indirecta, se deben tener en cuenta otros métodos para el calculo de su
+error.
+
+Teniendo en cuenta los datos calculados en la anterior experiencia, en este
+informe se calcularán los valores de volumen ($V$) y densidad ($\rho$), para
+el cilindro, disco, y esfera utilizados anteriormente.
+
+\section{Objetivos}
+\begin{itemize}
+\item Realizar mediciones indirectas y comunicar correctamente los resultados.
+\end{itemize}
+
+\section{Fundamento teórico}
+Las mediciones indirectas son mediciones donde no es posible obtener un valor
+directamente con el instrumento de medición. Para determinar el valor de la
+medición es necesaria una función matemática que relacione las magnitudes.
+
+Para la determinación del error de las mediciones indirectas, se utiliza el
+método de propagación de errores, es decir, la propagación o efecto que
+producen los errores de las mediciones directas al error de la función.
+
+\subsection{Propagación de errores}
+Consideremos el calculo el valor de una magnitud $y$ que es función de una serie
+de magnitudes $x_1, x_2, \dots, x_n$, cuyos valores se pueden obtener de una
+manera directa en el laboratorio, es decir que:
+
+\begin{equation}
+\label{eq:f}
+    y = f(x_1,x_2,\dots,x_n)
+\end{equation}
+
+donde $x_i$, son los resultados de mediciones directas, ellas son conocidas como
+variables independientes:
+
+\begin{equation}x_1 = (\bar{x}_1 \pm e_1)[u],\end{equation}
+\begin{equation}x_2 = (\bar{x}_2 \pm e_2)[u],\end{equation}
+\begin{equation}x_n = (\bar{x}_n \pm e_n)[u],\end{equation}
+
+La mejor estimación de $y$ se obtiene sustituyendo en la expresión \ref{eq:f}
+los valores obtenidos de $\bar{x}_i$:
+
+\begin{equation}
+    \bar{y} = f(\bar{x}_1,\bar{x}_2,\dots,\bar{x}_n)
+\end{equation}
+
+Para la estimación del error de $\bar{y}$ se utiliza la siguiente formula:
+
+\begin{equation}
+    e_y = \sqrt{\sum_{i=1}^{n}
+    \left(\left|\frac{\partial{f}}{\partial{x_i}}\right|_{\bar{x}_i}
+    e_i\right)^2}
+\end{equation}
+
+finalmente el resultado de la medición indirecta es:
+
+\begin{equation}
+    y = (\bar{y} \pm e_y)[u], E\%
+\end{equation}
+
+\subsection{Calculo del error del volumen de un cilindro}
+Ahora procederemos a calcular la formula a utilizarse para el calculo del
+error del volumen de un cilindro.
+
+Dada la ecuación para el calculo del volumen de un cilindro:
+
+\begin{equation}
+    V = \frac{\pi D^2 H}{4}
+\end{equation}
+
+y conocidas las mediciones directas de $D$ y $H$:
+
+\begin{equation}
+    D = \bar{D} \pm e_D [cm]; E\%
+\end{equation}
+\begin{equation}
+    H = \bar{H} \pm e_H [cm]; E\%
+\end{equation}
+
+Las derivadas parciales serian:
+
+\begin{equation}
+    \frac{\partial{V}}{\partial{D}} = \frac{\pi H D}{2}
+\end{equation}
+\begin{equation}
+    \frac{\partial{V}}{\partial{H}} = \frac{\pi D^2}{4}
+\end{equation}
+
+Siendo el error de la medición:
+
+\begin{equation}
+    e_V = \sqrt{
+        \left(\frac{\pi \bar{H} \bar{D}}{2}\right)^2 {e_D}^2 +
+        \left(\frac{\pi \bar{D}^2}{4}\right)^2 {e_H}^2
+    }
+\end{equation}
+
+\subsection{Calculo del error del volumen de una esfera}
+Ahora procederemos a calcular la formula a utilizarse para el calculo del
+error del volumen de una esfera.
+
+Dada la ecuación para el calculo del volumen de una esfera:
+
+\begin{equation}
+    V = \frac{\pi D^3}{6}
+\end{equation}
+
+y conocido su diámetro $D$:
+
+\begin{equation}
+    D = \bar{D} \pm e_D [cm]; E\%
+\end{equation}
+
+La derivada parcial seria:
+
+\begin{equation}
+    \frac{\partial{V}}{\partial{D}} = \frac{\pi D^2}{2}
+\end{equation}
+
+Siendo el error de la medición:
+
+\begin{equation}
+    e_V = \frac{\pi \bar{D}^2}{2} e_D
+\end{equation}
+
+\subsection{Calculo del error de la densidad de un objeto}
+Ahora procederemos a calcular la formula a utilizarse para el calculo del
+error de la densidad de los objetos.
+
+Dada la ecuación para el calculo de la densidad de un objeto:
+
+\begin{equation}
+    \rho = \frac{m}{V}
+\end{equation}
+
+y conocidas las mediciones de $m$ y $V$:
+
+\begin{equation}
+    m = \bar{m} \pm e_m [cm]; E\%
+\end{equation}
+\begin{equation}
+    V = \bar{V} \pm e_V [cm^3]; E\%
+\end{equation}
+
+Las derivadas parciales serian:
+
+\begin{equation}
+    \frac{\partial{\rho}}{\partial{m}} = \frac{1}{V}
+\end{equation}
+\begin{equation}
+    \frac{\partial{\rho}}{\partial{V}} = -\frac{m}{V^2}
+\end{equation}
+
+Siendo el error de la medición:
+
+\begin{equation}
+    e_{\rho} = \sqrt{
+        \left(\frac{1}{\bar{V}}\right)^2 {e_m}^2 +
+        \left(-\frac{\bar{m}}{\bar{V}^2}\right)^2 {e_V}^2
+    }
+\end{equation}
+
+\section{Materiales y montaje experimental}
+En esta práctica no se realizan mediciones. Sin embargo es necesario una
+calculadora científica como herramienta de trabajo.
+
+\section{Descripción del procedimiento experimental}
+A continuación se describe el procedimiento experimental de calculo que se
+llevará a cabo:
+
+\begin{enumerate}
+\item Copiar los resultados de las mediciones (valor representativo, su error y
+su unidad) de la práctica anterior, es decir, los valores de diámetros, alturas,
+y masas del cilindro, disco, y esfera utilizados.
+\item Realizar las medidas indirectas del volumen y la densidad para el
+cilindro, disco, y esfera.
+\item Comunicar correctamente los resultados de las mediciones indirectas.
+\end{enumerate}
+
+\section{Registro de datos}
+
+\subsection{Cilindro}
+Medición de la longitud, diámetro, y masa del cilindro:
+
+\vspace{0.4cm}
+\begin{tabular}{|c|p{5.0cm}|}
+\hline
+\multicolumn{2}{|c|}{Resultados de la medición:} \\ \hline
+$H$ & \\ \hline
+$D$ & \\ \hline
+$m$ & \\ \hline
+\end{tabular}
+
+\subsection{Disco}
+Medición de la longitud, diámetro, y masa del disco:
+
+\vspace{0.4cm}
+\begin{tabular}{|c|p{5.0cm}|}
+\hline
+\multicolumn{2}{|c|}{Resultados de la medición:} \\ \hline
+$H$ & \\ \hline
+$D$ & \\ \hline
+$m$ & \\ \hline
+\end{tabular}
+
+\subsection{Esfera}
+Medición del diámetro y masa de la esfera:
+
+\vspace{0.4cm}
+\begin{tabular}{|c|p{5.0cm}|}
+\hline
+\multicolumn{2}{|c|}{Resultados de la medición:} \\ \hline
+$D$ & \\ \hline
+$m$ & \\ \hline
+\end{tabular}
+
+\section{Cálculos y tablas}
+
+\subsection{Cilindro}
+\newpage
+
+\subsection{Disco}
+\vspace{6.0cm}
+
+\subsection{Esfera}
+\vspace{6.0cm}
+
+\subsection{Resumen de mediciones}
+A continuación se resumen las medidas obtenidas:
+
+\begin{center}
+\begin{tabular}{|c|>{\centering}m{2.2cm}<{\centering}
+                  |>{\centering}m{2.2cm}<{\centering}
+                  |>{\centering}m{2.2cm}<{\centering}
+                  |>{\centering}m{2.2cm}<{\centering}
+                  |>{\centering}m{2.2cm}<{\centering}|}
+\hline
+\textbf{Objeto} & \textbf{$H[cm]$}
+             & \textbf{$D[cm]$}
+             & \textbf{$m[g]$}
+             & \textbf{$V[cm^3]$}
+             & \textbf{$\rho[g/cm^3]$} \tabularnewline \hline
+\textbf{Cilindro} & & & & & \\ \hline
+\textbf{Disco} & & & & & \\ \hline
+\textbf{Esfera} & & & & & \\ \hline
+\end{tabular}\\
+\end{center}
+
+\section{Conclusiones}
+
+\section{Referencias bibliográficas}
+\begin{itemize}
+\item Errores de medición y su propagación \\
+http://www.tplaboratorioquimico.com/2008/08/\
+errores-de-medicion-y-su-propagacion.html
+\item Tratamiento y propagación de errores \\
+http://www.lawebdefisica.com/apuntsfis/errores/
+\item Informe de propagación de errores \\
+http://www.slideshare.net/cdloor/\
+informe-de-propagacion-de-errores-laboratorio-de-fisica-c
+\item Guía práctica para la realización de la medida y el calculo de errores \\
+http://bacterio.uc3m.es/docencia/laboratorio/guiones\_esp/\
+errores/guiondeerrores.pdf
+\end{itemize}
+
+\section{Respuestas al cuestionario}
+\begin{enumerate}
+\item ¿Que criterio utilizo para obtener el error del volumen y de la densidad
+a partir de las contribuciones de los errores involucrados en cada una de ellas?
+\item En la estimación del error del volumen de un cilindro se tiene la
+contribución del error de su longitud y del error de su diámetro. ¿Cuál de ellos
+contribuye más al error del volumen?
+\item A partir del resultado de la pregunta anterior, la longitud o el diámetro
+debería medirse con mayor precisión?
+\item En la estimación del error del volumen de un disco se tiene la
+contribución del error de su espesor (altura $H$) y de su diámetro. ¿Cuál de ellos contribuye mas al error del volumen?
+\item A partir del resultado de la pregunta anterior, el espesor o el diámetro
+debería medirse con mayor precisión?
+\item En la estimación del error de la densidad se tiene la contribución del
+error del volumen y de la masa. ¿Cuál de ellos contribuye más al error de la
+densidad?
+\item A partir del resultado de la pregunta anterior, la masa o el volumen
+debería medirse con mayor precisión?
+\item De la tabla resumen obtenga el valor de la densidad del cilindro, disco, y
+esfera, compare estos valores con valores publicados en la literatura y diga
+aproximadamente de que material están hechos.
+\end{enumerate}
+
+\end{document}
