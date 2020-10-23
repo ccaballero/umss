@@ -1,4 +1,5 @@
-const path=require('path');
+const path=require('path'),
+    report='informe1_5';
 
 module.exports=(grunt)=>{
     require('time-grunt')(grunt);
@@ -6,21 +7,21 @@ module.exports=(grunt)=>{
 
     grunt.initConfig({
         shell:{
-            informe1:{
+            report:{
                 command:(doc)=>{
                     return [
-                        'latex -interaction=nonstopmode informe1'
-                      , 'dvipdf informe1'
+                        'latex -interaction=nonstopmode '+report
+                      , 'dvipdf '+report
                     ].join(' && ');
                 }
             }
         }
       , watch:{
-            informe1:{
+            report:{
                 files:[
-                    'informe1.tex'
+                    report+'.tex'
                 ]
-              , tasks:['shell:informe1']
+              , tasks:['shell:report']
             }
         }
     });
@@ -28,7 +29,7 @@ module.exports=(grunt)=>{
     grunt.event.on('watch',(action,filepath,target)=>{
         var c=path.parse(filepath);
 
-        grunt.config('watch.informe1.tasks','shell:informe1:'+c.dir);
+        grunt.config('watch.report.tasks','shell:report:'+c.dir);
     });
 
     grunt.registerTask('serve',[
