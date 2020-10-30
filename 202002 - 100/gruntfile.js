@@ -19,7 +19,8 @@ module.exports=(grunt)=>{
       , watch:{
             report:{
                 files:[
-                    report+'.tex'
+                    report+'.tex',
+                    'eps/*.eps'
                 ]
               , tasks:['shell:report']
             }

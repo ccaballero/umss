@@ -8,9 +8,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="96.212601"
-   height="56.307674"
-   viewBox="0 0 25.45625 14.898072"
+   width="382.63281"
+   height="228.43893"
+   viewBox="0 0 101.23826 60.441135"
    version="1.1"
    id="svg92"
    sodipodi:docname="02_05.capacitor.svg"
@@ -107,9 +107,9 @@
      fit-margin-right="10"
      fit-margin-bottom="10"
      inkscape:showpageshadow="false"
-     inkscape:zoom="83.099584"
-     inkscape:cx="79.248751"
-     inkscape:cy="11.898257"
+     inkscape:zoom="2.8284271"
+     inkscape:cx="119.15172"
+     inkscape:cy="124.93169"
      inkscape:window-x="0"
      inkscape:window-y="18"
      inkscape:window-maximized="1"
@@ -119,22 +119,46 @@
      lock-margins="true"
      inkscape:document-rotation="0">
     <sodipodi:guide
-       position="2.774818,4.5072911"
-       orientation="1,0"
-       id="guide939" />
+       position="2.7781248,2.6458319"
+       orientation="0,-1"
+       id="guide1261" />
     <sodipodi:guide
-       position="8.6969296,4.5837054"
+       position="2.7781248,2.6458319"
        orientation="1,0"
-       id="guide941" />
+       id="guide1263" />
     <sodipodi:guide
-       position="12.785097,4.558234"
+       position="31.31389,2.6458319"
        orientation="1,0"
-       id="guide943" />
+       id="guide1265" />
     <sodipodi:guide
-       position="22.678125,6.4899471"
+       position="50.854192,2.6458319"
        orientation="1,0"
-       id="guide945" />
+       id="guide1267" />
+    <sodipodi:guide
+       position="98.460138,2.3397049"
+       orientation="1,0"
+       id="guide1269" />
+    <sodipodi:guide
+       position="34.063637,33.462354"
+       orientation="0,-1"
+       id="guide1271" />
   </sodipodi:namedview>
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     d="M 98.460139,57.795302 V 26.97878"
+     id="path1117"
+     sodipodi:nodetypes="cc" />
+  <path
+     style="fill:none;stroke:#0000ff;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     d="M 50.854193,57.795302 V 26.97878"
+     id="path1115"
+     sodipodi:nodetypes="cc" />
+  <circle
+     cx="17.047791"
+     cy="26.809887"
+     r="14.253771"
+     id="circle4"
+     style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <g
      lc:layername="0"
      lc:is_locked="false"
@@ -143,58 +167,52 @@
      stroke="#000000"
      stroke-width="1"
      id="g2"
-     transform="translate(-2.2218754,2.7781248)" />
+     transform="translate(35.67708,26.707267)" />
   <circle
-     cx="5.7431245"
-     cy="5.7431245"
-     r="2.9649999"
-     id="circle4"
-     style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
-  <circle
-     cx="5.7431245"
-     cy="5.7431245"
-     r="1.965"
+     cx="17.047791"
+     cy="26.809887"
+     r="9.4464283"
      id="circle6"
      style="fill:none;stroke:#000000;stroke-width:0.0264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <line
-     x1="21.078123"
-     y1="2.7781248"
-     x2="13.078125"
-     y2="2.7781248"
+     x1="90.768379"
+     y1="12.556116"
+     x2="52.30965"
+     y2="12.556116"
      id="line8"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <line
-     x1="12.778125"
-     y1="3.0781248"
-     x2="12.778125"
-     y2="8.4081249"
+     x1="50.867447"
+     y1="13.998318"
+     x2="50.867447"
+     y2="39.621452"
      id="line10"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <line
-     x1="13.078125"
-     y1="8.7081242"
-     x2="21.078123"
-     y2="8.7081242"
+     x1="52.30965"
+     y1="41.063652"
+     x2="90.768379"
+     y2="41.063652"
      id="line12"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
-     d="M 13.078125,2.7781248 A 0.3,0.3 0 0 0 12.779614,3.1079759"
+     d="m 52.309651,12.556116 a 1.4422028,1.4422028 0 0 0 -1.435045,1.585707"
      id="path14"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
-     d="m 12.778125,8.4081248 a 0.3,0.3 0 0 0 0.3,0.3"
+     d="m 50.867448,39.621456 a 1.4422028,1.4422028 0 0 0 1.442203,1.442202"
      id="path16"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <path
-     d="m 22.678125,8.4081248 c 0,0.1656854 -0.134315,0.3 -0.3,0.3 -0.0394,0 -0.07841,-0.00388 -0.114805,-0.011418 -0.0364,-0.00754 -0.06947,-0.018587 -0.09733,-0.032516 -0.02786,-0.013928 -0.04996,-0.030465 -0.06503,-0.048663 -0.01507,-0.018199 -0.02284,-0.037705 -0.02284,-0.057403 2e-6,-0.039767 -0.0369,-0.077946 -0.102511,-0.106066 -0.06561,-0.02812 -0.154697,-0.043934 -0.247487,-0.043934 -0.09279,0 -0.181877,0.015814 -0.247487,0.043934 -0.06561,0.02812 -0.102513,0.066299 -0.102513,0.106066 0,0.019698 -0.0078,0.039204 -0.02284,0.057402 -0.01508,0.018198 -0.03718,0.034735 -0.06503,0.048663 -0.02786,0.013929 -0.06093,0.024978 -0.09733,0.032516 -0.03639,0.00754 -0.0754,0.011419 -0.1148,0.011419"
+     d="m 98.46014,39.621456 c 0,0.796504 -0.645698,1.442202 -1.442203,1.442202 -0.189409,0 -0.376943,-0.01875 -0.551906,-0.0549 -0.174988,-0.03606 -0.333967,-0.08937 -0.467899,-0.156335 -0.133932,-0.06697 -0.240175,-0.146432 -0.312621,-0.233925 -0.07245,-0.08749 -0.1098,-0.181285 -0.1098,-0.275942 9e-6,-0.191188 -0.177391,-0.374732 -0.492806,-0.509896 -0.31541,-0.135182 -0.743681,-0.211186 -1.189755,-0.211186 -0.446073,0 -0.874345,0.076 -1.189754,0.211186 -0.315411,0.135183 -0.492815,0.318728 -0.492815,0.509896 0,0.09471 -0.0375,0.188448 -0.1098,0.275942 -0.07249,0.08749 -0.178738,0.166959 -0.312622,0.233925 -0.133932,0.06697 -0.292911,0.120087 -0.467898,0.156335 -0.17494,0.03606 -0.362474,0.0549 -0.551883,0.0549"
      id="path20"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none"
      sodipodi:nodetypes="ccssscsssccssc" />
   <line
-     x1="22.678123"
-     y1="3.0781248"
-     x2="22.678123"
-     y2="8.4081249"
+     x1="98.460129"
+     y1="13.998318"
+     x2="98.460129"
+     y2="39.621452"
      id="line22"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none" />
   <g
@@ -205,7 +223,7 @@
      stroke="#000000"
      stroke-width="1"
      id="g38"
-     transform="translate(-2.2218754,2.7781248)" />
+     transform="translate(35.67708,26.707267)" />
   <g
      lc:layername="trazos"
      lc:is_locked="false"
@@ -215,7 +233,7 @@
      stroke="#000000"
      stroke-width="1"
      id="g90"
-     transform="translate(-2.2218754,2.7781248)">
+     transform="translate(35.67708,26.707267)">
     <line
        x1="5"
        y1="5.9299998"
@@ -369,55 +387,71 @@
   </g>
   <text
      xml:space="preserve"
-     style="font-size:1.4439px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';fill:#0000ff;stroke:none;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
-     x="4.0000606"
-     y="10.930265"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.282054;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     x="12.93008"
+     y="53.138569"
      id="text1527"><tspan
        sodipodi:role="line"
        id="tspan1525"
-       x="4.0000606"
-       y="10.930265"
-       style="fill:#0000ff;stroke:none;stroke-width:0.0902435">5.93</tspan></text>
+       x="12.93008"
+       y="53.138569"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.282054">5.93</tspan></text>
   <path
-     style="fill:none;stroke:#0000ff;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#Arrow2Lstart-0);marker-end:url(#Arrow2Lend-6);paint-order:markers fill stroke"
-     d="M 2.9686469,11.633542 H 8.4988082"
+     style="fill:none;stroke:#0000ff;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#Arrow2Lstart-0);marker-end:url(#Arrow2Lend-6);paint-order:markers fill stroke"
+     d="M 3.7099268,55.12714 H 30.295307"
      id="path1551-6"
      sodipodi:nodetypes="cc" />
   <path
-     style="fill:none;stroke:#0000ff;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
-     d="M 2.774818,12.18856 V 9.1161643"
-     id="path1553-2" />
+     style="fill:none;stroke:#0000ff;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     d="M 2.7781248,57.795302 V 26.97878"
+     id="path1553-2"
+     sodipodi:nodetypes="cc" />
   <path
-     style="fill:none;stroke:#0000ff;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
-     d="M 8.6969296,12.252239 V 9.1798429"
-     id="path1365" />
+     style="fill:none;stroke:#0000ff;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     d="M 31.31389,57.795302 V 26.97878"
+     id="path1365"
+     sodipodi:nodetypes="cc" />
   <text
      xml:space="preserve"
-     style="font-size:1.4439px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';fill:#0000ff;stroke:none;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
-     x="16.430975"
-     y="10.930265"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.433831;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     x="71.626457"
+     y="53.138569"
      id="text1111"><tspan
        sodipodi:role="line"
        id="tspan1109"
-       x="16.430975"
-       y="10.930265"
-       style="fill:#0000ff;stroke:none;stroke-width:0.0902435">9.0</tspan></text>
+       x="71.626457"
+       y="53.138569"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.433831">9.0</tspan></text>
   <path
-     style="fill:none;stroke:#0000ff;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#marker1121);marker-end:url(#marker1131);paint-order:markers fill stroke"
-     d="m 12.978926,11.633542 h 9.50636"
+     style="fill:none;stroke:#0000ff;stroke-width:0.264583;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;marker-start:url(#marker1121);marker-end:url(#marker1131);paint-order:markers fill stroke"
+     d="M 51.832768,55.12714 H 97.533097"
      id="path1113"
      sodipodi:nodetypes="cc" />
   <path
-     style="fill:none;stroke:#0000ff;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
-     d="M 12.785097,12.18856 V 9.1161643"
-     id="path1115" />
-  <path
-     style="fill:none;stroke:#0000ff;stroke-width:0.0902435;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
-     d="M 22.678125,12.252239 V 9.1798429"
-     id="path1117" />
-  <path
-     d="m 22.678123,3.0781248 c 0,-0.1656854 -0.134315,-0.3 -0.3,-0.3 -0.0394,0 -0.07841,0.00388 -0.114805,0.011418 -0.0364,0.00754 -0.06947,0.018587 -0.09733,0.032516 -0.02786,0.013928 -0.04996,0.030465 -0.06503,0.048663 -0.01507,0.018199 -0.02284,0.037705 -0.02284,0.057403 2e-6,0.039767 -0.0369,0.077946 -0.102511,0.106066 -0.06561,0.02812 -0.154697,0.043934 -0.247487,0.043934 -0.09279,0 -0.181877,-0.015814 -0.247487,-0.043934 -0.06561,-0.02812 -0.102513,-0.066299 -0.102513,-0.106066 0,-0.019698 -0.0078,-0.039204 -0.02284,-0.057402 -0.01508,-0.018198 -0.03718,-0.034735 -0.06503,-0.048663 -0.02786,-0.013929 -0.06093,-0.024978 -0.09733,-0.032516 -0.03639,-0.00754 -0.0754,-0.011419 -0.1148,-0.011419"
+     d="m 98.46013,13.998319 c 0,-0.796506 -0.645697,-1.442203 -1.442202,-1.442203 -0.189409,0 -0.376944,0.01866 -0.551907,0.05489 -0.174987,0.03625 -0.333966,0.08935 -0.467899,0.156315 -0.133932,0.06696 -0.240174,0.146456 -0.312621,0.23394 -0.07245,0.08749 -0.1098,0.181261 -0.1098,0.275956 1e-5,0.191174 -0.177391,0.374713 -0.492805,0.509896 -0.31541,0.135182 -0.743682,0.211206 -1.189756,0.211206 -0.446072,0 -0.874345,-0.07602 -1.189754,-0.211206 -0.31541,-0.135183 -0.492815,-0.318722 -0.492815,-0.509896 0,-0.09469 -0.0375,-0.188467 -0.1098,-0.275951 -0.0725,-0.08748 -0.178737,-0.166983 -0.312622,-0.23394 -0.133932,-0.06696 -0.292911,-0.120078 -0.467898,-0.156315 -0.174939,-0.03625 -0.362474,-0.0549 -0.551883,-0.0549"
      id="path20-3"
      style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-miterlimit:4;stroke-dasharray:none"
      sodipodi:nodetypes="ccssscsssccssc" />
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.433831;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     x="67.150223"
+     y="7.1367168"
+     id="text68"><tspan
+       sodipodi:role="line"
+       id="tspan66"
+       x="67.150223"
+       y="7.1367168"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.433831">LATERAL</tspan></text>
+  <text
+     xml:space="preserve"
+     style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.433831;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;paint-order:markers fill stroke"
+     x="9.4544077"
+     y="7.1349945"
+     id="text72"><tspan
+       sodipodi:role="line"
+       id="tspan70"
+       x="9.4544077"
+       y="7.1349945"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.52778px;font-family:'Bitstream Vera Sans Mono';-inkscape-font-specification:'Bitstream Vera Sans Mono, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#0000ff;stroke:none;stroke-width:0.433831">FRONTAL</tspan></text>
 </svg>
