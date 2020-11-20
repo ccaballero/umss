@@ -1,5 +1,5 @@
 const path=require('path'),
-    report='informe2';
+    report='informe3';
 
 module.exports=(grunt)=>{
     require('time-grunt')(grunt);
