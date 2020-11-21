@@ -22,8 +22,8 @@ module.exports=(grunt)=>{
                     report+'.tex',
                     'eps/*.eps',
                     'm/*.m',
-                    'csv/*.csv',
-                    'out/*.out'
+                    'm/*.csv',
+                    'm/*.txt'
                 ]
               , tasks:['shell:report']
             }
