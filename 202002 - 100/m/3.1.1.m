@@ -1,5 +1,5 @@
 % leer datos previamente formateados
-table = readtable('./practica31.csv')
+table = readtable('../csv/3.1.csv')
 
 % personalizar grafica
 title('Intensidad luminica en función de la distancia')
@@ -10,4 +10,3 @@ ylabel('Intensidad luminica [lux]')
 hold on
 plot(table.Var1, table.Var2, 'o')
 hold off
-

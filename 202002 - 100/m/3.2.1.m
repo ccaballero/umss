@@ -1,5 +1,5 @@
 % leer datos previamente formateados
-table = readtable('./practica32.csv')
+table = readtable('../csv/3.2.csv')
 
 % calcular la ecuacion de la recta
 p = polyfit(table.Var1, table.Var2, 1)
@@ -14,4 +14,3 @@ ylabel('Presion [kPa]')
 hold on
 plot(table.Var1, table.Var2, 'o')
 hold off
-

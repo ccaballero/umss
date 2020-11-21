@@ -1,14 +1,14 @@
 % leer datos previamente formateados
-table = readtable('./practica33.csv')
+table = readtable('../csv/3.3.csv')
 
 % calcular la ecuacion de la recta
 p = polyfit(table.Var1, table.Var2, 1)
 v = polyval(p, table.Var1)
 
 % personalizar grafica
-title('Resistencia electríca en función de la temperatura')
-xlabel('Temperatura [°C]')
-ylabel('Resistencia [\Omega]')
+title('Resistencia electrica en funcion de la temperatura')
+xlabel('Temperatura [\\degree C]')
+ylabel('Resistencia [\\Omega]')
 
 % texto y grafica de ecuacion
 caption = sprintf('y = (%.2f) + (%.2f) x', p(2), p(1))
@@ -22,4 +22,3 @@ hold on
 plot(table.Var1, table.Var2, 'o')
 plot(table.Var1, v, 'LineWidth', 2)
 hold off
-

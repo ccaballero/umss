@@ -1,8 +1,8 @@
 % leer datos previamente formateados
-table = readtable('./practica31.csv')
+table = readtable('../csv/3.4.csv')
 
 % cambio de variable
-X = table.Var1(2:end).^(-1)
+X = table.Var1(2:end).^(0.5)
 Y = table.Var2(2:end)
 
 % calcular la ecuacion de la recta
@@ -10,8 +10,8 @@ p = polyfit(X, Y, 1)
 v = polyval(p, X)
 
 % personalizar grafica
-title('Cambio de variable hiperbólico')
-xlabel('$x^{-1}$','interpreter','latex')
+title('Cambio de variable parabólico')
+xlabel('$\sqrt{x}$','interpreter','latex')
 ylabel('y')
 
 % texto y grafica de ecuacion

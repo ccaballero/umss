@@ -1,5 +1,5 @@
 % leer datos previamente formateados
-table = readtable('./practica34.csv')
+table = readtable('../csv/3.4.csv')
 
 % personalizar grafica
 title('Periodo en función de la longitud')

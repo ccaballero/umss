@@ -1,5 +1,5 @@
 % leer datos previamente formateados
-table = readtable('./practica34.csv')
+table = readtable('../csv/3.4.csv')
 
 % cambio de variable
 X = log(table.Var1(2:end))
@@ -10,7 +10,7 @@ p = polyfit(X, Y, 1)
 v = polyval(p, X)
 
 % personalizar grafica
-title('Cambio de variable logarítmico')
+title('Cambio de variable logaritmico')
 xlabel('log(x)')
 ylabel('log(y)')
 

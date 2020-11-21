@@ -1,12 +1,11 @@
-% leer datos previamente formateados
-table = csvread('../csv/practica253.csv')
+table = csvread('../csv/2.5.1.csv')
 
 % calcular la ecuacion de la recta
 p = polyfit(table(:,1), table(:,2), 1)
 v = polyval(p, table(:,1))
 
 % personalizar grafica
-title('Posición en función al tiempo (Serie 3)')
+title('Posición en función al tiempo (Serie 1)')
 xlabel('Tiempo [s]')
 ylabel('Posición [m]')
 

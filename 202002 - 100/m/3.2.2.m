@@ -1,18 +1,14 @@
 % leer datos previamente formateados
-table = readtable('./practica31.csv')
-
-% cambio de variable
-X = log(table.Var1(2:end))
-Y = log(table.Var2(2:end))
+table = readtable('../csv/3.2.csv')
 
 % calcular la ecuacion de la recta
-p = polyfit(X, Y, 1)
-v = polyval(p, X)
+p = polyfit(table.Var1, table.Var2, 1)
+v = polyval(p, table.Var1)
 
 % personalizar grafica
-title('Cambio de variable logarítmico')
-xlabel('log(x)')
-ylabel('log(I)')
+title('Presion en funcion de la profundidad')
+xlabel('Profundidad [m]')
+ylabel('Presion [kPa]')
 
 % texto y grafica de ecuacion
 caption = sprintf('y = (%.2f) + (%.2f) x', p(2), p(1))
@@ -23,6 +19,6 @@ a.FontSize = 10
 
 % graficar puntos y lineas
 hold on
-plot(X, Y, 'o')
-plot(X, v, 'LineWidth', 2)
+plot(table.Var1, table.Var2, 'o')
+plot(table.Var1, v, 'LineWidth', 2)
 hold off

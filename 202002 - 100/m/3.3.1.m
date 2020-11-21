@@ -1,5 +1,5 @@
 % leer datos previamente formateados
-table = readtable('./practica33.csv')
+table = readtable('../csv/3.3.csv')
 
 % personalizar grafica
 title('Resistencia electríca en función de la temperatura')
@@ -10,4 +10,3 @@ ylabel('Resistencia [\Omega]')
 hold on
 plot(table.Var1, table.Var2, 'o')
 hold off
-

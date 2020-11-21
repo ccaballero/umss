@@ -1,14 +1,18 @@
 % leer datos previamente formateados
-table = readtable('./practica32.csv')
+table = readtable('../csv/3.1.csv')
+
+% cambio de variable
+X = table.Var1(2:end).^(-1)
+Y = table.Var2(2:end)
 
 % calcular la ecuacion de la recta
-p = polyfit(table.Var1, table.Var2, 1)
-v = polyval(p, table.Var1)
+p = polyfit(X, Y, 1)
+v = polyval(p, X)
 
 % personalizar grafica
-title('Presión en función de la profundidad')
-xlabel('Profundidad [m]')
-ylabel('Presion [kPa]')
+title('Cambio de variable hiperbólico')
+xlabel('$x^{-1}$','interpreter','latex')
+ylabel('y')
 
 % texto y grafica de ecuacion
 caption = sprintf('y = (%.2f) + (%.2f) x', p(2), p(1))
@@ -19,7 +23,6 @@ a.FontSize = 10
 
 % graficar puntos y lineas
 hold on
-plot(table.Var1, table.Var2, 'o')
-plot(table.Var1, v, 'LineWidth', 2)
+plot(X, Y, 'o')
+plot(X, v, 'LineWidth', 2)
 hold off
-

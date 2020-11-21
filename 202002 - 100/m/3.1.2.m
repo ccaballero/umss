@@ -1,18 +1,18 @@
 % leer datos previamente formateados
-table = readtable('./practica34.csv')
+table = readtable('../csv/3.1.csv')
 
 % cambio de variable
-X = table.Var1(2:end).^(0.5)
-Y = table.Var2(2:end)
+X = log(table.Var1(2:end))
+Y = log(table.Var2(2:end))
 
 % calcular la ecuacion de la recta
 p = polyfit(X, Y, 1)
 v = polyval(p, X)
 
 % personalizar grafica
-title('Cambio de variable parabólico')
-xlabel('$\sqrt{x}$','interpreter','latex')
-ylabel('y')
+title('Cambio de variable logaritmico')
+xlabel('log(x)')
+ylabel('log(I)')
 
 % texto y grafica de ecuacion
 caption = sprintf('y = (%.2f) + (%.2f) x', p(2), p(1))

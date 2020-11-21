@@ -1,12 +1,12 @@
 % leer datos previamente formateados
-table = readtable('../csv/practica253.csv')
+table = readtable('../csv/2.5.2.csv')
 
 % calcular la ecuacion de la recta
 p = polyfit(table.Var1, table.Var2, 1)
 v = polyval(p, table.Var1)
 
 % personalizar grafica
-title('Posición en función al tiempo (Serie 3)')
+title('Posición en función al tiempo (Serie 2)')
 xlabel('Tiempo [s]')
 ylabel('Posición [m]')
 
