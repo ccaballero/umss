@@ -11,7 +11,7 @@ v = polyval(p, X)
 
 % personalizar grafica
 title('Cambio de variable parabolico')
-xlabel('$\sqrt{x}$','interpreter','latex')
+xlabel('$\textbackslash sqrt{x}$','interpreter','latex')
 ylabel('y')
 
 % texto y grafica de ecuacion

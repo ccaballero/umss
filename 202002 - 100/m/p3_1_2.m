@@ -2,8 +2,8 @@
 table = readtable('i3_1.csv')
 
 % cambio de variable
-X = log(table.Var1(2:end))
-Y = log(table.Var2(2:end))
+X = log10(table.Var1(2:end))
+Y = log10(table.Var2(2:end))
 
 % calcular la ecuacion de la recta
 p = polyfit(X, Y, 1)
