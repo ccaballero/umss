@@ -19,7 +19,7 @@ xlabel('log(d)')
 ylabel('log(F)')
 
 % texto y grafica de ecuacion
-caption = sprintf('y = (%.2f) + (%.2f) x', p(2), p(1))
+caption = sprintf("f' = (%.2f) + (%.2f) d'", p(2), p(1))
 dim = [.38 .50 0 .3]
 a = annotation('textbox',dim,'String',caption,'FitBoxToText','on')
 a.Color = 'black'

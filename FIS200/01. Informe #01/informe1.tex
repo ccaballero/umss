@@ -34,7 +34,12 @@
 \special{papersize=215.9mm,279.4mm}
 
 \usepackage[
-    pdfauthor={Carlos Eduardo Caballero Burgoa},%
+    pdfauthor={
+        Bastos Lizondo Rosemary;
+        Blanco Alconz John Brandon;
+        Caballero Burgoa Carlos Eduardo;
+        Villena Gutiérrez Ismael Cristian
+    },%
     pdftitle={Laboratorio de Física Básica III},%
     pdfsubject={Ley de Coulomb},%
     colorlinks,%
@@ -162,7 +167,7 @@ signo, y de atracción si son de signo contrario'' véase
 
 \begin{figure}[!h]
 \centering
-\includegraphics[scale=0.45]{resources/figura1.eps}
+\includegraphics[scale=0.58]{resources/figura1.eps}
 \caption{Comportamiento de la intensidad del campo eléctrico entre cargas
 puntuales.}
 \label{figura1}
@@ -179,7 +184,7 @@ A continuación se describe el procedimiento experimental que se llevará a
 cabo.
 
 \begin{enumerate}
-\item Ir al simulador ubicado en la dirección
+\item Ir al simulador ubicado en la dirección web:
 (https://phet.colorado.edu/sims/html/coulombs-law/latest/coulombs-law\_es.html),
 tal como se muestra en la \textbf{Figura \ref{figura2}}.
 \begin{figure}[!h]
@@ -355,16 +360,16 @@ $i$ & $d'_i F'_i$ & $d'^2_i$ & $F'^2_i$ & $Y$ & $\delta_i$ & $\delta^2_i$ \tabul
     \sum d'_i F'_i = 7.7886
 \end{equation*}
 \begin{equation*}
-    \Delta = n \sum d'^2_i - \left( \sum d'_i \right)^2 = 3.7534
+    \Delta_1 = n \sum d'^2_i - \left( \sum d'_i \right)^2 = 3.7534
 \end{equation*}
 \begin{equation*}
-    \Gamma = n \sum F'^2_i - \left( \sum F'_i \right)^2 = 15.0136
+    \Delta_2 = n \sum F'^2_i - \left( \sum F'_i \right)^2 = 15.0136
 \end{equation*}
 \begin{equation*}
-    A = \frac{\sum F'_i \sum d'^2_i - \sum d'_i F'_i \sum d'_i}{\Delta} = 3.0328
+    A = \frac{\sum F'_i \sum d'^2_i - \sum d'_i F'_i \sum d'_i}{\Delta_1} = 3.0328
 \end{equation*}
 \begin{equation*}
-    B = \frac{n \sum d'_i F'_i - \sum d'_i \sum F'_i}{\Delta} = -2.0000
+    B = \frac{n \sum d'_i F'_i - \sum d'_i \sum F'_i}{\Delta_1} = -2.0000
 \end{equation*}
 \begin{equation*}
     \sum \delta^2 = \num{3.2909e-11}
@@ -373,10 +378,10 @@ $i$ & $d'_i F'_i$ & $d'^2_i$ & $F'^2_i$ & $Y$ & $\delta_i$ & $\delta^2_i$ \tabul
     \sigma^2 = \frac{\sum \delta^2_i}{n-2} = \num{5.4849e-12}
 \end{equation*}
 \begin{equation*}
-    \sigma_A = \sqrt{\frac{\sigma^2 \sum d^2_i}{\Delta}} = \num{2.1699e-6}
+    \sigma_A = \sqrt{\frac{\sigma^2 \sum d^2_i}{\Delta_1}} = \num{2.1699e-6}
 \end{equation*}
 \begin{equation*}
-    \sigma_B = \sqrt{\frac{\sigma^2 n}{\Delta}} = \num{3.4191e-6}
+    \sigma_B = \sqrt{\frac{\sigma^2 n}{\Delta_1}} = \num{3.4191e-6}
 \end{equation*}
 
 \begin{equation*}
@@ -389,7 +394,7 @@ $i$ & $d'_i F'_i$ & $d'^2_i$ & $F'^2_i$ & $Y$ & $\delta_i$ & $\delta^2_i$ \tabul
 Siendo el coeficiente de correlación:
 
 \begin{equation*}
-    R = \frac{n \sum d'_i F'_i - (\sum d'_i)(\sum F'_i)}{\sqrt{\Delta \Gamma}} = -1.0000
+    R = \frac{n \sum d'_i F'_i - (\sum d'_i)(\sum F'_i)}{\sqrt{\Delta_1 \Delta_2}} = -1.0000
 \end{equation*}
 
 \textbf{Debido a que estamos trabajando en un simulador ideal, podemos verificar
@@ -481,7 +486,7 @@ Siendo el error de la medición:
     e_\varepsilon = \frac{|Q_1 Q_2|}{4 \pi a^2} e_a = \num{4.4e-9}
 \end{equation}
 
-Siendo la medición:
+Resultando la medición:
 
 \begin{equation*}
     \varepsilon_0 = (\num{8.8e-4} \pm \num{4.4e-9}) [\mu C^2/cm^2 N]; \num{5e-4} \%
