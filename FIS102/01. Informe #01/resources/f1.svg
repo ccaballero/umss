@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="500"
+   height="500"
+   viewBox="0 0 132.29166 132.29167"
+   version="1.1"
+   id="svg8"
+   inkscape:version="1.0.2 (e86c870879, 2021-01-15)"
+   sodipodi:docname="f1.svg">
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible;"
+       id="Arrow1Send"
+       refX="0.0"
+       refY="0.0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="scale(0.2) rotate(180) translate(6,0)"
+         style="fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1;fill:#ff0000;fill-opacity:1"
+         d="M 0.0,0.0 L 5.0,-5.0 L -12.5,0.0 L 5.0,5.0 L 0.0,0.0 z "
+         id="path1004" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-1"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1004-2" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-1-0"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1004-2-9" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-1-0-6"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1004-2-9-0" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Send-1-0-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Send"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.2,0,0,-0.2,-1.2,0)"
+         style="fill:#ff0000;fill-opacity:1;fill-rule:evenodd;stroke:#ff0000;stroke-width:1pt;stroke-opacity:1"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path1004-2-9-6" />
+    </marker>
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="3.959798"
+     inkscape:cx="286.89223"
+     inkscape:cy="319.04904"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     inkscape:document-rotation="0"
+     showgrid="false"
+     units="px"
+     showborder="true"
+     inkscape:showpageshadow="false"
+     inkscape:window-width="1920"
+     inkscape:window-height="1050"
+     inkscape:window-x="1920"
+     inkscape:window-y="18"
+     inkscape:window-maximized="0">
+    <inkscape:grid
+       type="xygrid"
+       id="grid12"
+       spacingx="2.6458333"
+       spacingy="2.6458333" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Capa 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#fff6d5;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       id="rect915"
+       width="68.791664"
+       height="55.5625"
+       x="50.270832"
+       y="63.5"
+       ry="0"
+       rx="0" />
+    <rect
+       style="fill:#f4d7d7;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       id="rect913"
+       width="37.041668"
+       height="55.5625"
+       x="13.229166"
+       y="63.5" />
+    <path
+       style="fill:none;fill-opacity:0.698039;stroke:#000000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       d="m 13.229167,55.562499 0,71.437501"
+       id="path14"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:0.698039;stroke:#000000;stroke-width:0.42333333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke;stroke-dasharray:none"
+       d="M 5.2916666,119.0625 127,119.0625"
+       id="path16"
+       sodipodi:nodetypes="cc" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="66.126984"
+       y="125.88676"
+       id="text22"><tspan
+         sodipodi:role="line"
+         id="tspan20"
+         x="66.126984"
+         y="125.88676"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333">Deformación</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="-91.286896"
+       y="8.8779488"
+       id="text22-3"
+       transform="rotate(-90)"><tspan
+         sodipodi:role="line"
+         id="tspan20-6"
+         x="-91.286896"
+         y="8.8779488"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333">Esfuerzo</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="10.611968"
+       y="122.58758"
+       id="text873"><tspan
+         sodipodi:role="line"
+         id="tspan871"
+         x="10.611968"
+         y="122.58758"
+         style="stroke-width:0.423333">O</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="76.335197"
+       y="81.633675"
+       id="text22-7"><tspan
+         sodipodi:role="line"
+         id="tspan20-5"
+         x="76.335197"
+         y="81.633675"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333">Deformación</tspan><tspan
+         sodipodi:role="line"
+         x="76.335197"
+         y="85.161461"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333"
+         id="tspan963">plástica</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="52.879642"
+       y="100.03055"
+       id="text901"><tspan
+         sodipodi:role="line"
+         id="tspan899"
+         x="52.879642"
+         y="100.03055"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333">Límite de</tspan><tspan
+         sodipodi:role="line"
+         x="52.879642"
+         y="103.55833"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333"
+         id="tspan959">proporcionalidad</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="43.492981"
+       y="67.230751"
+       id="text905"><tspan
+         sodipodi:role="line"
+         id="tspan903"
+         x="43.492981"
+         y="67.230751"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333">Límite</tspan><tspan
+         sodipodi:role="line"
+         x="43.492981"
+         y="70.758537"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333"
+         id="tspan961">elástico</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="107.46365"
+       y="94.203651"
+       id="text909"><tspan
+         sodipodi:role="line"
+         id="tspan907"
+         x="107.46365"
+         y="94.203651"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333">Punto de</tspan><tspan
+         sodipodi:role="line"
+         x="107.46365"
+         y="97.731438"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333"
+         id="tspan965">ruptura</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       d="M 13.229167,119.0625 39.687499,84.666666 c 26.458333,-15.275726 47.625,-15.875 74.083331,0"
+       id="path911"
+       sodipodi:nodetypes="ccc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#000000;stroke-width:0.42333333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:0.42333333,0.84666666;paint-order:markers fill stroke;stroke-dashoffset:0"
+       d="M 39.6875,84.666666 V 119.24442"
+       id="path985" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect917"
+       width="2.6458333"
+       height="2.6458333"
+       x="38.317341"
+       y="83.390999"
+       ry="1.3229166" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect919"
+       width="2.6458333"
+       height="2.6458333"
+       x="48.892677"
+       y="77.865898"
+       ry="1.3229166" />
+    <rect
+       style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       id="rect919-9"
+       width="2.6458333"
+       height="2.6458333"
+       x="112.49873"
+       y="83.438675"
+       ry="1.3229166" />
+    <text
+       xml:space="preserve"
+       style="font-size:2.82223px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';text-align:center;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;paint-order:markers fill stroke"
+       x="26.527615"
+       y="75.965485"
+       id="text955"><tspan
+         sodipodi:role="line"
+         id="tspan953"
+         x="26.527615"
+         y="75.965485"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333">Comportamiento</tspan><tspan
+         sodipodi:role="line"
+         x="26.527615"
+         y="79.493271"
+         style="fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.423333"
+         id="tspan957">elástico</tspan></text>
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.42333333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;marker-end:url(#Arrow1Send)"
+       d="m 24.50456,81.459376 2.492494,16.435538"
+       id="path987" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-1);paint-order:markers fill stroke"
+       d="M 46.599527,97.007119 41.540554,87.394516"
+       id="path987-7"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-1-0);paint-order:markers fill stroke"
+       d="m 43.257018,71.822421 4.769769,5.073319"
+       id="path987-7-3"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-1-0-6);paint-order:markers fill stroke"
+       d="M 77.277446,79.219873 74.6285,74.83062"
+       id="path987-7-3-6"
+       sodipodi:nodetypes="cc" />
+    <path
+       style="fill:none;fill-opacity:1;stroke:#ff0000;stroke-width:0.423333;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-end:url(#Arrow1Send-1-0-2);paint-order:markers fill stroke"
+       d="m 108.9469,91.539858 2.93229,-4.338328"
+       id="path987-7-3-1"
+       sodipodi:nodetypes="cc" />
+  </g>
+</svg>
