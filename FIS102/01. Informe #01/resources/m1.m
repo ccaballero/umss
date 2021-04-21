@@ -30,19 +30,19 @@ e_s = arrayfun(@(x) sqrt( ((g/a)^2*e_m^2) + ((x/a)^2*e_g^2) + (((x*g)/a^2)^2*e_a
 f = d/l_m(1)
 e_f = arrayfun(@(x) sqrt( ((1/l_m(1))^2*e_l^2) + ((x/l_m(1)^2)^2*e_l^2) ), d)
 
-%title('Esfuerzo - Deformación unitaria')
-%xlabel('Deformacion ($\epsilon$)','interpreter','latex')
-%ylabel('Esfuerzo ($\sigma$)','interpreter','latex')
+title('Esfuerzo - Deformación unitaria')
+xlabel('Deformacion Unitaria ($\epsilon$)','interpreter','latex')
+ylabel('Esfuerzo ($\sigma$)','interpreter','latex')
 
-%hold on
-%plot(f, s, 'o')
-%hold off
+hold on
+plot(f, s, 'o')
+hold off
 
 % MINIMOS CUADRADOS
 
-% cambio de variable y remover el primer elemento
-x = log10(s(1:18))
-y = log10(f(1:18))
+% remover los elementos fuera del comportamiento elastico
+x = s(1:18)
+y = f(1:18)
 
 % tamano de la muestra
 n = length(x)
@@ -80,18 +80,6 @@ sB = sqrt( (s2 * n) / D )
 % calculando el error porcentual
 EA = (sA / A) * 100
 EB = (sB / B) * 100
-
-% calculando los valores originales
-a = 10^A
-b = B
-
-% calculando el error absoluto
-sa = (10^A) * log(10) * sA
-sb = sB
-
-% calculando el error porcentual
-Ea = (sa / a) * 100
-Eb = (sb / b) * 100
 
 % calculo de correlacion
 R = ((n * sxy) - (sx * sy)) / sqrt( D * DD )
