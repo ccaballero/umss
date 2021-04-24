@@ -1,5 +1,5 @@
 const path=require('path'),
-    report='informe4';
+    report='inercia';
 
 module.exports=(grunt)=>{
     require('time-grunt')(grunt);
