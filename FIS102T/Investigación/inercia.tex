@@ -79,7 +79,7 @@
             \centering
             \large{\textbf{UNIVERSIDAD MAYOR DE SAN SIMÓN}} \newline
             \large{\textbf{FACULTAD DE CIENCIAS Y TECNOLOGÍA}} \newline
-            \large{\textbf{CARRERA DE ELECTROMECANICA}} \newline
+            \large{\textbf{CARRERA DE ELECTROMECÁNICA}} \newline
         \end{minipage}
         \begin{minipage}[]{.20\linewidth}
             \begin{flushright}
@@ -386,14 +386,14 @@ calcular la energía cinética con la \textbf{ecuación
 
 \section{Teorema de los ejes paralelos \cite{Sears}}
 
-Considérese dos ejes de rotación paralelos en un sistema de partículas (véase la
-\textbf{Figura \ref{figura5}}), uno de estos ejes ubicado en el centro de masa
-$O = (0,0)$ y otro en un punto $P = (a,b)$.
+Considérese dos ejes de rotación paralelos en un sistema discreto de partículas
+(véase la \textbf{Figura \ref{figura5}}), uno de estos ejes ubicado en el centro
+de masa $O = (0,0)$ y otro en un punto $P = (a,b)$.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.50\textwidth]{resources/f5.eps}
-\caption{Sistema de partículas y su relación entre ejes que son paralelos.}
+\caption{Dos ejes paralelos y su relación con una partícula de un sistema discreto.}
 \label{figura5}
 \end{figure}
 
@@ -457,14 +457,64 @@ cuerpo respecto a un eje paralelo al anterior que pase a través del centro de
 masas del objeto, de la masa del objeto y de la distancia medida
 perpendicularmente entre ambos ejes \cite{WIKI1}.
 
-\section{Solidos rigidos}
-Realizar el desarrollo de la teoría y ejemplos de aplicación de
-momentos de inercia. Debe analizar los siguientes casos:
-2. Sistema continuo de partículas (solido), analizando distribuciones de masa:
-2.1 Lineal
-2.2 Superficial
-2.3 Volumétrica
+\section{Sistema continuo de partículas \cite{Sears}}
 
+Para el calculo de momentos de inercia en distribuciones continuas de masa, se
+transforma la masa $m_i$ a un diferencial de masa $dm$ y la sumatoria de las
+partículas a una integral, la \textbf{Ecuación \ref{momentodeinercia}} se
+transforma en:
+
+\begin{equation}
+    I = \int r^2\, dm
+\label{solidorigido}
+\end{equation}
+
+Para la resolución de esta integral, se debe representar $r$ y $dm$ en términos
+de la variable de integración. Para eso puede usarse el concepto de densidad:
+
+\begin{equation}
+    \rho = \frac{dm}{dV}
+\label{densidad}
+\end{equation}
+
+Por tanto:
+
+\begin{equation*}
+    dm = \rho\, dV
+\end{equation*}
+
+Y reemplazando en la \textbf{Ecuación \ref{solidorigido}}, obtenemos:
+
+\begin{equation*}
+    I = \int r^2\, \rho\, dV
+\end{equation*}
+
+Si es que la densidad del objeto es uniforme, $rho$ puede salir de la integral:
+
+\begin{equation}
+    I = \rho \int r^2\, dV
+\end{equation}
+
+Dependiendo del tipo de objeto pueden usarse tres diferentes tipos de densidad,
+en el cambio de variable de la integral:
+
+\begin{itemize}
+\item Densidad lineal de masa:
+\begin{equation*}
+    dm = \lambda\, dx
+\end{equation*}
+
+\item Densidad superficial de masa:
+\begin{equation*}
+    dm = \sigma\, dx\, dy
+\end{equation*}
+
+\item Densidad volumétrica de masa:
+\begin{equation*}
+    dm = \rho\, dx\, dy\, dz
+\end{equation*}
+
+\end{itemize}
 
 \begin{thebibliography}{99}
 
