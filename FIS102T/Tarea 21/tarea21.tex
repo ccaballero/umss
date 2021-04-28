@@ -98,7 +98,7 @@ Demostrar todos los momentos de inercia notables siguientes:
 a) Barra uniforme, eje en el centro de masa y perpendicular a su longitud.
 
 \begin{center}
-\includegraphics[scale=1.25]{resources/f1.eps}
+\includegraphics[scale=1.75]{resources/f1.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -159,7 +159,7 @@ Resultando finalmente:
 b) Barra uniforme, eje por un extremo y perpendicular a su longitud.
 
 \begin{center}
-\includegraphics[scale=1.25]{resources/f2.eps}
+\includegraphics[scale=1.75]{resources/f2.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -220,7 +220,7 @@ Resultando finalmente:
 c) Disco uniforme, eje en el centro de masa y perpendicular al disco.
 
 \begin{center}
-\includegraphics[scale=1.25]{resources/f3.eps}
+\includegraphics[scale=1.75]{resources/f3.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -284,7 +284,7 @@ Resultando finalmente:
 d) Disco uniforme, eje con el centro de masa y paralelo al disco.
 
 \begin{center}
-\includegraphics[scale=1.25]{resources/f4.eps}
+\includegraphics[scale=1.75]{resources/f4.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -313,7 +313,7 @@ Por tanto:
 \label{dm4}
 \end{equation}
 
-Considerando la relación trigonometrica entre las variables $r$ y $a$:
+Considerando la relación trigonométrica entre las variables $r$ y $a$:
 
 \begin{equation*}
     cos (\theta) = \frac{r}{a}
@@ -332,7 +332,7 @@ Reemplazando (\ref{dm4}) y (\ref{distancia4}) en (\ref{momentodeinercia4}):
     I = \int_{S} r^2\, \sigma\, ds = \int_{0}^{R} \int_{0}^{2\pi} a^2\, cos^2(\theta)\, \sigma\, a\, d\theta\, da = \sigma \int_{0}^{R} a^3 \int_{0}^{2\pi} cos^2(\theta)\, d\theta\, da
 \end{equation*}
 
-Considerando las siguientes propiedades trigonometricas:
+Considerando las siguientes propiedades trigonométricas:
 
 \begin{equation*}
     cos^2(x) + sen^2(x) = 1
@@ -386,7 +386,7 @@ Resultando finalmente:
 e) Aro o anillo uniforme, eje en el centro de masa y perpendicular al aro.
 
 \begin{center}
-\includegraphics[scale=1.25]{resources/f5.eps}
+\includegraphics[scale=1.75]{resources/f5.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -441,7 +441,7 @@ Resultando finalmente:
 f) Cilindro macizo uniforme, eje de simetría en el centro de masa.
 
 \begin{center}
-\includegraphics[scale=1.25]{resources/f6.eps}
+\includegraphics[scale=1.75]{resources/f6.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -501,6 +501,10 @@ Resultando finalmente:
 \newpage
 g) Esfera maciza uniforme, eje en el centro de masa.
 
+\begin{center}
+\includegraphics[scale=1.75]{resources/f7.eps}
+\end{center}
+
 Dada la ecuación del momento de inercia:
 
 \begin{equation}
@@ -514,7 +518,7 @@ Asumiendo la distribución homogénea de la masa:
     \rho = \frac{dm}{dv}
 \end{equation*}
 
-Usando un diferencial en coordenadas esfericas obtenemos:
+Usando un diferencial en coordenadas esféricas obtenemos:
 
 \begin{equation*}
     dv = da\, a\, d\phi\, a\, sen (\phi)\, d\theta
@@ -530,7 +534,7 @@ Por tanto:
 \label{dm7}
 \end{equation}
 
-Considerando la relación trigonometrica entre las variables $r$ y $a$:
+Considerando la relación trigonométrica entre las variables $r$ y $a$:
 
 \begin{equation}
     r = a\, sen (\phi)
@@ -564,7 +568,7 @@ Reemplazando (\ref{dm7}) y (\ref{distancia7}) en (\ref{momentodeinercia7}):
     I = \rho\, \frac{R^5}{5}\, \int_{0}^{2\pi} \left( 1 + 1 - \frac{1}{3} - \frac{1}{3} \right) d\theta = \rho\, \frac{R^5}{5}\, \int_{0}^{2\pi} \frac{4}{3} d\theta = \rho\, \frac{4\, R^5}{15} \int_{0}^{2\pi} d\theta = \rho\, \frac{4\, R^5}{15} ( \theta \Biggr|_{0}^{2\pi} )
 \end{equation*}
 \begin{equation}
-    I = \rho\, \frac{8\pi\, R^5}{15}
+    I = \rho\, \frac{8\pi}{15}\, R^5
 \label{resultado7}
 \end{equation}
 
@@ -588,6 +592,92 @@ Resultando finalmente:
 
 \newpage
 h) Cascarón esférico uniforme, eje en el centro de masa.
+
+\begin{center}
+\includegraphics[scale=1.75]{resources/f8.eps}
+\end{center}
+
+Dada la ecuación del momento de inercia:
+
+\begin{equation}
+    I = \int_{M} r^2\, dm
+\label{momentodeinercia8}
+\end{equation}
+
+Asumiendo la distribución homogénea de la masa:
+
+\begin{equation*}
+    \sigma = \frac{dm}{ds}
+\end{equation*}
+
+Usando un diferencial en coordenadas esféricas obtenemos:
+
+\begin{equation*}
+    ds = R\, d\phi\, R\, sen(\phi)\, d\theta
+\end{equation*}
+\begin{equation*}
+    ds = R^2\, sen (\phi)\, d\phi\, d\theta
+\end{equation*}
+
+Por tanto:
+
+\begin{equation}
+    dm = \sigma\, ds = \sigma\, R^2\, sen (\phi)\, d\phi\, d\theta
+\label{dm8}
+\end{equation}
+
+Considerando la relación trigonométrica entre las variables $r$ y $R$:
+
+\begin{equation}
+    r = R\, sen (\phi)
+\label{distancia8}
+\end{equation}
+
+Reemplazando (\ref{dm8}) y (\ref{distancia8}) en (\ref{momentodeinercia8}): 
+
+\begin{equation*}
+    I = \int_{S} r^2\, \sigma\, ds = \int_{0}^{2\pi} \int_{0}^{\pi} R^2\, sen^2(\phi)\, \sigma\, R^2\, sen (\phi)\, d\phi\, d\theta = \int_{0}^{2\pi} \int_{0}^{\pi} \sigma R^4\, sen^3(\phi)\, d\phi\, d\theta
+\end{equation*}
+\begin{equation*}
+    I = \sigma\, R^4\, \int_{0}^{2\pi} \int_{0}^{\pi}\, sen^3(\phi)\, d\phi\, d\theta = \sigma\, R^4\, \int_{0}^{2\pi} \int_{0}^{\pi} sen^2(\phi)\, sen(\phi)\, d\phi\, d\theta
+\end{equation*}
+\begin{equation*}
+    I = \sigma\, R^4\, \int_{0}^{2\pi} \int_{0}^{\pi} (1 - cos^2(\phi))\, sen(\phi)\, d\phi\, d\theta
+\end{equation*}
+\begin{equation*}
+    I = \sigma\, R^4\, \int_{0}^{2\pi} \left( \int_{0}^{\pi} sen(\phi)\, d\phi - \int_{0}^{\pi} cos^2(\phi)\, sen(\phi)\, d\phi\, \right) d\theta
+\end{equation*}
+\begin{equation*}
+    I = \sigma\, R^4\, \int_{0}^{2\pi} \left( -cos(\phi)\Biggr|_{0}^{\pi} + \frac{cos^3(\phi)}{3}\Biggr|_{0}^{\pi} \right) d\theta
+\end{equation*}
+\begin{equation*}
+    I = \sigma\, R^4\, \int_{0}^{2\pi} \left( -cos(\pi) + cos(0) + \frac{cos^3(\pi)}{3} - \frac{cos^3(0)}{3} \right) d\theta
+\end{equation*}
+\begin{equation*}
+    I = \sigma\, R^4\, \int_{0}^{2\pi} \left( 1 + 1 - \frac{1}{3} - \frac{1}{3} \right) d\theta = \sigma\, R^4\, \int_{0}^{2\pi} \frac{4}{3} d\theta = \sigma\, \frac{4\, R^4}{3} \int_{0}^{2\pi} d\theta = \sigma\, \frac{4\, R^4}{3} ( \theta \Biggr|_{0}^{2\pi} )
+\end{equation*}
+\begin{equation}
+    I = \sigma\, \frac{8\pi}{3} R^4
+\label{resultado8}
+\end{equation}
+
+A partir de la ecuación (\ref{dm8}) sabemos que:
+
+\begin{equation*}
+    M = \sigma\, S = \sigma\, 4\pi\, R^2
+\end{equation*}
+
+Despejando $\sigma$ y reemplazando en la ecuación (\ref{resultado8}), obtenemos:
+
+\begin{equation*}
+    I = (\frac{M}{4\pi\, R^2})\, \frac{8\pi\, R^4}{3}
+\end{equation*}
+
+Resultando finalmente:
+
+\begin{equation}
+    I = \frac{2}{3}\, M\, R^2
+\end{equation}
 
 \end{document}
 
