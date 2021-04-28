@@ -98,7 +98,7 @@ Demostrar todos los momentos de inercia notables siguientes:
 a) Barra uniforme, eje en el centro de masa y perpendicular a su longitud.
 
 \begin{center}
-\includegraphics[scale=1.10]{resources/f1.eps}
+\includegraphics[scale=1.25]{resources/f1.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -159,7 +159,7 @@ Resultando finalmente:
 b) Barra uniforme, eje por un extremo y perpendicular a su longitud.
 
 \begin{center}
-\includegraphics[scale=1.10]{resources/f2.eps}
+\includegraphics[scale=1.25]{resources/f2.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -220,7 +220,7 @@ Resultando finalmente:
 c) Disco uniforme, eje en el centro de masa y perpendicular al disco.
 
 \begin{center}
-\includegraphics[scale=1.10]{resources/f3.eps}
+\includegraphics[scale=1.25]{resources/f3.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -263,6 +263,7 @@ Reemplazando (\ref{dm3}) en (\ref{momentodeinercia3}):
 \end{equation}
 
 A partir de la ecuación (\ref{dm3}) sabemos que:
+
 \begin{equation*}
     M = \sigma\, S = \sigma\, \pi\, R^2
 \end{equation*}
@@ -283,7 +284,7 @@ Resultando finalmente:
 d) Disco uniforme, eje con el centro de masa y paralelo al disco.
 
 \begin{center}
-\includegraphics[scale=1.10]{resources/f4.eps}
+\includegraphics[scale=1.25]{resources/f4.eps}
 \end{center}
 
 Dada la ecuación del momento de inercia:
@@ -383,6 +384,58 @@ Resultando finalmente:
 
 \newpage
 e) Aro o anillo uniforme, eje en el centro de masa y perpendicular al aro.
+
+\begin{center}
+\includegraphics[scale=1.25]{resources/f5.eps}
+\end{center}
+
+Dada la ecuación del momento de inercia:
+
+\begin{equation}
+    I = \int_{M} r^2\, dm
+\label{momentodeinercia5}
+\end{equation}
+
+Asumiendo la distribución homogénea de la masa:
+
+\begin{equation*}
+    \lambda = \frac{dm}{dl} = \frac{dm}{R\, d\theta}
+\end{equation*}
+
+Por tanto:
+
+\begin{equation}
+    dm = \lambda\, R\, d\theta
+\label{dm5}
+\end{equation}
+
+Reemplazando (\ref{dm5}) en (\ref{momentodeinercia5}):
+
+\begin{equation*}
+    I = \int_{0}^{2\pi} R^2\, \lambda\, R\, d\theta = R^3\, \lambda\, \int_{0}^{2\pi} d\theta = R^3\, \lambda (\theta \Biggr|_{0}^{2\pi})
+\end{equation*}
+\begin{equation}
+    I = \lambda\, R^3\, 2\pi
+\label{resultado5}
+\end{equation}
+
+A partir de la ecuación (\ref{dm5}) sabemos que:
+
+\begin{equation*}
+    M = \lambda\, l = \lambda\, 2\pi\, R
+\end{equation*}
+
+Despejando $\lambda$ y reemplazando en la ecuación (\ref{resultado5}), obtenemos:
+
+\begin{equation*}
+    I = \left( \frac{M}{2\pi\, R} \right) R^3\, 2\pi
+\end{equation*}
+
+Resultando finalmente:
+
+\begin{equation}
+    I = M\, R^2
+\end{equation}
 
 \newpage
 f) Cilindro macizo uniforme, eje de simetría en el centro de masa.
