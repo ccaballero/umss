@@ -520,7 +520,7 @@ Por ejemplo en coordenadas cartesianas se tienen:
 \section{Calculo de momentos de inercia}
 
 \subsection{Varilla delgada horizontal}
-El procedimiento para hallar el momento de inercia de una varilla delgada (vease
+El procedimiento para hallar el momento de inercia de una varilla delgada (véase
 la \textbf{Figura \ref{figura6}}) con eje en el centro de masa y perpendicular a
 su longitud ($L$), es el siguiente:
 
@@ -551,7 +551,7 @@ Por tanto:
 \label{dm1}
 \end{equation}
 
-Para cada diferencial de longitud, se sabe que $r$ es equivalente al valor de
+Para cada diferencial, se sabe que $r$ es equivalente al valor de
 $|l|$:
 
 \begin{equation}
@@ -587,15 +587,15 @@ Resultando finalmente:
     I = \frac{1}{12}\, M\, L^2
 \end{equation}
 
-\subsection{Varilla delgada vertical}
-El procedimiento para hallar el momento de inercia de una varilla delgada (vease
-la \textbf{Figura \ref{figura7}}) con eje en el centro de masa y paralelo a
-su longitud ($L$), es el siguiente:
+\subsection{Anillo delgado horizontal}
+El procedimiento para hallar el momento de inercia de un anillo delgado (véase
+la \textbf{Figura \ref{figura7}}) con eje en el centro de masa y perpendicular a
+su radio ($R$), es el siguiente:
 
 \begin{figure}
 \centering
 \includegraphics[scale=0.5]{resources/f7.eps}
-\caption{Varilla delgada vertical}
+\caption{Anillo delgado horizontal}
 \label{figura7}
 \end{figure}
 
@@ -606,11 +606,131 @@ Considerando la \textbf{Ecuación (\ref{solidorigido})}:
 \tag{4}
 \end{equation*}
 
-Para cada diferencial de longitud, se sabe que $r = 0$, por tanto:
+Asumiendo la distribución homogénea y longitudinal de la masa, y usando un
+sistema de referencia polar:
+
+\begin{equation*}
+    \lambda = \frac{dm}{dl} = \frac{dm}{R\, d\theta}
+\end{equation*}
+
+Por tanto:
 
 \begin{equation}
-    I = 0
+    dm = \lambda\, R\, d\theta
+\label{dm2}
+\end{equation}
+
+Para cada diferencial, se sabe que $r$ es equivalente al valor de
+$R$:
+
+\begin{equation}
+    r = R
 \label{r2}
+\end{equation}
+
+Reemplazando (\ref{r2}) y (\ref{dm2}) en (\ref{solidorigido}):
+
+\begin{equation*}
+    I = \int_{M} r^2\, dm = \int_{0}^{2\pi} R^2\, \lambda\, R\, d\theta = \lambda\, R^3\, \int_{0}^{2\pi} d\theta = \lambda\, R^3\, (\theta \Biggr|_{0}^{2\pi})
+\end{equation*}
+\begin{equation}
+    I = \lambda\, R^3\, 2\pi
+\label{resultado2}
+\end{equation}
+
+A partir de la ecuación (\ref{dm2}) sabemos que:
+
+\begin{equation*}
+    M = \lambda\, R\, 2\pi
+\end{equation*}
+
+Despejando $\lambda$ y reemplazando en la ecuación (\ref{resultado2}):
+
+\begin{equation*}
+    I = \left( \frac{M}{2\pi\, R} \right) R^3\, 2\pi
+\end{equation*}
+
+Resultando finalmente:
+
+\begin{equation}
+    I = M\, R^2
+\end{equation}
+
+\subsection{Anillo delgado vertical}
+El procedimiento para hallar el momento de inercia de un anillo delgado (véase
+la \textbf{Figura \ref{figura8}}) con eje en el centro de masa y paralelo a
+su radio ($R$), es el siguiente:
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{resources/f8.eps}
+\caption{Anillo delgado vertical}
+\label{figura8}
+\end{figure}
+
+Considerando la \textbf{Ecuación (\ref{solidorigido})}:
+
+\begin{equation*}
+    I = \int_{M} r^2\, dm
+\tag{4}
+\end{equation*}
+
+Asumiendo la distribución homogénea y longitudinal de la masa, y usando un
+sistema de referencia polar:
+
+\begin{equation*}
+    \lambda = \frac{dm}{dl} = \frac{dm}{R\, d\theta}
+\end{equation*}
+
+Por tanto:
+
+\begin{equation}
+    dm = \lambda\, R\, d\theta
+\label{dm3}
+\end{equation}
+
+Considerando la relación trigonométrica entre $R$ y $r$:
+
+\begin{equation*}
+    cos (\theta) = \frac{r}{R}
+\end{equation*}
+
+Por tanto:
+
+\begin{equation}
+    r = R\, cos(\theta)
+\label{r3}
+\end{equation}
+
+Reemplazando (\ref{r3}) y (\ref{dm3}) en (\ref{solidorigido}):
+
+\begin{equation*}
+    I = \int_{M} r^2\, dm = \int_{0}^{2\pi} R^2\, cos^2(\theta)\, \lambda\, R\, d\theta = \lambda\, R^3\, \int_{0}^{2\pi} cos^2(\theta)\, d\theta
+\end{equation*}
+\begin{equation*}
+    I = \lambda\, R^3 \left( \frac{1}{2} \theta + \frac{1}{4} sen (2\theta) \right) \Biggr|_{0}^{2\pi} = \lambda\, R^3 \left( \pi + \frac{1}{4} sen(4\pi) - \frac{1}{4} sen(0) \right)
+\end{equation*}
+\begin{equation}
+    I = \lambda\, R^3\, \pi
+\label{resultado3}
+\end{equation}
+
+A partir de la ecuación (\ref{dm3}) sabemos que:
+
+\begin{equation*}
+    M = \lambda\, R\, 2\pi
+\end{equation*}
+
+Despejando $\lambda$ y reemplazando en la ecuación (\ref{resultado3}):
+
+\begin{equation*}
+    I = \left( \frac{M}{2\pi\, R} \right) R^3\, \pi
+\end{equation*}
+
+Resultando finalmente:
+
+\begin{equation}
+    I = \frac{1}{2}\, M\, R^2
 \end{equation}
 
 \begin{thebibliography}{99}
