@@ -465,7 +465,7 @@ partículas a una integral, la \textbf{Ecuación \ref{momentodeinercia}} se
 transforma en:
 
 \begin{equation}
-    I = \int r^2\, dm
+    I = \int_{M} r^2\, dm
 \label{solidorigido}
 \end{equation}
 
@@ -486,17 +486,19 @@ Por tanto:
 Y reemplazando en la \textbf{Ecuación \ref{solidorigido}}, obtenemos:
 
 \begin{equation*}
-    I = \int r^2\, \rho\, dV
+    I = \int_{V} r^2\, \rho\, dV
 \end{equation*}
 
 Si es que la densidad del objeto es uniforme, $rho$ puede salir de la integral:
 
 \begin{equation}
-    I = \rho \int r^2\, dV
+    I = \rho \int_{V} r^2\, dV
 \end{equation}
 
 Dependiendo del tipo de objeto pueden usarse tres diferentes tipos de densidad,
-en el cambio de variable de la integral:
+en el cambio de variable de la integral.
+
+Por ejemplo en coordenadas cartesianas se tienen:
 
 \begin{itemize}
 \item Densidad lineal de masa:
@@ -513,8 +515,103 @@ en el cambio de variable de la integral:
 \begin{equation*}
     dm = \rho\, dx\, dy\, dz
 \end{equation*}
-
 \end{itemize}
+
+\section{Calculo de momentos de inercia}
+
+\subsection{Varilla delgada horizontal}
+El procedimiento para hallar el momento de inercia de una varilla delgada (vease
+la \textbf{Figura \ref{figura6}}) con eje en el centro de masa y perpendicular a
+su longitud ($L$), es el siguiente:
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{resources/f6.eps}
+\caption{Varilla delgada horizontal}
+\label{figura6}
+\end{figure}
+
+Considerando la \textbf{Ecuación (\ref{solidorigido})}:
+
+\begin{equation*}
+    I = \int_{M} r^2\, dm
+\tag{4}
+\end{equation*}
+
+Asumiendo la distribución homogénea y longitudinal de la masa:
+
+\begin{equation*}
+    \lambda = \frac{dm}{dl}
+\end{equation*}
+
+Por tanto:
+
+\begin{equation}
+    dm = \lambda\, dl
+\label{dm1}
+\end{equation}
+
+Para cada diferencial de longitud, se sabe que $r$ es equivalente al valor de
+$|l|$:
+
+\begin{equation}
+    r^2 = l^2
+\label{r1}
+\end{equation}
+
+Reemplazando (\ref{r1}) y (\ref{dm1}) en (\ref{solidorigido}):
+
+\begin{equation*}
+    I = \int_{M} r^2\, dm = \int_{-L/2}^{L/2} l^2\, \lambda\, dl = \lambda \int_{-L/2}^{L/2} l^2\, dl = \lambda\, \frac{l^3}{3} \Biggr|_{-L/2}^{L/2} = \lambda \left( \frac{(\frac{L}{2})^3}{3} - \frac{(-\frac{L}{2})^3}{3} \right)
+\end{equation*}
+\begin{equation}
+    I = \lambda\, \frac{L^3}{12}
+\label{resultado1}
+\end{equation}
+
+A partir de la ecuación (\ref{dm1}) sabemos que:
+
+\begin{equation*}
+    M = \lambda\, L
+\end{equation*}
+
+Despejando $\lambda$ y reemplazando en la ecuación (\ref{resultado1}):
+
+\begin{equation*}
+    I = \frac{1}{12} \left( \frac{M}{L} \right) L^3
+\end{equation*}
+
+Resultando finalmente:
+
+\begin{equation}
+    I = \frac{1}{12}\, M\, L^2
+\end{equation}
+
+\subsection{Varilla delgada vertical}
+El procedimiento para hallar el momento de inercia de una varilla delgada (vease
+la \textbf{Figura \ref{figura7}}) con eje en el centro de masa y paralelo a
+su longitud ($L$), es el siguiente:
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.5]{resources/f7.eps}
+\caption{Varilla delgada vertical}
+\label{figura7}
+\end{figure}
+
+Considerando la \textbf{Ecuación (\ref{solidorigido})}:
+
+\begin{equation*}
+    I = \int_{M} r^2\, dm
+\tag{4}
+\end{equation*}
+
+Para cada diferencial de longitud, se sabe que $r = 0$, por tanto:
+
+\begin{equation}
+    I = 0
+\label{r2}
+\end{equation}
 
 \begin{thebibliography}{99}
 
