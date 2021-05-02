@@ -358,7 +358,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -379,7 +379,7 @@
        d="M 253.22176,237.06667 H 16.155097"
        id="path14" />
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:0.529167, 1.05833;stroke-dashoffset:0;paint-order:markers fill stroke"
+       style="fill:none;stroke:#ff0000;stroke-width:1.05833334;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:4.23333336,2.11666668,1.05833334,2.11666668;stroke-dashoffset:0;paint-order:markers fill stroke"
        d="M 237.06667,33.866667 33.866667,237.06667"
        id="path1167"
        sodipodi:nodetypes="cc" />
@@ -398,7 +398,7 @@
        d="m 180.91598,-155.28485 a 4.2333331,2.1166666 0 0 1 1.97242,2.38092 4.2333331,2.1166666 0 0 1 -4.08908,1.56883 4.2333331,2.1166666 0 0 1 -4.08909,-1.56883 4.2333331,2.1166666 0 0 1 1.97242,-2.38092"
        transform="rotate(50.129521)" />
     <rect
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;fill-opacity:1"
        id="rect1299"
        width="8.4666662"
        height="8.4666662"
@@ -407,7 +407,7 @@
        rx="4.2333331"
        ry="4.2333331" />
     <rect
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;fill-opacity:1"
        id="rect1301"
        width="8.4666662"
        height="8.4666662"
@@ -416,7 +416,7 @@
        rx="4.2333331"
        ry="4.2333331" />
     <rect
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;fill-opacity:1"
        id="rect1303"
        width="8.4666662"
        height="8.4666662"
@@ -425,7 +425,7 @@
        rx="4.2333331"
        ry="4.2333331" />
     <rect
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;fill-opacity:1"
        id="rect1305"
        width="8.4666662"
        height="8.4666662"
@@ -434,7 +434,7 @@
        rx="4.2333331"
        ry="4.2333331" />
     <rect
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;fill-opacity:1"
        id="rect1307"
        width="8.4666662"
        height="8.4666662"
@@ -443,7 +443,7 @@
        rx="4.2333331"
        ry="4.2333331" />
     <rect
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;paint-order:markers fill stroke;fill-opacity:1"
        id="rect1309"
        width="8.4666662"
        height="8.4666662"

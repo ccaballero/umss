@@ -210,9 +210,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.2"
-     inkscape:cx="421.0326"
-     inkscape:cy="290.41159"
+     inkscape:zoom="2.8"
+     inkscape:cx="474.39765"
+     inkscape:cy="269.6095"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -568,24 +568,24 @@
        id="path2172"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:none;stroke:#ff0000;stroke-width:1.05833334;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:4.23333335,2.11666667,1.05833334,2.11666667;paint-order:markers fill stroke;stroke-dashoffset:0"
        d="m 95.91722,189.76472 46.7654,-84.00007"
        id="path2174"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#Arrow1Sstart);paint-order:markers fill stroke"
+       style="fill:none;stroke:#000000;stroke-width:0.459841;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#Arrow1Sstart);paint-order:markers fill stroke"
        id="path2179"
        transform="rotate(30.775558)"
        sodipodi:type="arc"
-       sodipodi:cx="176.97345"
-       sodipodi:cy="27.97909"
-       sodipodi:rx="1.9509308"
-       sodipodi:ry="0.97546542"
+       sodipodi:cx="176.94781"
+       sodipodi:cy="27.994392"
+       sodipodi:rx="3.3906851"
+       sodipodi:ry="1.6953425"
        sodipodi:start="5.2036078"
        sodipodi:end="4.1747888"
        sodipodi:open="true"
        sodipodi:arc-type="arc"
-       d="m 177.89371,27.118965 a 1.9509308,0.97546542 0 0 1 0.97749,1.08632 1.9509308,0.97546542 0 0 1 -1.85251,0.749008 1.9509308,0.97546542 0 0 1 -1.91998,-0.705257 1.9509308,0.97546542 0 0 1 0.87571,-1.107813" />
+       d="m 178.5472,26.49951 a 3.3906851,1.6953425 0 0 1 1.69888,1.888005 3.3906851,1.6953425 0 0 1 -3.21964,1.301764 3.3906851,1.6953425 0 0 1 -3.33689,-1.225725 3.3906851,1.6953425 0 0 1 1.52198,-1.925359" />
     <path
        style="fill:none;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:0.264583, 1.5875;stroke-dashoffset:0;stroke-opacity:1;paint-order:markers fill stroke"
        d="M 78.596698,189.76471 V 87.764643"
@@ -661,19 +661,19 @@
        d="m 147.87878,138.76468 v 51.00003"
        id="path2285" />
     <circle
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
        id="path2295"
        cx="86.39093"
        cy="134.26468"
        r="2.1021461" />
     <circle
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
        id="path2297"
        cx="106.30953"
        cy="181.76471"
        r="1.7346519" />
     <circle
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
        id="path2299"
        cx="147.87878"
        cy="138.76466"
@@ -809,7 +809,7 @@
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:5.71761px;font-family:'Latin Modern Math';-inkscape-font-specification:'Latin Modern Math, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-variant-east-asian:normal;fill:#000000;stroke:none;stroke-width:0.178675"
          id="tspan2373">rotación</tspan></text>
     <circle
-       style="fill:#0000ff;stroke:none;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.264583;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
        id="path2293"
        cx="95.917221"
        cy="87.764641"

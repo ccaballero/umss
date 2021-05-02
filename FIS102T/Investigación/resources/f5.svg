@@ -995,8 +995,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="0.98994949"
-     inkscape:cx="283.77667"
-     inkscape:cy="567.09186"
+     inkscape:cx="687.33379"
+     inkscape:cy="649.33579"
      inkscape:document-units="px"
      inkscape:current-layer="layer1"
      inkscape:document-rotation="0"
@@ -1006,7 +1006,7 @@
      borderlayer="true"
      inkscape:window-width="1920"
      inkscape:window-height="1050"
-     inkscape:window-x="0"
+     inkscape:window-x="1920"
      inkscape:window-y="18"
      inkscape:window-maximized="0">
     <inkscape:grid
@@ -1021,7 +1021,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -1098,7 +1098,7 @@
        d="M 33.866666,16.933333 V 254"
        id="path12" />
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);paint-order:markers fill stroke"
+       style="fill:none;stroke:#ff0000;stroke-width:1.05833334;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart);paint-order:markers fill stroke"
        id="path1187"
        sodipodi:type="arc"
        sodipodi:cx="33.866665"
@@ -1115,12 +1115,12 @@
        d="M 253.23728,237.06666 H 16.170612"
        id="path14" />
     <path
-       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#marker1265);paint-order:markers fill stroke"
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#marker1265);paint-order:markers fill stroke"
        d="m 101.6,16.933333 0,169.333337"
        id="path1249"
        sodipodi:nodetypes="cc" />
     <path
-       style="fill:none;stroke:#0000ff;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#marker1255);paint-order:markers fill stroke"
+       style="fill:none;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;marker-start:url(#marker1255);paint-order:markers fill stroke"
        d="M 254,169.33334 H 84.666668"
        id="path1251"
        sodipodi:nodetypes="cc" />
@@ -1177,12 +1177,12 @@
        inkscape:label=""
        transform="translate(161.78371,96.171593)"
        id="g1539"
-       style="fill:#0000ff">
+       style="fill:#000000">
       <g
          id="g9855"
-         style="fill:#0000ff">
+         style="fill:#000000">
         <g
-           style="fill:#0000ff;fill-opacity:1"
+           style="fill:#000000;fill-opacity:1"
            id="g5209">
           <use
              xlink:href="#symbol6240"
@@ -1191,10 +1191,10 @@
              id="use9435"
              width="100%"
              height="100%"
-             style="fill:#0000ff" />
+             style="fill:#000000" />
         </g>
         <g
-           style="fill:#0000ff;fill-opacity:1"
+           style="fill:#000000;fill-opacity:1"
            id="g1873">
           <use
              xlink:href="#symbol7891"
@@ -1203,7 +1203,7 @@
              id="use4031"
              width="100%"
              height="100%"
-             style="fill:#0000ff" />
+             style="fill:#000000" />
         </g>
       </g>
     </g>
@@ -1227,7 +1227,7 @@
       </g>
     </g>
     <circle
-       style="fill:#0000ff;stroke:none;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke"
+       style="fill:#c6e9af;stroke:#000000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;paint-order:markers fill stroke;fill-opacity:1"
        id="path1667"
        cx="186.26666"
        cy="84.666664"
@@ -1360,7 +1360,7 @@
        d="M 33.866666,84.666666 H 186.26666 l 1e-5,152.400004"
        id="path224" />
     <path
-       style="fill:none;stroke:#ff0000;stroke-width:0.529167;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart-3);paint-order:markers fill stroke"
+       style="fill:none;stroke:#ff0000;stroke-width:1.05833334;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:10;stroke-dasharray:none;stroke-dashoffset:0;marker-start:url(#Arrow1Mstart-3);paint-order:markers fill stroke"
        id="path1187-7"
        sodipodi:type="arc"
        sodipodi:cx="102.07317"
