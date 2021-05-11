@@ -7,7 +7,6 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 
-\usepackage{framed}
 \usepackage[svgnames]{xcolor}
 \colorlet{shadecolor}{Gainsboro!50}
 
@@ -22,10 +21,9 @@
 \usepackage{siunitx}
 \usepackage{amsmath}
 \usepackage{array}
-\usepackage{alltt}
 
 \usepackage{caption}
-\newcommand{\source}[1]{\vspace{-11pt} \caption*{\small{\textbf{Fuente:} {#1}}}}
+\newcommand{\source}[1]{\vspace{-11pt} \caption*{\small{\textbf{Nota:} {#1}}}}
 
 \usepackage{fancyhdr}
 \usepackage{lastpage}
@@ -73,14 +71,14 @@
 \end{center}
 
 \begin{abstract}
-    Este documento detalla el experimento realizado en simulador para hallar 
-    la relación funcional entre el periodo de oscilación ($T$) y la longitud
-    ($L$) de un péndulo simple, además de calcular el valor de la aceleración
-    de la gravedad; para esto se realizó la medición de 10 oscilaciones de un
-    péndulo con una longitud determinada; y posteriormente se calculó la
-    relación funcional después de linealizar la cuerva y ajustarla con el método
-    de mínimos cuadrados, finalmente se determinó el valor de la gravedad ($g$)
-    con su respectivo error.
+Este documento detalla el experimento realizado en simulador para hallar la
+relación funcional entre el periodo de oscilación ($T$) y la longitud ($L$) de
+un péndulo simple, además de calcular el valor de la aceleración de la gravedad;
+para esto se realizó dos mediciones de 10 oscilaciones de un péndulo con una
+longitud determinada; y posteriormente se calcula la relación funcional después
+de linealizar la curva y ajustarla con el método de mínimos cuadrados,
+finalmente se determinó el valor de la gravedad, resultando ser igual a:
+$g = (9.85 \pm 0.03)[m/s^2]; 0.33\%$.
 \end{abstract}
 
 \section{Introducción}
@@ -88,17 +86,18 @@
 Un péndulo simple es un modelo idealizado que consiste en una masa puntual
 suspendida de una cuerda no expansible y de masa despreciable. Si la masa se
 mueve a un lado de su posición de equilibrio vertical descendente, oscilará
-alrededor de dicha posición \cite{Sears}.
+alrededor de dicha posición \cite{Young&Freedman}.
 
 \begin{figure}
 \centering
 \includegraphics[width=0.38\textwidth]{resources/f1.eps}
 \caption{Péndulo simple idealizado.}
 \label{figura1}
-\source{2013. Sears y Zemansky. Física Universitaria Volumen I. Pagina 454.}
+\source{Física Universitaria Volumen I (p. 454), \\
+Young, Hugh D. y Freedman, Roger A., 2013, Pearson.}
 \end{figure}
 
-En la \textbf{Figura \ref{figura1}} se muestran las fuerzas que actúan sobre la
+En la \textbf{Figura \ref{figura1}} se detallan las fuerzas que actúan sobre la
 masa ($m$) en cualquier instante del movimiento, estas fuerzas son: La tensión
 ($F$) de la cuerda y la fuerza de gravedad ($mg$), que se descompone en función
 del ángulo desplazado ($\theta$), en una componente normal ($mg\, cos\, \theta$)
@@ -111,14 +110,14 @@ obtiene:
     -mg\, sen\, (\theta) = m\, a_t
 \label{segundaley}
 \end{equation*}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
 La aceleración en la dirección tangencial es:
 
 \begin{equation*}
     a_t = \frac{d^2 S}{dt^2}
 \end{equation*}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
 Donde $S$ es la longitud del arco o trayectoria circular, cuya relación con el
 ángulo $\theta$ y la longitud de la cuerda $L$ es:
@@ -126,49 +125,57 @@ Donde $S$ es la longitud del arco o trayectoria circular, cuya relación con el
 \begin{equation*}
     S = \theta\, L
 \end{equation*}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
 Por tanto:
 
 \begin{equation*}
     \frac{d^2 \theta}{dt^2} + \frac{g}{L} sen\, (\theta) = 0
 \end{equation*}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
-Si consideramos tan solo oscilaciones de pequeña amplitud, de modo que el
+Si se consideran tan solo oscilaciones de pequeña amplitud, de modo que el
 ángulo $\theta$ sea siempre suficientemente pequeño, entonces el valor del
-$sen\, (\theta)$ será muy próximo al valor de $\theta$ expresado en radianes (
-$sen\, (\theta) \cong \theta$, para $\theta$ suficientemente pequeño), como podemos
-apreciar en el \textbf{Cuadro \ref{cuadro1}} \cite{WIKI1}, y la ecuación
-anterior se reduce a:
+$sen\, (\theta)$ será muy próximo al valor de $\theta$ expresado en radianes
+($sen\, (\theta) \cong \theta$, para $\theta$ suficientemente pequeño), como
+se aprecia en el \textbf{Cuadro \ref{cuadro1}} \cite{WIKI1}.
 
 \begin{table}[!h]
 \begin{center}
 \begin{tabular}{|>{\centering}m{0.50cm}<{\centering}
                 |>{\centering}m{1.25cm}<{\centering}
                 |>{\centering}m{1.25cm}<{\centering}
-                |>{\centering}m{1.50cm}<{\centering}|
+                |>{\centering}m{2.50cm}<{\centering}|
                 |>{\centering}m{0.50cm}<{\centering}
                 |>{\centering}m{1.25cm}<{\centering}
                 |>{\centering}m{1.25cm}<{\centering}
-                |>{\centering}m{1.50cm}<{\centering}|}
+                |>{\centering}m{2.50cm}<{\centering}|}
 \hline
-$\theta [^\circ]$ & $\theta [rad]$ & $sen\, \theta$ & Dif. (\%) & $\theta [^\circ]$ & $\theta [rad]$ & $sen\, \theta$ & Dif. (\%) \tabularnewline \hline
- 0 & 0.00000 & 0.00000 & 0.00 & 15 & 0.26180 & 0.25882 & 1.15 \tabularnewline \hline
- 2 & 0.03491 & 0.03490 & 0.02 & 20 & 0.34907 & 0.34202 & 2.06 \tabularnewline \hline
- 5 & 0.08727 & 0.08716 & 0.13 & 25 & 0.43633 & 0.42262 & 3.25 \tabularnewline \hline
-10 & 0.17453 & 0.17365 & 0.51 & 30 & 0.52360 & 0.50000 & 4.72 \tabularnewline \hline
+$\theta [^\circ]$ & $\theta [rad]$ & $sen\, (\theta)$ & diferencia (\%) &
+$\theta [^\circ]$ & $\theta [rad]$ & $sen\, (\theta)$ & diferencia (\%)
+    \tabularnewline \hline
+\hline
+ 0 & 0.00000 & 0.00000 & 0.00 & 15 & 0.26180 & 0.25882 & 1.15
+    \tabularnewline \hline
+ 2 & 0.03491 & 0.03490 & 0.02 & 20 & 0.34907 & 0.34202 & 2.06
+    \tabularnewline \hline
+ 5 & 0.08727 & 0.08716 & 0.13 & 25 & 0.43633 & 0.42262 & 3.25
+    \tabularnewline \hline
+10 & 0.17453 & 0.17365 & 0.51 & 30 & 0.52360 & 0.50000 & 4.72
+    \tabularnewline \hline
 \end{tabular}
-\caption{Comparación entre el valor de un ángulo (rad) y su seno.}
+\caption{Comparación entre el valor del ángulo y su función seno.}
 \label{cuadro1}
-\source{Wikipedia: Péndulo simple.}
+\source{Adaptado de péndulo simple (Wikipedia).}
 \end{center}
 \end{table}
+
+La ecuación anterior se reduce a:
 
 \begin{equation*}
     \frac{d^2 \theta}{dt^2} + \frac{g}{L} \theta = 0
 \end{equation*}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
 La ecuación anterior corresponde a un \textbf{oscilador armónico simple} cuya
 solución general es:
@@ -176,18 +183,18 @@ solución general es:
 \begin{equation*}
     \theta(t) = A\, cos\, (\omega\, t + \phi)
 \end{equation*}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
-Donde $A$ representa el máximo desplazamiento angular de $\theta$, $\omega$ es la
-frecuencia angular, y $\phi$ el desfase. Tanto la magnitud $A$, como $\phi$ son
-dos constantes determinadas por las condiciones iniciales.
+Donde $A$ representa el máximo desplazamiento angular de $\theta$, $\omega$ es
+la frecuencia angular, y $\phi$ el desfase. Tanto la magnitud $A$, como $\phi$
+son dos constantes determinadas por las condiciones iniciales.
 
 La frecuencia angular ($\omega$) esta determinado por:
 
 \begin{equation*}
     \omega = \sqrt{\frac{g}{L}}
 \end{equation*}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
 Considerando que $\omega = 2\pi / T$, el periodo de oscilación para el péndulo
 simple es:
@@ -196,12 +203,12 @@ simple es:
     T = 2\pi\, \sqrt{\frac{L}{g}} = \frac{2\pi}{\sqrt{g}} \sqrt{L}
 \label{periodo}
 \end{equation}
-\vspace{-0.16cm}
+\vspace{0.10cm}
 
-Para el experimento se verificará la \textbf{Ecuación \ref{periodo}}, a partir
-de la toma de datos del tiempo de oscilación del péndulo para hallar el periodo
-($T$) a partir de una longitud de cuerda establecida ($L$). Finalmente se
-determinará el valor de la gravedad ($g$) despejándola de la misma ecuación.
+Para el experimento se verificará la \textbf{Ecuación \ref{periodo}}.
+A partir de una longitud de cuerda establecida ($L$), se medirá el tiempo de
+oscilación del péndulo para hallar el periodo ($T$). Finalmente se determinará
+el valor de la gravedad ($g$) despejándola de la misma ecuación.
 
 \section{Método experimental}
 
@@ -213,14 +220,14 @@ determinará el valor de la gravedad ($g$) despejándola de la misma ecuación.
 \source{Fotografía propia.}
 \end{figure}
 
-Para la realización del experimento, se utilizará el simulador de péndulo simple
-de \emph{PHET}, ubicado en la dirección web:
-\url{https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_es.html},
-esté se muestra en la \textbf{Figura \ref{figura2}}.
+Para la realización del experimento, se emplea el simulador de péndulo simple de
+\emph{PHET}, ubicado en la dirección web: \url{
+https://phet.colorado.edu/sims/html/pendulum-lab/latest/pendulum-lab_es.html},
+tal como presenta en la \textbf{Figura \ref{figura2}}.
 
 Para el simulador se escoge un valor de longitud ($L$), que se mantendrá
 constante durante la medición, y se registrarán 2 veces la cantidad de tiempo
-que requiere el péndulo para hacer 10 oscilaciones completas, todas las
+que requiere el péndulo para hacer 10 oscilaciones completas. Todas las
 mediciones con una inclinación de $8^\circ$.
 
 Una vez medidos los datos para 10 valores distintos de longitud ($L$), se
@@ -232,12 +239,11 @@ procederá a calcular el periodo ($T$) con la siguiente ecuación:
 \end{equation}
 \vspace{0.10cm}
 
-Donde $\bar{t}$, es el valor representativo para una serie de mediciones
-realizadas.
+Donde $\bar{t}$, es el promedio de las mediciones realizadas.
 
 Luego se procederá a graficar la relación longitud ($L$) vs. periodo ($T$), para
 realizar primeramente la linealización de la curva por logaritmos, y luego el
-calculo de la recta por el método de los mínimos cuadrados, para posteriormente
+calculo de la recta por el método de los mínimos cuadrados, posteriormente
 hallar la relación funcional entre las variables.
 
 Finalizando con el calculo del valor de la gravedad, a partir de la
@@ -246,38 +252,19 @@ Finalizando con el calculo del valor de la gravedad, a partir de la
 \begin{equation*}
     a = \frac{2 \pi}{\sqrt{g}}
 \end{equation*}
+\vspace{0.10cm}
+
+Donde $a$ es uno de los parámetros de la curva hallada.
+
+Despejando $g$, se obtiene:
+
 \begin{equation}
     g = \frac{4 \pi^2}{a^2}
 \label{gravedad}
 \end{equation}
 \vspace{0.10cm}
 
-Donde $a$ es uno de los parámetros de la curva hallada.
-
-\vspace{0.35cm}
-\textbf{Datos necesarios para el experimento:} \\
-
-Masa del peso a oscilar por el péndulo:
-\begin{equation*}
-    m = 1.50 [kg]
-\end{equation*}
-
-Precisión de la regla:
-\begin{equation*}
-    P_L = 0.01 [m]
-\end{equation*}
-
-Precisión de la balanza:
-\begin{equation*}
-    P_m = 0.01 [kg]
-\end{equation*}
-
-Precisión del cronometro:
-\begin{equation*}
-    P_t = 0.01 [s]
-\end{equation*}
-
-\section{Resultados}
+\textbf{Datos tomados en el experimento:} \\
 
 En el \textbf{Cuadro \ref{cuadro2}}, se pueden ver los valores tomados del 
 experimento, tanto la longitud como el tiempo de 10 oscilaciones tomados 2
@@ -285,13 +272,13 @@ veces, además del valor del periodo resultante.
 
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{|c|>{\centering}m{2.4cm}<{\centering}|
+\begin{tabular}{|c||>{\centering}m{2.4cm}<{\centering}|
                   |>{\centering}m{2.4cm}<{\centering}
                   |>{\centering}m{2.4cm}<{\centering}|
                   |>{\centering}m{2.4cm}<{\centering}|}
 \hline
-$i$ & $L_i [m]$ & $t_{1i} [s]$ & $t_{2i} [s]$ & $T [s]$ \tabularnewline \hline
-\hline
+$i$ & $L_i [m]$ & $t_{1i} [s]$ & $t_{2i} [s]$ & $T_i [s]$
+    \tabularnewline \hline \hline
  1 & 0.55 & 14.85 & 14.81 & 1.4830 \tabularnewline \hline
  2 & 0.60 & 15.42 & 15.45 & 1.5435 \tabularnewline \hline
  3 & 0.65 & 16.09 & 16.14 & 1.6115 \tabularnewline \hline
@@ -317,39 +304,46 @@ $i$ & $L_i [m]$ & $t_{1i} [s]$ & $t_{2i} [s]$ & $T [s]$ \tabularnewline \hline
 \source{Elaboración propia.}
 \end{figure}
 
+\section{Resultados}
+
 A partir de los datos obtenidos se calculó el periodo de oscilación ($T$) para
-los valores de longitud ($L$), de los cuales se genera la gráfica de la
+los valores de longitud ($L$), con los que se generó la gráfica de la
 \textbf{Figura \ref{figura3}}.
 
-Posteriormente se linealizó la curva por logaritmos, y luego se realizó el ajuste
-de la curva, por el método de los mínimos cuadrados, resultando los
-siguientes valores, con su coeficiente de correlación ($r$):
+Posteriormente se linealizó la curva por medio de logaritmos, y se calculó la
+recta de mejor ajuste por el método de los mínimos cuadrados, resultando los
+siguientes valores:
 
 \begin{equation*}
-    A = (0.6941 \pm 0.0016) [u]; 0.2354 \%
+    A = (0.694 \pm 0.001) [u]; 0.23\%
 \end{equation*}
 \begin{equation*}
-    B = (0.5022 \pm 0.0049) [u]; 0.9791 \%
+    B = (0.502 \pm 0.005) [u]; 0.98\%
 \end{equation*}
+\vspace{0.10cm}
+
+Siendo su coeficiente de correlación ($r$):
+
 \begin{equation*}
     r = 0.9996
 \end{equation*}
+\vspace{0.10cm}
 
-Con los valores hallados, se procedió a calcular los valores originales
-de la curva, resultando:
+Con los valores hallados, se calculan los valores originales de la curva,
+resultando:
 
 \begin{equation*}
-    a = (2.0019 \pm 0.0033) [s/\sqrt{m}]; 0.1634 \%
+    a = (2.002 \pm 0.003) [s/\sqrt{m}]; 0.16\%
 \end{equation*}
 \begin{equation*}
-    b = (0.5022 \pm 0.0049) [u]; 0.9791 \%
+    b = (0.502 \pm 0.005) [u]; 0.98\%
 \end{equation*}
 \vspace{0.10cm}
 
 Resultando el modelo de ajuste:
 
 \begin{equation*}
-    T = 2.0019 L^{0.5022}
+    T = 2.002\,L^{0.502}
 \end{equation*}
 \vspace{0.10cm}
 
@@ -367,32 +361,53 @@ Para el calculo de la gravedad ($g$) se utiliza la
 \textbf{Ecuación \ref{gravedad}}, resultando:
 
 \begin{equation*}
-    g = (9.8508 \pm 0.0322) [m/s^2]; 0.3268 \%
+    g = (9.85 \pm 0.03) [m/s^2]; 0.33\%
 \end{equation*}
+\vspace{0.10cm}
 
 \section{Discusión}
 
-La gráfica obtenida de la longitud vs. periodo, visualmente aparenta ser una
-relación lineal entre las variables, esto se debe al intervalo de la medición
-de la longitud $[0.55, 1.00]$, se recomienda tener datos mas dispersos para
-evitar una posible confusión de este tipo.
+Si se calculase la relación lineal entre la longitud ($L$) y el periodo ($T$)
+directamente desde sus valores sin linealización previa, se obtienen los
+siguientes valores de la recta:
+
+\begin{equation*}
+    A = (0.86 \pm 0.02) [s]; 2.08\%
+\end{equation*}
+\begin{equation*}
+    B = (1.15 \pm 0.02) [s/\sqrt{m}]; 1.98\%
+\end{equation*}
+\vspace{0.10cm}
+
+Siendo su coeficiente de correlación ($r$):
+
+\begin{equation*}
+    r = 0.9984
+\end{equation*}
+\vspace{0.10cm}
+
+Considerando la correlación hallada, podría cometerse el error de presuponer una
+relación lineal entre las variables. Esto se debe a que los datos tomados se
+encuentran en una zona de la curva (que es una parábola) donde la curvatura es
+muy alta ($[0.55, 1.00]$).
+
+Se recomienda tener datos más dispersos para evitar una posible confusión de
+este tipo.
 
 \section{Conclusiones}
 
-Se realizó la gráfica de longitud vs periodo, se linealizó y realizó el ajuste
-de la curva por el método de mínimos cuadrados y se halló la relación funcional
-entre estas dos variables, confirmándose la ecuación teórica de un oscilador
-armónico simple.
+Se confirmaron las ecuaciones planteadas en la introducción, así como la
+ecuación de un oscilador armónico simple.
 
-También se halló el valor de la gravedad, siendo está la misma que el simulador
-establecía.
+También se calculó el valor de la gravedad, siendo equivalente al valor
+establecido en el simulador.
 
 \begin{thebibliography}{99}
 
-\bibitem{Sears} Sears y Zemansky (2013).\\
+\bibitem{Young&Freedman} Young, Hugh D. y Freedman, Roger A. (2013).\\
 Física Universitaria. Volumen 1.\\
 13va Edición.\\
-Capitulo 11.
+Capitulo 14.
 
 \bibitem{GUIA} Departamento de Física - UMSS.\\
 Laboratorio de Física Básica II.\\
@@ -406,30 +421,32 @@ Extraído el 27 de Abril del 2021, de: \\
 \end{thebibliography}
 
 \newpage
-\section*{Anexo: Cálculos adicionales}
+\section*{Apéndice: Cálculos adicionales}
 
-Conociendo $t_{1i}$, $t_{2i}$, se detallan los valores del valor representativo
-($\bar{t}$), y el periodo de oscilación ($T$) en el
-\textbf{Cuadro \ref{cuadro3}}.
+\subsection{Linealización de la curva}
+
+Conociendo $t_{1i}$, $t_{2i}$, se calculan los valores del promedio ($\bar{t}$),
+y el periodo de oscilación ($T$) en el \textbf{Cuadro \ref{cuadro3}}.
 
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{|c|>{\centering}m{2.5cm}<{\centering}
-                  |>{\centering}m{2.5cm}<{\centering}
-                  |>{\centering}m{3.4cm}<{\centering}
-                  |>{\centering}m{3.4cm}<{\centering}|}
+\begin{tabular}{|c||>{\centering}m{2.0cm}<{\centering}
+                  |>{\centering}m{2.0cm}<{\centering}
+                  |>{\centering}m{2.0cm}<{\centering}|
+                  |>{\centering}m{2.0cm}<{\centering}|}
 \hline
-$i$ & $t_{1i} [s]$ & $t_{2i} [s]$ & $\bar{t} [s]$ & $T [s]$ \tabularnewline \hline
- 1 & $(14.85 \pm 0.01)$ & $(14.81 \pm 0.01)$ & $(14.8300 \pm 0.0200)$ & $(1.4830 \pm 0.0020)$ \tabularnewline \hline
- 2 & $(15.42 \pm 0.01)$ & $(15.45 \pm 0.01)$ & $(15.4350 \pm 0.0150)$ & $(1.5435 \pm 0.0015)$ \tabularnewline \hline
- 3 & $(16.09 \pm 0.01)$ & $(16.14 \pm 0.01)$ & $(16.1150 \pm 0.0250)$ & $(1.6115 \pm 0.0025)$ \tabularnewline \hline
- 4 & $(16.88 \pm 0.01)$ & $(16.76 \pm 0.01)$ & $(16.8200 \pm 0.0600)$ & $(1.6820 \pm 0.0060)$ \tabularnewline \hline
- 5 & $(17.35 \pm 0.01)$ & $(17.37 \pm 0.01)$ & $(17.3600 \pm 0.0100)$ & $(1.7360 \pm 0.0010)$ \tabularnewline \hline
- 6 & $(17.87 \pm 0.01)$ & $(17.92 \pm 0.01)$ & $(17.8950 \pm 0.0250)$ & $(1.7895 \pm 0.0025)$ \tabularnewline \hline
- 7 & $(18.37 \pm 0.01)$ & $(18.41 \pm 0.01)$ & $(18.3900 \pm 0.0200)$ & $(1.8390 \pm 0.0020)$ \tabularnewline \hline
- 8 & $(19.01 \pm 0.01)$ & $(18.94 \pm 0.01)$ & $(18.9750 \pm 0.0350)$ & $(1.8975 \pm 0.0035)$ \tabularnewline \hline
- 9 & $(19.53 \pm 0.01)$ & $(19.62 \pm 0.01)$ & $(19.5750 \pm 0.0450)$ & $(1.9575 \pm 0.0045)$ \tabularnewline \hline
-10 & $(20.02 \pm 0.01)$ & $(19.92 \pm 0.01)$ & $(19.9700 \pm 0.0500)$ & $(1.9970 \pm 0.0050)$ \tabularnewline \hline
+$i$ & $t_{1i} [s]$ & $t_{2i} [s]$ & $\bar{t}_i [s]$ & $T_i [s]$
+    \tabularnewline \hline \hline
+ 1 & $14.85$ & $14.81$ & $14.8300$ & $1.4830$ \tabularnewline \hline
+ 2 & $15.42$ & $15.45$ & $15.4350$ & $1.5435$ \tabularnewline \hline
+ 3 & $16.09$ & $16.14$ & $16.1150$ & $1.6115$ \tabularnewline \hline
+ 4 & $16.88$ & $16.76$ & $16.8200$ & $1.6820$ \tabularnewline \hline
+ 5 & $17.35$ & $17.37$ & $17.3600$ & $1.7360$ \tabularnewline \hline
+ 6 & $17.87$ & $17.92$ & $17.8950$ & $1.7895$ \tabularnewline \hline
+ 7 & $18.37$ & $18.41$ & $18.3900$ & $1.8390$ \tabularnewline \hline
+ 8 & $19.01$ & $18.94$ & $18.9750$ & $1.8975$ \tabularnewline \hline
+ 9 & $19.53$ & $19.62$ & $19.5750$ & $1.9575$ \tabularnewline \hline
+10 & $20.02$ & $19.92$ & $19.9700$ & $1.9970$ \tabularnewline \hline
 \end{tabular}
 \caption{Calculo del periodo de oscilación.}
 \label{cuadro3}
@@ -442,10 +459,10 @@ $T$ y $L$:
 
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{|c|>{\centering}m{2.5cm}<{\centering}
+\begin{tabular}{|c||>{\centering}m{2.5cm}<{\centering}
                   |>{\centering}m{2.5cm}<{\centering}|}
 \hline
-$i$ & $ln(L)$ & $ln(T)$ \tabularnewline \hline
+$i$ & $ln(L_i)$ & $ln(T_i)$ \tabularnewline \hline \hline
  1 & -0.5978 & 0.3941 \tabularnewline \hline
  2 & -0.5108 & 0.4341 \tabularnewline \hline
  3 & -0.4308 & 0.4772 \tabularnewline \hline
@@ -463,30 +480,33 @@ $i$ & $ln(L)$ & $ln(T)$ \tabularnewline \hline
 \end{center}
 \end{table}
 
-Los valores del \textbf{Cuadro \ref{cuadro4}}, pueden verse gráficamente en la
-figura
-
 \begin{figure}
 \centering
 \includegraphics[width=0.80\textwidth]{resources/m1.2.eps}
 \caption{Gráfica de $ln(L)$ vs. $ln(T)$.}
-\label{figura3}
+\label{figura4}
 \source{Elaboración propia.}
 \end{figure}
+
+Los valores del \textbf{Cuadro \ref{cuadro4}}, pueden verse gráficamente en la
+\textbf{Figura \ref{figura4}}.
+
+\subsection{Método de mínimos cuadrados}
 
 Se calculan los parámetros de la recta por el método de los mínimos cuadrados,
 con la ayuda de los datos presentados en el \textbf{Cuadro \ref{cuadro5}}.
 
 \begin{table}[!h]
 \begin{center}
-\begin{tabular}{|c|>{\centering}m{1.8cm}<{\centering}
+\begin{tabular}{|c||>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{2.1cm}<{\centering}|}
 \hline
-$i$ & $x_i y_i$ & $x^2_i$ & $y^2_i$ & $Y$ & $d_i$ & $d^2_i (\num{1e-4})$ \tabularnewline \hline
+$i$ & $x_i y_i$ & $x^2_i$ & $y^2_i$ & $Y_i$ & $d_i$ & $d^2_i\,(\num{e-4})$
+    \tabularnewline \hline \hline
  1 & -0.2356 & 0.3574 & 0.1553 & 0.3938 &  0.0002 & 0.0005 \tabularnewline \hline
  2 & -0.2217 & 0.2609 & 0.1884 & 0.4375 & -0.0035 & 0.1222 \tabularnewline \hline
  3 & -0.2056 & 0.1856 & 0.2277 & 0.4777 & -0.0006 & 0.0034 \tabularnewline \hline
@@ -546,6 +566,9 @@ $i$ & $x_i y_i$ & $x^2_i$ & $y^2_i$ & $Y$ & $d_i$ & $d^2_i (\num{1e-4})$ \tabula
 \begin{equation*}
     \sigma_B = \sqrt{\frac{\sigma^2 n}{\Delta_1}} = 0.0049
 \end{equation*}
+\vspace{0.10cm}
+
+Parámetros de la recta obtenida:
 
 \begin{equation*}
     A = (0.6941 \pm 0.0016) [u]; 0.2354 \%
@@ -553,18 +576,21 @@ $i$ & $x_i y_i$ & $x^2_i$ & $y^2_i$ & $Y$ & $d_i$ & $d^2_i (\num{1e-4})$ \tabula
 \begin{equation*}
     B = (0.5022 \pm 0.0049) [u]; 0.9791 \%
 \end{equation*}
+\vspace{0.10cm}
 
 Siendo el coeficiente de correlación:
 
 \begin{equation*}
     R = \frac{n \sum x_i y_i - (\sum x_i)(\sum y_i)}{\sqrt{\Delta_1 \Delta_2}} = 0.9996
 \end{equation*}
+\vspace{0.10cm}
 
 La ecuación de la recta resultante es:
 
 \begin{equation*}
-    y = 0.6941 + 0.5022 x
+    y = 0.6941 + 0.5022\,x
 \end{equation*}
+\vspace{0.10cm}
 
 A partir de los parámetros de recta $A$ y $B$, se calculan los parámetros $a$ y
 $b$ de la curva original y sus errores por el método de propagación de errores:
@@ -576,25 +602,29 @@ $b$ de la curva original y sus errores por el método de propagación de errores
     b = B = 0.5022
 \end{equation*}
 \begin{equation*}
-    e_a = e^A e_A = e^{0.6941} 0.0016 = 0.0033
+    e_a = e^A e_A = e^{0.6941}\,(0.0016) = 0.0033
 \end{equation*}
 \begin{equation*}
     e_b = e_B = 0.0049
 \end{equation*}
+\vspace{0.10cm}
 
 Obteniendo finalmente los valores de la curva:
 
 \begin{equation*}
-    a = (2.0019 \pm 0.0033) [u]; 0.1634 \%
+    a = (2.0019 \pm 0.0033) [s/\sqrt{m}]; 0.1634 \%
 \end{equation*}
 \begin{equation*}
     b = (0.5022 \pm 0.0049) [u]; 0.9791 \%
 \end{equation*}
+\vspace{0.10cm}
 
 La ecuación de la curva resultante es:
 
 \begin{equation*}
-    T = a L^b = 2.0019 d^{0.5022} = 2.0019 \sqrt{d}
+    T = a L^b = 2.0019\,d^{0.5022} = 2.0019\,\sqrt{d}
 \end{equation*}
+\vspace{0.10cm}
+
 \end{document}
 

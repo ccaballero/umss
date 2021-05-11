@@ -2,30 +2,19 @@ clear
 close all
 clc
 
-m = 1.50
-e_m = 0.01
-e_l = 0.01
-e_t = 0.01
-
 % leer datos previamente formateados
 table = readtable('i1.csv', 'Format', '%f%f%f')
 table_ = table2array(table)
 
-n = length(table_)
-i = 1:n
 L = table_(:,1)
 t1 = table_(:,2)
 t2 = table_(:,3)
 
 % calculo del valor representativo
 tp = (t1 + t2) / 2
-e_tp = arrayfun(@(i) sqrt(0.5 * ( (t1(i) - tp(i))^2 + (t2(i) - tp(i))^2) ), i)
-e_tp = max(e_tp, e_t)
-E_tp = arrayfun(@(i) 100 * (e_tp(1) / tp(1)), i)
 
 % calculo del periodo
 T = tp / 10
-e_T = arrayfun(@(i) e_tp(i) / 10, i)
 
 % personalizar grafica
 %title('Gráfica: Longitud-Periodo')

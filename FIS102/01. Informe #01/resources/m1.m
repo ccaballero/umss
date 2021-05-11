@@ -2,47 +2,43 @@ clear
 close all
 clc
 
+% leer datos previamente formateados
+table = readtable('i1.csv', 'Format', '%f%f')
+table_ = table2array(table)
+
 g = 9.78
-e_g = 0.02
 
-m_base = 40.8
-m_gr = [0 23.4 46.9 70 93.1 116.4 139.6 162.9 185.7 207.8 231.1 254.4 277.6 301 324.3 347.5 370.3 393.6 420.1 443.2 466.7 489.8 512.5 535.9 559.4 583 606.2 623.4 640.7 658.3 674.8 697.1 733.5 769.4 802.3 837 862.3 898.2 932.2 965.6 1007.2 1046 1085.2 1126.3]
-m_kg = (m_gr+m_base)./1000
-e_m = 0.1/1000
+% conversion de masa a kilogramos
+m_gr = table_(:,1)
+m_kg = m_gr./1000
 
-l_base = 0.8
-l_cm = [
-    4.1 4.6 5.5 6.4 7.5 7.9 8.9 9.8 10.8 ...
-    11.6 12.7 13.5 14.6 15.8 16.2 17.1 17.8 18.1 ...
-    19.1 19.3 19.7 20.3 20.6 21.3 ...
-    22.5 23.2 24.2 24.7 25 25.4 25.5 25.8 26.5 27.7 28 29 29.1 29.5 29.8 30.5 30.8 31.3 31.8 32.3]
-l_m = (l_cm+l_base)./1000
-e_l = 1/1000
+% conversion de longitud a metros
+l_cm = table_(:,2)
+l_m = l_cm./1000
 
+% calculo del area
 a = (2/1000)*(1.6/1000)
 e_a = sqrt( ((2/1000)^2*(0.1/1000)^2) + ((1.6/1000)^2*(0.1/1000)^2) )
 
 d = l_m-l_m(1)
+epsilon = d/l_m(1)
+sigma = arrayfun(@(m) (m*g)/a, m_kg)
 
-s = arrayfun(@(x) (x*g)/a, m_kg)
-e_s = arrayfun(@(x) sqrt( ((g/a)^2*e_m^2) + ((x/a)^2*e_g^2) + (((x*g)/a^2)^2*e_a^2) ), m_kg)
+% personalizar grafica
+%title('Esfuerzo - Deformación unitaria')
+%xlabel('Deformacion Unitaria ($\epsilon$)','interpreter','latex')
+%ylabel('Esfuerzo ($\sigma$)','interpreter','latex')
 
-f = d/l_m(1)
-e_f = arrayfun(@(x) sqrt( ((1/l_m(1))^2*e_l^2) + ((x/l_m(1)^2)^2*e_l^2) ), d)
-
-title('Esfuerzo - Deformación unitaria')
-xlabel('Deformacion Unitaria ($\epsilon$)','interpreter','latex')
-ylabel('Esfuerzo ($\sigma$)','interpreter','latex')
-
-hold on
-plot(f, s, 'o')
-hold off
+% graficar puntos y lineas
+%hold on
+%plot(epsilon, sigma, 'o')
+%hold off
 
 % MINIMOS CUADRADOS
 
 % remover los elementos fuera del comportamiento elastico
-x = s(1:18)
-y = f(1:18)
+x = epsilon(1:15)
+y = sigma(1:15)
 
 % tamano de la muestra
 n = length(x)
@@ -78,9 +74,15 @@ sA = sqrt( (s2 * sxx) / D )
 sB = sqrt( (s2 * n) / D )
 
 % calculando el error porcentual
-EA = (sA / A) * 100
-EB = (sB / B) * 100
+EA = abs(sA / A) * 100
+EB = abs(sB / B) * 100
 
 % calculo de correlacion
 R = ((n * sxy) - (sx * sy)) / sqrt( D * DD )
+
+% conversion del modulo de young
+Y = B / 1e6
+eY = sB / 1e6
+EY = abs(eY / Y) * 100
+
 

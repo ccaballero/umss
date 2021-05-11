@@ -3,7 +3,6 @@ close all
 clc
 
 g = 9.78
-e_g = 0.02
 
 % leer datos previamente formateados
 table = readtable('i2.csv', 'Format', '%f%f')
@@ -15,25 +14,22 @@ y0 = table_(1,2)
 
 % conversion a SI
 m_kg = m/1000
-e_m = 1/1000
 d_cm = l-y0
 d_mt = d_cm/100
-e_d = 1/100
 
 % conversion F=mg y d=d-do
 F = arrayfun(@(m) g * m, m_kg)
-e_F = arrayfun(@(m) sqrt( (g^2)*(e_m^2) + (m^2)*(e_g^2) ), m_kg)
 d = arrayfun(@(d) d, d_mt)
 
 % personalizar grafica
-title('Gráfica: Longitud-Fuerza')
-xlabel('Longitud $[m]$', 'interpreter', 'latex')
-ylabel('Fuerza $[N]$', 'interpreter', 'latex')
+%title('Gráfica: Longitud-Fuerza')
+%xlabel('Longitud $[m]$', 'interpreter', 'latex')
+%ylabel('Fuerza $[N]$', 'interpreter', 'latex')
 
 % graficar puntos y lineas
-hold on
-plot(d, F, 'o')
-hold off
+%hold on
+%plot(d, F, 'o')
+%hold off
 
 % MINIMOS CUADRADOS
 
