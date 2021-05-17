@@ -78,8 +78,8 @@ comportamiento elástico, comportamiento plástico, y punto de ruptura; para est
 se realizó la medición de la elongación de la banda elástica a diferentes
 cantidades de masa hasta el punto de ruptura; se tomo las mediciones realizadas
 dentro de la zona elástica para hallar la recta de ajuste con el método de
-mínimos cuadrados, finalmente se determinó el valor del módulo de elasticidad,
-resultando ser igual a: $Y = (1.59 \pm 0.08)[N/m^2]; 4.89\%$.
+mínimos cuadrados, y finalmente se determinó el valor del módulo de elasticidad
+($Y$) resultando ser igual a: $(0.322 \pm 0.005)[MPa]; 1.48\%$.
 \end{abstract}
 
 \section{Introducción}
@@ -89,14 +89,14 @@ estiramiento, la compresión, o la torcedura; la magnitud de estas deformaciones
 y las fuerzas aplicadas, nos permiten determinar el comportamiento de los
 materiales ante tales fuerzas.
 
-Se denomina \textbf{esfuerzo} a la cantidad vectorial que representa la
-intensidad de las fuerzas que causan el cambio de forma del objeto, mientras que
-la medida de ese cambio se denomina \textbf{deformación}.
+Se denomina \textbf{esfuerzo} ($\sigma$) a la cantidad vectorial que representa
+la intensidad de las fuerzas que causan el cambio de forma del objeto, mientras
+que la medida de ese cambio se denomina \textbf{deformación} ($\epsilon$).
 
 De la ley de \emph{Hooke}, se sabe que:
 
 \begin{equation}
-    \frac{esfuerzo}{deformación} = constante
+    \frac{\text{esfuerzo}}{\text{deformación}} = \text{constante}
 \label{hooke}
 \end{equation}
 \vspace{0.10cm}
@@ -116,7 +116,7 @@ el limite de proporcionalidad del material, como puede verse en la
 
 En las curvas esfuerzo vs. deformación de un material hay un tramo de
 comportamiento perfectamente elástico en el que la relación es lineal (hasta el
-limite de proporcionalidad). De ahí hasta el límite elástico el material sigue
+limite de proporcionalidad). De ahí hasta el límite elástico, el material sigue
 un comportamiento elástico (existe una relación entre esfuerzo y deformación,
 aunque no es lineal, y si se retira el esfuerzo se recupera la
 longitud inicial). Si se sigue aumentando la carga (por encima de ese punto), el
@@ -140,38 +140,39 @@ caso longitudinal) para una banda elástica.
 Para el calculo del esfuerzo ($\sigma$) se usa la siguiente ecuación:
 
 \begin{equation}
-    \sigma = \frac{F}{A}
+    \sigma = \frac{F_{\perp}}{A}
 \label{sigma}
 \end{equation}
 \vspace{0.10cm}
 
-Donde: $F$ es la magnitud de la fuerza de tensión realizada, y $A$ el área de la
-sección transversal del material.
+Donde: $F_{\perp}$ es la magnitud de la fuerza de tensión realizada
+perpendicular al área transversal, y $A$ el área de tal sección transversal del
+material.
 
 Mientras que para calcular la deformación unitaria ($\epsilon$) se tiene la
 siguiente ecuación:
 
 \begin{equation}
-    \epsilon = \frac{L - L_o}{L_o} = \frac{\Delta L}{L_o}
+    \epsilon = \frac{l - l_o}{l_o} = \frac{\Delta l}{l_o}
 \label{epsilon}
 \end{equation}
 \vspace{0.10cm}
 
-Donde: $\Delta L$ es la diferencia entre la longitud inicial ($L_o$) del
-material y la longitud actual ($L$).
+Donde: $\Delta l$ es la diferencia entre la longitud inicial ($l_o$) del
+material y la longitud actual ($l$).
 
-Reemplazando $\sigma$ de la \textbf{Ecuación \ref{sigma}} y $\epsilon$  de la
+Reemplazando $\sigma$ de la \textbf{Ecuación \ref{sigma}} y $\epsilon$ de la
 \textbf{Ecuación \ref{epsilon}}, en la \textbf{Ecuación \ref{young1}}
 \cite{GUIA}, se obtiene:
 
 \begin{equation}
-    \frac{F}{A} = Y\,\frac{\Delta L}{L_o}
+    \frac{F}{A} = Y\,\frac{\Delta l}{l_o}
 \label{young2}
 \end{equation}
 \vspace{0.10cm}
 
 Para el experimento se tomará los datos del estiramiento de la banda elástica
-($L$) a diferentes masas de carga ($m$), y hasta alcanzar el punto de ruptura;
+($l$) a diferentes masas de carga ($m$), y hasta alcanzar el punto de ruptura;
 luego se realizará la gráfica esfuerzo vs. deformación unitaria para una
 deformación longitudinal por tensión, de forma que pueda apreciarse las
 diferentes etapas de su comportamiento.
@@ -185,12 +186,12 @@ y finalmente se hallará el módulo de elasticidad del material.
 \centering
 \includegraphics[width=0.65\textwidth]{resources/f3.eps}
 \caption{Montaje del experimento.}
-\label{figura3}
+\label{figura2}
 \source{Fotografía propia.}
 \end{figure}
 
 Para facilitar la medición, se ha armado el equipo mostrado en la
-\textbf{Figura \ref{figura3}}, el cual consta de un \textbf{trípode},
+\textbf{Figura \ref{figura2}}, el cual consta de un \textbf{trípode},
 previamente nivelado, y una \textbf{regla de 60 centímetros} (Precisión:
 $1 [mm]$) para facilitar la medición.
 
@@ -205,14 +206,14 @@ un \textbf{calibrador} (Precisión: $0.1 [mm]$).
 \centering
 \includegraphics[width=0.65\textwidth]{resources/f2.eps}
 \caption{Conjunto de pesos a utilizar.}
-\label{figura2}
+\label{figura3}
 \source{Fotografía propia.}
 \end{figure}
 
 Posteriormente se midió la longitud inicial de la banda elástica ya suspendida;
 y se procedió a agregar masa ($m$) al contenedor, a partir de un
 \textbf{conjunto de pesos} (en este caso baterías \emph{A}, \emph{AA}, y
-\emph{AAA}) como los mostrados en la \textbf{Figura \ref{figura2}}.
+\emph{AAA}) como los mostrados en la \textbf{Figura \ref{figura3}}.
 
 Se registró el incremento de la longitud, hasta alcanzar el punto de ruptura de
 la banda elástica.
@@ -407,7 +408,7 @@ Gestión I/2020.
 \newpage
 \section*{Apéndice: Cálculos adicionales}
 
-Conociendo $L$, $L_o$, $m$, $g$, y $A$, se detallan los valores del esfuerzo
+Conociendo $l$, $l_o$, $m$, $g$, y $A$, se detallan los valores del esfuerzo
 ($\sigma$) y la deformación unitaria ($\epsilon$) en el
 \textbf{cuadro \ref{cuadro2}}.
 
@@ -418,7 +419,7 @@ Conociendo $L$, $L_o$, $m$, $g$, y $A$, se detallan los valores del esfuerzo
                 |c||>{\centering}m{2.8cm}<{\centering}
                    |>{\centering}m{1.8cm}<{\centering}|}
 \hline
-$i$ & $\sigma_i [N/m^2] \num{e6}$ & $\epsilon_i$ &
+    $i$ & $\sigma_i [N/m^2] \num{e6}$ & $\epsilon_i$ &
     $i$ & $\sigma_i [N/m^2] \num{e6}$ & $\epsilon_i$ \tabularnewline \hline
 \hline
  1 &      0 &      0 & 23 & 1.5663 & 4.0244 \tabularnewline \hline
@@ -457,7 +458,7 @@ con la ayuda de los datos presentados en el \textbf{Cuadro \ref{cuadro3}}.
 \begin{center}
 \begin{tabular}{|c||>{\centering}m{1.6cm}<{\centering}
                    |>{\centering}m{1.6cm}<{\centering}
-                   |>{\centering}m{1.6cm}<{\centering}
+                   |>{\centering}m{1.6cm}<{\centering}|
                    |>{\centering}m{1.6cm}<{\centering}
                    |>{\centering}m{1.6cm}<{\centering}
                    |>{\centering}m{1.6cm}<{\centering}|}

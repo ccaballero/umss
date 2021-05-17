@@ -78,7 +78,7 @@ para esto se realizó dos mediciones de 10 oscilaciones de un péndulo con una
 longitud determinada; y posteriormente se calcula la relación funcional después
 de linealizar la curva y ajustarla con el método de mínimos cuadrados,
 finalmente se determinó el valor de la gravedad, resultando ser igual a:
-$g = (9.85 \pm 0.03)[m/s^2]; 0.33\%$.
+$(9.85 \pm 0.03)[m/s^2]; 0.33\%$.
 \end{abstract}
 
 \section{Introducción}
@@ -501,23 +501,33 @@ con la ayuda de los datos presentados en el \textbf{Cuadro \ref{cuadro5}}.
 \begin{center}
 \begin{tabular}{|c||>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
-                  |>{\centering}m{1.8cm}<{\centering}
+                  |>{\centering}m{1.8cm}<{\centering}|
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{2.1cm}<{\centering}|}
 \hline
 $i$ & $x_i y_i$ & $x^2_i$ & $y^2_i$ & $Y_i$ & $d_i$ & $d^2_i\,(\num{e-4})$
     \tabularnewline \hline \hline
- 1 & -0.2356 & 0.3574 & 0.1553 & 0.3938 &  0.0002 & 0.0005 \tabularnewline \hline
- 2 & -0.2217 & 0.2609 & 0.1884 & 0.4375 & -0.0035 & 0.1222 \tabularnewline \hline
- 3 & -0.2056 & 0.1856 & 0.2277 & 0.4777 & -0.0006 & 0.0034 \tabularnewline \hline
- 4 & -0.1855 & 0.1272 & 0.2704 & 0.5150 &  0.0050 & 0.2516 \tabularnewline \hline
- 5 & -0.1587 & 0.0828 & 0.3042 & 0.5496 &  0.0020 & 0.0387 \tabularnewline \hline
- 6 & -0.1299 & 0.0498 & 0.3386 & 0.5820 & -0.0001 & 0.0001 \tabularnewline \hline
- 7 & -0.0990 & 0.0264 & 0.3712 & 0.6125 & -0.0033 & 0.1060 \tabularnewline \hline
- 8 & -0.0675 & 0.0111 & 0.4103 & 0.6412 & -0.0006 & 0.0042 \tabularnewline \hline
- 9 & -0.0345 & 0.0026 & 0.4511 & 0.6683 &  0.0033 & 0.1109 \tabularnewline \hline
-10 &       0 &      0 & 0.4784 & 0.6941 & -0.0025 & 0.0602 \tabularnewline \hline
+ 1 & -0.2356 & 0.3574 & 0.1553 & 0.3938 &  0.0002 & 0.0005
+    \tabularnewline \hline
+ 2 & -0.2217 & 0.2609 & 0.1884 & 0.4375 & -0.0035 & 0.1222
+    \tabularnewline \hline
+ 3 & -0.2056 & 0.1856 & 0.2277 & 0.4777 & -0.0006 & 0.0034
+    \tabularnewline \hline
+ 4 & -0.1855 & 0.1272 & 0.2704 & 0.5150 &  0.0050 & 0.2516
+    \tabularnewline \hline
+ 5 & -0.1587 & 0.0828 & 0.3042 & 0.5496 &  0.0020 & 0.0387
+    \tabularnewline \hline
+ 6 & -0.1299 & 0.0498 & 0.3386 & 0.5820 & -0.0001 & 0.0001
+    \tabularnewline \hline
+ 7 & -0.0990 & 0.0264 & 0.3712 & 0.6125 & -0.0033 & 0.1060
+    \tabularnewline \hline
+ 8 & -0.0675 & 0.0111 & 0.4103 & 0.6412 & -0.0006 & 0.0042
+    \tabularnewline \hline
+ 9 & -0.0345 & 0.0026 & 0.4511 & 0.6683 &  0.0033 & 0.1109
+    \tabularnewline \hline
+10 &       0 &      0 & 0.4784 & 0.6941 & -0.0025 & 0.0602
+    \tabularnewline \hline
 \end{tabular}
 \caption{Valores para el método de mínimos cuadrados.}
 \label{cuadro5}
@@ -582,7 +592,8 @@ Parámetros de la recta obtenida:
 Siendo el coeficiente de correlación:
 
 \begin{equation*}
-    R = \frac{n \sum x_i y_i - (\sum x_i)(\sum y_i)}{\sqrt{\Delta_1 \Delta_2}} = 0.9996
+    R = \frac{n \sum x_i y_i - (\sum x_i)(\sum y_i)}{\sqrt{\Delta_1 \Delta_2}}
+      = 0.9996
 \end{equation*}
 \vspace{0.10cm}
 
@@ -624,6 +635,32 @@ La ecuación de la curva resultante es:
 
 \begin{equation*}
     T = a L^b = 2.0019\,d^{0.5022} = 2.0019\,\sqrt{d}
+\end{equation*}
+\vspace{0.10cm}
+
+\subsection{Calculo de la gravedad}
+
+Para el calculo de la gravedad, se utiliza la \textbf{Ecuación \ref{gravedad}}:
+
+\begin{equation*}
+    g = \frac{4 \pi^2}{a^2} = \frac{4(3.1415)^2}{(2.0019)^2} = 9.8508
+\end{equation*}
+\vspace{0.10cm}
+
+Y el error de la medición es:
+
+\begin{equation*}
+    \frac{\partial g}{\partial a} = 4 \pi^2 (-2) a^{-3} = -\frac{8\pi^2}{a^3}
+\end{equation*}
+\begin{equation*}
+    e_g = \frac{8 \pi^2}{a^3}\,e_a = 0.0322
+\end{equation*}
+\vspace{0.10cm}
+
+Resultando:
+
+\begin{equation*}
+    g = (9.8508 \pm 0.0322) [m/s^2]; 0.3268\%
 \end{equation*}
 \vspace{0.10cm}
 

@@ -14,7 +14,7 @@ m_kg = m_gr./1000
 
 % conversion de longitud a metros
 l_cm = table_(:,2)
-l_m = l_cm./1000
+l_m = l_cm./100
 
 % calculo del area
 a = (2/1000)*(1.6/1000)

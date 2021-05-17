@@ -81,8 +81,8 @@ y posteriormente se calculó la relación funcional entre el periodo ($T$) y la
 distancia entre el eje de oscilación y el centro de masa ($b$) después de
 linealizar la curva y ajustarla con el método de mínimos cuadrados, finalmente
 se determinaron los valores deseados, resultando ser:
-$k = (0.1501 \pm \num{1.3992e-6}) [m]; \num{9.3188e-4}\%$ y
-$g = (9.78 \pm 0.08) [m/s^2]; 0.77\%$
+$(0.1501 \pm 0.0000014) [m]; 0.0009\%$ para el radio de giro, y
+$(9.78 \pm 0.08) [m/s^2]; 0.77\%$ para la gravedad.
 \end{abstract}
 
 \section{Introducción}
@@ -584,7 +584,7 @@ con la ayuda de los datos presentados en el \textbf{Cuadro \ref{cuadro5}}.
 \begin{center}
 \begin{tabular}{|c||>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
-                  |>{\centering}m{1.8cm}<{\centering}
+                  |>{\centering}m{1.8cm}<{\centering}|
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{2.1cm}<{\centering}|}
@@ -661,7 +661,8 @@ Parámetros de la recta obtenida:
 Siendo el coeficiente de correlación:
 
 \begin{equation*}
-    R = \frac{n \sum x_i y_i - (\sum x_i)(\sum y_i)}{\sqrt{\Delta_1 \Delta_2}} = 0.9999
+    R = \frac{n \sum x_i y_i - (\sum x_i)(\sum y_i)}{\sqrt{\Delta_1 \Delta_2}}
+      = 0.9999
 \end{equation*}
 \vspace{0.10cm}
 
@@ -674,7 +675,8 @@ La ecuación de la recta resultante es:
 
 \subsection{Calculo del radio de giro}
 
-Para el calculo del radio de giro, se utiliza la \textbf{Ecuación \ref{radiodegiro2}}:
+Para el calculo del radio de giro, se utiliza la
+\textbf{Ecuación \ref{radiodegiro2}}:
 
 \begin{equation*}
     k = \sqrt{-A} = \sqrt{-(-0.0225)} = 0.1501
@@ -684,10 +686,11 @@ Para el calculo del radio de giro, se utiliza la \textbf{Ecuación \ref{radiodeg
 Y el error de la medición es:
 
 \begin{equation*}
-    \frac{\partial k}{\partial A} = \frac{1}{2} A \sqrt{-A}
+    \frac{\partial k}{\partial A} = \frac{1}{2} \sqrt{A^3}
+                                  = \frac{1}{2} |A| \sqrt{-A}
 \end{equation*}
 \begin{equation*}
-    e_k = \frac{1}{2} A \sqrt{-A}\,e_A = \num{-1.3992e-6}
+    e_k = \left(\frac{1}{2} |A| \sqrt{-A}\right) e_A = \num{1.3992e-6}
 \end{equation*}
 \vspace{0.10cm}
 
@@ -703,7 +706,7 @@ Resultando:
 Para el calculo de la gravedad, se utiliza la \textbf{Ecuación \ref{gravedad}}:
 
 \begin{equation*}
-    g = 4 \pi^2\, B = 4 (3.1415) (0.2479) = 9.7869
+    g = 4 \pi^2\, B = 4\,(3.1415)^2 (0.2479) = 9.7869
 \end{equation*}
 \vspace{0.10cm}
 
