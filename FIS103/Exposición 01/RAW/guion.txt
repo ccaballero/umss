@@ -1,7 +1,6 @@
 Hola y bienvenidos a esta exposición sobre                                     | caratula
                                                                                |
-Esfuerzo, deformación                                                          |
-y módulos de elasticidad                                                       |
+Esfuerzo, deformación y módulos de elasticidad                                 |
 Mi nombre es Carlos E. Caballero B.                                            |
 <200201226@est.umss.edu>                                                       |
                                                                                |
