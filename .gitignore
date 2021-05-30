@@ -120,7 +120,8 @@ node_modules
 
 package-lock.json
 
-
+*.mp3
+*.m4a
 *.mp4
 *.MP4
 *.THM

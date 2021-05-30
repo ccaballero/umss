@@ -1,0 +1,28 @@
+Hola y bienvenidos a esta exposición sobre                                     |
+                                                                               |
+Esfuerzo, deformación, y modulos de elasticidad                                |
+2da parte                                                                      |
+esfuerzo y deformación, por volumen y corte                                    |
+                                                                               |
+Mi nombre es Carlos Caballero                                                  |
+<200201226@est.umss.edu>                                                       |
+                                                                               |
+y como siempre esta es una                                                     |
+Exposición basada en la seccion 4ta del capitulo 11 del libro Fisica           |
+Universitaria. de Sears y Zemansky                                             |
+                                                                               |
+                                                                               |
+                                                                               |
+Anteriormente se estudió el esfuerzo y la deformación por tensión, aquella en
+que la tension es representada por un vector fuerza en una solo direccion, que
+es transversal al mismo objeto.
+
+En el caso del esfuerzo y la deformación por volumen, existe una fuerza que
+actua sobre toda la superficie del objeto, por tanto, esta fuerza es
+perpendicular a la superficie en todos sus puntos.
+
+Esta fuerza por unidad de area ejercida sobre la superficie del objeto es
+denominado presión \rho en el fluido. \rho = \frac{F_{perp}}{A}
+
+
+
