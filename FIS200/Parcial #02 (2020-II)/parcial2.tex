@@ -1,0 +1,203 @@
+\documentclass[letter,11pt]{article}
+
+\usepackage[spanish,es-nodecimaldot]{babel}
+\usepackage[utf8]{inputenc}
+
+\usepackage{lmodern}
+\usepackage[T1]{fontenc}
+\usepackage{textcomp}
+
+\usepackage{framed}
+\usepackage[svgnames]{xcolor}
+\colorlet{shadecolor}{Gainsboro!50}
+
+\usepackage{graphicx}
+\usepackage{pstricks}
+
+\usepackage{anysize}
+\marginsize{3cm}{2cm}{2cm}{3cm}
+
+\usepackage{siunitx}
+\usepackage{amsmath}
+\usepackage{array}
+
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[LE,RO]{Física Básica III}
+\fancyfoot[CO,CE]{\thepage\ de \pageref{LastPage}}
+
+\special{papersize=215.9mm,279.4mm}
+
+\usepackage[
+    pdfauthor={Carlos Eduardo Caballero Burgoa},%
+    pdftitle={Física Básica III},%
+    pdfsubject={2do Parcial},%
+    colorlinks,%
+    citecolor=black,%
+    filecolor=black,%
+    linkcolor=black,%
+    urlcolor=black,
+    breaklinks]{hyperref}
+\usepackage{breakurl}
+
+\newcommand{\blankpage}{
+\newpage
+\thispagestyle{empty}
+\mbox{}
+\newpage
+}
+
+\renewcommand{\arraystretch}{1.2}
+
+\begin{document}
+
+\begin{center}
+    {\Large \bf{Segundo parcial}}
+\end{center}
+
+\noindent\fbox{%
+    \parbox{\textwidth}{%
+        Estudiante: CABALLERO BURGOA, Carlos Eduardo \\
+        Carrera: Ingeniería Electromecánica \\
+        Correo: cijkb.j@gmail.com
+    }%
+}
+
+\vspace{0.5cm}
+
+\begin{enumerate}
+\item La diferencia de potencial en las terminales de una batería es de
+$8.4 [V]$ cuando en esta hay una corriente de $1.5 [A]$ de la terminal negativa
+a la positiva. Cuando la corriente es de $3.5 [A]$ en la dirección inversa, la
+diferencia de potencial es de $10.20 [V]$. ¿Cuál es la fem de la batería?
+
+\begin{itemize}
+    \item $ 7.45 [V]$.
+    \item $ 8.94 [V]$.
+    \item $ 9.26 [V]$.
+    \item $10.02 [V]$.
+\end{itemize}
+
+Solución: \\
+
+\item Dos focos de $120 [V]$, una de $25 [W]$ y otra de $200 [W]$, se conectaron
+en serie a través de una línea de $240 [V]$, pero se quemó de inmediato ...
+
+\begin{itemize}
+    \item El de $25 [W]$.
+    \item El de $200 [W]$.
+    \item Se quemaron los dos.
+    \item Ninguno se quemó.
+\end{itemize}
+
+Solución: \\
+
+\item Calcule la corriente que fluye por el amperímetro $A$ (de resistencia
+interna igual a cero).
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=2.00]{resources/q3.eps}
+\end{figure}
+
+\begin{itemize}
+    \item $0.0  [A]$.
+    \item $0.86 [A]$.
+    \item $1.71 [A]$.
+    \item $2.06 [A]$.
+\end{itemize}
+
+Solución: \\
+
+\item Cierta batería de automóvil puede proporcionar una carga total de
+$125 [Ah]$ (amperio-horas) antes de agotarse. Suponiendo que la diferencia de
+potencial entre las terminales permanece constante, ¿Cuánto tiempo puede
+suministrar energía con una potencia de $110 [W]$?
+
+\begin{itemize}
+    \item $13.64 [h]$.
+    \item $14.08 [h]$.
+    \item $15.39 [h]$.
+    \item $16.47 [h]$.
+\end{itemize}
+
+Solución: \\
+
+\item La función de la fuerza electromotriz en un circuito consiste en:
+
+\begin{itemize}
+    \item Suministrar electrones al circuito.
+    \item Elevar el potencial de los electrones.
+    \item Disminuir el potencial de los electrones.
+    \item Aumentar la rapidez de los electrones.
+\end{itemize}
+
+Solución: \\
+
+\item Un calentador (estufa) que opera con una línea de $120 [V]$, tiene una
+resistencia de $14 [\Omega]$. ¿Cuánto cuesta hacer funcionar durante
+$6 [h] 25 [min]$, si se paga $5.22 [Bs]$ el kWh (kilowat-hora)?
+
+\begin{itemize}
+    \item $30.08 [Bs]$.
+    \item $32.19 [Bs]$.
+    \item $34.45 [Bs]$.
+    \item $36.27 [Bs]$.
+\end{itemize}
+
+Solución: \\
+
+\item Calcule el potencial del punto $a$ con respecto al punto $b$. Todas las
+resistencias están en ohms y todas las fems en volts.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=1.80]{resources/q7.eps}
+\end{figure}
+
+\begin{itemize}
+    \item $ 0.11 [V]$.
+    \item $ 0.22 [V]$.
+    \item $-0.67 [V]$.
+    \item $10.22 [V]$.
+\end{itemize}
+
+Solución: \\
+
+\item Calcule $V_b - V_a$, la diferencia de potencial de $b$ respecto de $a$.
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=2.00]{resources/q8.eps}
+\end{figure}
+
+\begin{itemize}
+    \item $ 4.20 [V]$.
+    \item $-3.60 [V]$.
+    \item $ 2.35 [V]$.
+    \item $-1.18 [V]$.
+\end{itemize}
+
+Solución: \\
+
+\item Un capacitor de $2 [\mu F]$ inicialmente descargado se conecta en serie
+con un resistor de $6000 [\Omega]$ y una fuente de FEM de $90 [V]$. El circuito
+se cierra en $t = 0 [s]$. ¿En qué instante la tasa a la que la energía eléctrica
+(potencia) se disipa en el resistor es igual a la tasa a la cual la energía
+eléctrica se almacena en el capacitor?
+
+\begin{itemize}
+    \item $4.58 [ms]$.
+    \item $5.97 [ms]$.
+    \item $7.23 [ms]$.
+    \item $8.32 [ms]$.
+\end{itemize}
+
+Solución: \\
+
+\end{enumerate}
+
+\end{document}
+
