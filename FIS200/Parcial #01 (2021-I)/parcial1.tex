@@ -79,13 +79,48 @@ distancia $d = 1 [m]$ de la varilla a lo largo de su bisectriz perpendicular.
 \end{figure}
 
 \begin{itemize}
-    \item $12727.92 [N/C]$.
+    \item \textcolor{red}{$12727.92 [N/C]$.}
     \item $11462.36 [N/C]$.
     \item $10354.28 [N/C]$.
     \item $ 9658.33 [N/C]$.
 \end{itemize}
 
-Solución: \\
+\textbf{Solución:} \\
+
+\begin{figure}[!h]
+\centering
+\includegraphics[scale=0.39]{resources/a1.eps}
+\end{figure}
+
+Dada la ecuación campo electrico:
+
+\begin{equation*}
+    \vec{E} = \frac{1}{4\pi\epsilon_0}\int_{Q}\frac{dq}{\vec{r}^2}
+\end{equation*}
+
+Y considerando la uniformidad de la carga:
+
+\begin{equation*}
+    \lambda = \frac{dq}{dx}
+\end{equation*}
+
+Entonces:
+
+\begin{equation*}
+    E_x = \frac{1}{4\pi\epsilon_0}\int_{-L}^{L}\frac{\lambda dx}{x^2+d^2}\,sen(\theta) = \frac{\lambda}{4\pi\epsilon_0}\int_{-L}^{L}\frac{dx}{x^2+d^2}\frac{x}{\sqrt{x^2+d^2}}
+\end{equation*}
+\begin{equation*}
+    E_x = \frac{\lambda}{4\pi\epsilon_0}\int_{-L}^{L}\frac{x}{(x^2+d^2)^{3/2}}dx = \frac{\lambda}{4\pi\epsilon_0}\left(-\frac{1}{\sqrt{x^2+d^2}}\Biggr|_{-L}^{L}\right) = 0
+\end{equation*}
+\begin{equation*}
+    E_y = \frac{1}{4\pi\epsilon_0}\int_{-L}^{L}\frac{\lambda dx}{x^2+d^2}\,cos(\theta) = \frac{\lambda}{4\pi\epsilon_0}\int_{-L}^{L}\frac{dx}{x^2+d^2}\frac{d}{\sqrt{x^2+d^2}}
+\end{equation*}
+\begin{equation*}
+    E_y = \frac{\lambda\,d}{4\pi\epsilon_0}\int_{-L}^{L}\frac{1}{(x^2+d^2)^{3/2}}dx = \frac{\lambda}{4\pi\epsilon_0}\left(\frac{1}{d^2}\frac{x}{\sqrt{x^2+d^2}}\Biggr|_{-L}^{L}\right)
+\end{equation*}
+\begin{equation*}
+    E_y = \frac{\lambda}{4\pi\epsilon_0}\left(\frac{2}{d^2}\frac{L}{\sqrt{L^2+d^2}}\right) = \frac{1}{4\pi\epsilon_0}\frac{2L\lambda}{d^2\sqrt{L^2+d^2}} = 12710.32 [N/C]
+\end{equation*}
 
 \item Considere un cilindro hueco con una pared delgada uniformemente cargada
 con una carga total $Q = 1 [\mu C]$, radio $R = 0.1 [m]$ y una longitud
@@ -104,7 +139,7 @@ $d = 0.2 [m]$ del lado derecho del cilindro como se muestra en la figura.
     \item $18567.46 [N/C]$.
 \end{itemize}
 
-Solución: \\
+\textbf{Solución:} \\
 
 \item  Un cilindro aislante de longitud infinita y de radio $R = 0.3 [m]$, tiene
 una densidad de carga volumétrica $\rho = \rho_0 (a - r/b )$ que varía en función del
@@ -119,7 +154,7 @@ en $r = 1 [m]$.
     \item $16458.29 [N/C]$.
 \end{itemize}
 
-Solución: \\
+\textbf{Solución:} \\
 
 \item Un alambre con una densidad lineal de carga uniforme igual a
 $1 [\mu C/m]$, se dobla como se muestra en la figura. Calcular el potencial
@@ -137,7 +172,7 @@ eléctrico en el punto $0$.
     \item $48049.36 [V]$.
 \end{itemize}
 
-Solución: \\
+\textbf{Solución:} \\
 
 \item Un capacitor de placas paralelas de $2 [nF]$ se carga con una diferencia
 de potencial de $100 [V]$ y se aísla (desconecta de la batería) a continuación.
@@ -152,7 +187,7 @@ mica.
     \item $41 [\mu J]$.
 \end{itemize}
 
-Solución: \\
+\textbf{Solución:} \\
 
 \end{enumerate}
 
