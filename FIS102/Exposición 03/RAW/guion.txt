@@ -1,0 +1,38 @@
+Hola y bienvenidos a esta exposición sobre                                     |
+                                                                               |
+Mecánica de fluidos                                                            | carátula
+1da parte                                                                      |
+estática de fluidos                                                            |
+                                                                               |
+Mi nombre es Carlos Caballero                                                  |
+<200201226@est.umss.edu>                                                       |
+                                                                               |
+y como siempre esta es una                                                     |
+Exposición basada en las secciones 1ra, 2da, y 3ra del capitulo 14 del libro   | libro de física
+Física Universitaria. de Sears y Zemansky                                      |
+                                                                               |
+                                                                               |
+Se denomina fluido a la materia compuesta por moleculas atraidas entre si de   |
+manera debil,                                                                  |
+por tanto está no tiene la capacidad de sostener una forma concreta, sino que  |
+adquiere la del recipiente en donde esta contenida.                            |
+                                                                               |
+Ahora exploraremos los conceptos de densidad, presión y flotación.             |
+                                                                               |
+                                                                               |
+Una propiedad importante de cualquier material es su densidad, definida como 
+su masa por unidad de volumen, por tanto sus unidades serán el kilogramo por
+metro cubico.
+
+Podemos ver los valores de densidad para algunas sustancias.
+
+El material mas denso que puede encontrarse en la Tierra es el Osmio con un
+valor de 22500 kilogramos por metro cubico, tambien existen objetos
+astronomicos exoticos cuya densidad es casi inimaginable, como las estrellas
+enanas blancas, y las estrellas de neutrones.
+
+Se denomina gravedad especifica o mejor llamado densidad relativa de un
+material a la razon entre su densidad y la densidad del agua a 4.0 grados
+centrigrados, que es 1000 kilogramos por metro cubico
+
+
