@@ -6,7 +6,7 @@ clc
 table = readtable('i2.csv', 'Format', '%f%f')
 table_ = table2array(table)
 
-x = table_(:,1) % [mm]
+x = table_(:,1) % [mm^2]
 y = table_(:,2) % [pF]
 
 % conversion a SI

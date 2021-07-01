@@ -19,7 +19,8 @@ y0 = table_(:,11) % [G]
 %yy0 = interp1(x, y0, xx, 'spline')
 
 %hold on
-%plot(x, y0, 'x', xx, yy0); plot(x, y0, 'x')
+%plot(x, y0, 'x', xx, yy0)
+%plot(x, y0, 'x')
 %hold off
 
 % linealización de la curva
@@ -37,7 +38,8 @@ y0 = log(y0)
 %yy0 = interp1(x, y0, xx, 'spline')
 
 %hold on
-%plot(x, y0, 'x', xx, yy0); plot(x, y0, 'x')
+%plot(x, y0, 'x', xx, yy0)
+%plot(x, y0, 'x')
 %hold off
 
 % tamano de la muestra
