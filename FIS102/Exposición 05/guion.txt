@@ -31,7 +31,7 @@ adelante y hacia atrás a lo largo del sentido de la propagación, la onda es
 entonces, longitudinal.
 
 Algunas ondas no son ni totalmente longitudinales, ni totalmente transversales,
-por tanto las partículas pueden moverse tanto hacia arriba y hacia abajo como
+por tanto, las partículas pueden moverse tanto hacia arriba y hacia abajo como
 hacia adelante y hacia atrás, lo que da lugar a que se tracen trayectorias
 elípticas al pasar por ellas las ondas.
 
