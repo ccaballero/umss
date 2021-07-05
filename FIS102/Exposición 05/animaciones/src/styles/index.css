@@ -1,4 +1,37 @@
-body {
-    margin:0;
-    padding:0;
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100vw;
 }
+
+body {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: stretch;
+    align-content: center;
+    background-color: #000000;
+}
+
+#main {
+    height: 256px;
+    width: 100vw;
+}
+
+svg {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+path {
+    stroke: white;
+    stroke-width: 2;
+    fill: none;
+}
+
