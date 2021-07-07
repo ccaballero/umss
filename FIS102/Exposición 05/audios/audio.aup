@@ -1,6 +1,6 @@
 <?xml version="1.0" standalone="no" ?>
 <!DOCTYPE project PUBLIC "-//audacityproject-1.3.0//DTD//EN" "http://audacity.sourceforge.net/xml/audacityproject-1.3.0.dtd" >
-<project xmlns="http://audacity.sourceforge.net/xml/" projname="audio_data" version="1.3.0" audacityversion="2.4.2" sel0="344.3427851712" sel1="344.3427851712" vpos="0" h="0.0000000000" zoom="2.2699662024" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
+<project xmlns="http://audacity.sourceforge.net/xml/" projname="audio_data" version="1.3.0" audacityversion="2.4.2" sel0="232.7838720015" sel1="232.7838720015" vpos="0" h="0.0000000000" zoom="1.4305114746" rate="44100.0" snapto="off" selectionformat="hh:mm:ss + milliseconds" frequencyformat="Hz" bandwidthformat="octaves">
 	<tags/>
 	<wavetrack name="Pista de audio" isSelected="1" height="165" minimized="0" channel="2" linked="0" mute="0" solo="0" rate="44100" gain="2.511886" pan="0.0" colorindex="0">
 		<waveclip offset="5.39428571" colorindex="0">
@@ -782,18 +782,18 @@
 		</waveclip>
 	</wavetrack>
 	<labeltrack name="Pista de etiqueta" isSelected="0" height="73" minimized="0" numlabels="13">
-		<label t="27.0997977570" t1="27.0997977570" title=""/>
-		<label t="50.5000000000" t1="50.5032299068" title=""/>
-		<label t="60.2001666836" t1="60.2001666836" title=""/>
-		<label t="70.2700956603" t1="70.2700956603" title=""/>
-		<label t="87.2000000000" t1="87.2000000000" title=""/>
-		<label t="99.3019672001" t1="99.3019672001" title=""/>
-		<label t="115.6499528930" t1="115.6499528930" title=""/>
-		<label t="134.1003755880" t1="134.1003755880" title=""/>
-		<label t="156.2499602562" t1="156.2499602562" title=""/>
-		<label t="182.8003796519" t1="182.8003796519" title=""/>
-		<label t="216.0001271232" t1="216.0001271232" title=""/>
-		<label t="306.9003052025" t1="306.9003052025" title=""/>
-		<label t="344.4004333312" t1="344.4004333312" title=""/>
+		<label t="27.1005013335" t1="27.1005013335" title=""/>
+		<label t="50.5000000003" t1="50.5000000003" title=""/>
+		<label t="60.2002773337" t1="60.2002773337" title=""/>
+		<label t="70.2700373338" t1="70.2700373338" title=""/>
+		<label t="87.1997440006" t1="87.1997440006" title=""/>
+		<label t="99.2999893340" t1="99.2999893340" title=""/>
+		<label t="115.6500906674" t1="115.6500906674" title=""/>
+		<label t="134.1000000009" t1="134.1000000009" title=""/>
+		<label t="156.2500266677" t1="156.2500266677" title=""/>
+		<label t="182.8003840012" t1="182.8003840012" title=""/>
+		<label t="216.0000853347" t1="216.0000853347" title=""/>
+		<label t="306.8999680020" t1="306.8999680020" title=""/>
+		<label t="344.3998720023" t1="344.3998720023" title=""/>
 	</labeltrack>
 </project>
