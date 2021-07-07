@@ -11,7 +11,7 @@ Exposición basada en las secciones 4ta y 5ta del capitulo 15 del libro: Física
 Universitaria. de Sears y Zemansky.                                             |
                                                                                 |
                                                                                 |
-Una de las propiedades clave de cualquier onda es su rapidez, si analizamos el
+Una de las propiedades clave de cualquier onda es su rapidez, si analizamos el  | https://www.youtube.com/watch?v=9L9AOPxhZwY
 caso de las ondas transversales en una cuerda, las cantidades físicas que
 determinan la rapidez de las ondas son: la tensión de la cuerda y su masa por
 unidad de longitud (o densidad de masa lineal).
@@ -37,7 +37,7 @@ derivada parcial de la función de onda con respecto a "x" en el punto "x" mas
 
 La fuerza neta "Fy" es la suma de "F1y" mas "F2y".
 
-Ahora igualamos "Fy" a la masa \mu por \Delta "x" multiplicada por la
+Ahora igualamos "Fy" a la masa \mu por \Delta "x" multiplicada por la			https://youtu.be/v3OYIIMefL0
 aceleración, expresada como la segunda derivada de la función de onda con
 respecto a "t", como se vio en la primera parte.
 
