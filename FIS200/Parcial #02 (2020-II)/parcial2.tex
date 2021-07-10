@@ -216,12 +216,18 @@ Por tanto el tiempo es:
 
 \begin{itemize}
     \item Suministrar electrones al circuito.
-    \item Elevar el potencial de los electrones.
-    \item \textcolor{red}{Disminuir el potencial de los electrones.}
+    \item \textcolor{red}{Elevar el potencial de los electrones.}
+    \item Disminuir el potencial de los electrones.
     \item Aumentar la rapidez de los electrones.
 \end{itemize}
 
 \textbf{Solución:}
+
+Los electrones se mueven, cuando hay un camino disponible, desde un punto de
+exceso de electrones (energía potencial más alta) a un punto deficiente en
+electrones (energía potencial más baja).
+
+La fuerza que provoca este movimiento es la fuerza electromotriz.
 
 \item Un calentador (estufa) que opera con una línea de $120 [V]$, tiene una
 resistencia de $14 [\Omega]$. ¿Cuánto cuesta hacer funcionar durante
@@ -291,7 +297,10 @@ Calculando la corriente en la malla:
 Calculando el potencial entre $a'$ y $b'$:
 
 \begin{equation*}
-    V_{a'b'} = -2\left(\frac{4}{9}\right)+8-1\left(\frac{4}{9}\right)-2\left(\frac{4}{9}\right) = 10.22 [V]
+    V_{a'b'} = -2\left(\frac{4}{9}\right)
+               + 8-1\left(\frac{4}{9}\right)
+               - 2\left(\frac{4}{9}\right)
+             = 10.22 [V]
 \end{equation*}
 
 Por tanto el potencial $V_{ab}$ es:
@@ -368,10 +377,67 @@ eléctrica se almacena en el capacitor?
     \item $4.58 [ms]$.
     \item $5.97 [ms]$.
     \item $7.23 [ms]$.
-    \item $8.32 [ms]$.
+    \item \textcolor{red}{$8.32 [ms]$.}
 \end{itemize}
 
 \textbf{Solución:}
+
+La tasa instantánea a la que la energía eléctrica se disipa en el resistor es:
+
+\begin{equation*}
+    P_R = \frac{i^2}{R}
+\end{equation*}
+
+y la tasa a la que la energía se almacena en el capacitor es:
+
+\begin{equation*}
+    P_C = \frac{iq}{C}
+\end{equation*}
+
+Igualando ambas ecuaciones:
+
+\begin{equation*}
+    P_R = P_C
+\end{equation*}
+\begin{equation*}
+    \frac{i^2}{R} = \frac{iq}{C}
+\end{equation*}
+\begin{equation*}
+    \frac{q}{RC} = I
+\end{equation*}
+
+La carga del capacitor esta dada por la ecuación:
+
+\begin{equation*}
+    q = Q_f\,(1-e^{-t/RC}) = C\mathcal{E}\,(1-e^{-t/RC})
+\end{equation*}
+
+y la corriente eléctrica es:
+
+\begin{equation*}
+    i = I_o\,e^{-t/RC} = \frac{\mathcal{E}}{R}\,e^{-t/RC}
+\end{equation*}
+
+Uniendo todas las ecuaciones:
+
+\begin{equation*}
+    \dfrac{C\mathcal{E}\,(1-e^{-t/RC})}{RC} = \frac{\mathcal{E}}{R}\,e^{-t/RC}
+\end{equation*}
+\begin{equation*}
+    1-e^{-t/RC} = e^{-t/RC}
+\end{equation*}
+\begin{equation*}
+    2e^{-t/RC} = 1
+\end{equation*}
+\begin{equation*}
+    e^{-t/RC} = 0.5
+\end{equation*}
+\begin{equation*}
+    -\frac{t}{RC} = ln(0.5)
+\end{equation*}
+\begin{equation*}
+    t = -RC\,ln(0.5) = \num{8.3178e-3} [s]
+\end{equation*}
 
 \end{enumerate}
 
