@@ -7,6 +7,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 
+\usepackage{framed}
 \usepackage[svgnames]{xcolor}
 \colorlet{shadecolor}{Gainsboro!50}
 
@@ -21,6 +22,7 @@
 \usepackage{siunitx}
 \usepackage{amsmath}
 \usepackage{array}
+\usepackage{alltt}
 
 \usepackage{caption}
 \newcommand{\source}[1]{\vspace{-11pt} \caption*{\small{\textbf{Nota:} {#1}}}}
@@ -59,13 +61,13 @@
 \author{Carlos Eduardo Caballero Burgoa \\
     \small{\href{mailto:200201226@est.umss.edu}{200201226@est.umss.edu}}
 }
-\date{\today}
+\date{28 de abril de 2021}
 
 \begin{document}
 
 \maketitle
 \begin{center}
-    \textbf{Grupo}: J2\\
+    \textbf{Grupo}: J2 (Miércoles)\\
     \textbf{Docente}: Ing. Milka Mónica Torrico Troche\\
     \textbf{Carrera}: Ing. Electromecánica
 \end{center}
@@ -218,7 +220,7 @@ el valor de la gravedad ($g$) despejándola de la misma ecuación.
 \includegraphics[width=0.90\textwidth]{resources/f2.eps}
 \caption{Simulador de péndulo simple.}
 \label{figura2}
-\source{Fotografía propia.}
+\source{Captura propia.}
 \end{figure}
 
 Para la realización del experimento, se emplea el simulador de péndulo simple de
@@ -299,7 +301,7 @@ $i$ & $L_i [m]$ & $t_{1i} [s]$ & $t_{2i} [s]$ & $T_i [s]$
 
 \begin{figure}
 \centering
-\includegraphics[width=0.80\textwidth]{resources/m1.1.eps}
+\includegraphics[width=0.75\textwidth]{resources/o1.1.eps}
 \caption{Gráfica de longitud vs periodo.}
 \label{figura3}
 \source{Elaboración propia.}
@@ -350,9 +352,17 @@ Resultando el modelo de ajuste:
 
 Por tanto la relación funcional entre $T$ y $L$, es:
 
-\begin{equation*}
-    T \propto \sqrt{L}
-\end{equation*}
+\begin{center}
+\begin{tabular}{|>{\centering}m{9.2cm}<{\centering}|}
+\hline
+\textbf{Resultado} 
+\tabularnewline \hline
+\\
+$T \propto \sqrt{L}$ \tabularnewline
+\\
+\hline
+\end{tabular}
+\end{center}
 \vspace{0.10cm}
 
 Verificándose el comportamiento establecido por la
@@ -361,9 +371,17 @@ Verificándose el comportamiento establecido por la
 Para el calculo de la gravedad ($g$) se utiliza la
 \textbf{Ecuación \ref{gravedad}}, resultando:
 
-\begin{equation*}
-    g = (9.85 \pm 0.03) [m/s^2]; 0.33\%
-\end{equation*}
+\begin{center}
+\begin{tabular}{|>{\centering}m{9.2cm}<{\centering}|}
+\hline
+\textbf{Resultado} 
+\tabularnewline \hline
+\\
+$g = (9.85 \pm 0.03) [m/s^2]; 0.33\%$ \tabularnewline
+\\
+\hline
+\end{tabular}
+\end{center}
 \vspace{0.10cm}
 
 \section{Discusión}
@@ -422,7 +440,7 @@ Extraído el 27 de Abril del 2021, de: \\
 \end{thebibliography}
 
 \newpage
-\section*{Apéndice: Cálculos adicionales}
+\section*{Apéndice A: Cálculos adicionales}
 
 \subsection{Linealización de la curva}
 
@@ -483,7 +501,7 @@ $i$ & $ln(L_i)$ & $ln(T_i)$ \tabularnewline \hline \hline
 
 \begin{figure}
 \centering
-\includegraphics[width=0.80\textwidth]{resources/m1.2.eps}
+\includegraphics[width=0.75\textwidth]{resources/o1.2.eps}
 \caption{Gráfica de $ln(L)$ vs. $ln(T)$.}
 \label{figura4}
 \source{Elaboración propia.}
@@ -506,27 +524,27 @@ con la ayuda de los datos presentados en el \textbf{Cuadro \ref{cuadro5}}.
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{2.1cm}<{\centering}|}
 \hline
-$i$ & $x_i y_i$ & $x^2_i$ & $y^2_i$ & $Y_i$ & $d_i$ & $d^2_i\,(\num{e-4})$
+$i$ & $x^2_i$ & $y^2_i$ & $x_i y_i$ & $Y_i$ & $d_i$ & $d^2_i\,(\num{e-4})$
     \tabularnewline \hline \hline
- 1 & -0.2356 & 0.3574 & 0.1553 & 0.3938 &  0.0002 & 0.0005
+ 1 & 0.3574 & 0.1553 & -0.2356 & 0.3938 &  0.0002 & 0.0005
     \tabularnewline \hline
- 2 & -0.2217 & 0.2609 & 0.1884 & 0.4375 & -0.0035 & 0.1222
+ 2 & 0.2609 & 0.1884 & -0.2217 & 0.4375 & -0.0035 & 0.1222
     \tabularnewline \hline
- 3 & -0.2056 & 0.1856 & 0.2277 & 0.4777 & -0.0006 & 0.0034
+ 3 & 0.1856 & 0.2277 & -0.2056 & 0.4777 & -0.0006 & 0.0034
     \tabularnewline \hline
- 4 & -0.1855 & 0.1272 & 0.2704 & 0.5150 &  0.0050 & 0.2516
+ 4 & 0.1272 & 0.2704 & -0.1855 & 0.5150 &  0.0050 & 0.2516
     \tabularnewline \hline
- 5 & -0.1587 & 0.0828 & 0.3042 & 0.5496 &  0.0020 & 0.0387
+ 5 & 0.0828 & 0.3042 & -0.1587 & 0.5496 &  0.0020 & 0.0387
     \tabularnewline \hline
- 6 & -0.1299 & 0.0498 & 0.3386 & 0.5820 & -0.0001 & 0.0001
+ 6 & 0.0498 & 0.3386 & -0.1299 & 0.5820 & -0.0001 & 0.0001
     \tabularnewline \hline
- 7 & -0.0990 & 0.0264 & 0.3712 & 0.6125 & -0.0033 & 0.1060
+ 7 & 0.0264 & 0.3712 & -0.0990 & 0.6125 & -0.0033 & 0.1060
     \tabularnewline \hline
- 8 & -0.0675 & 0.0111 & 0.4103 & 0.6412 & -0.0006 & 0.0042
+ 8 & 0.0111 & 0.4103 & -0.0675 & 0.6412 & -0.0006 & 0.0042
     \tabularnewline \hline
- 9 & -0.0345 & 0.0026 & 0.4511 & 0.6683 &  0.0033 & 0.1109
+ 9 & 0.0026 & 0.4511 & -0.0345 & 0.6683 &  0.0033 & 0.1109
     \tabularnewline \hline
-10 &       0 &      0 & 0.4784 & 0.6941 & -0.0025 & 0.0602
+10 &      0 & 0.4784 &       0 & 0.6941 & -0.0025 & 0.0602
     \tabularnewline \hline
 \end{tabular}
 \caption{Valores para el método de mínimos cuadrados.}
@@ -663,6 +681,28 @@ Resultando:
     g = (9.8508 \pm 0.0322) [m/s^2]; 0.3268\%
 \end{equation*}
 \vspace{0.10cm}
+
+\newpage
+\section*{Apéndice B: Cálculos realizados en \emph{Octave}}
+
+A continuación se presenta los cálculos realizados en el programa \emph{Octave}
+para la generación de las gráficas, la linealización de la curva, el calculo
+de los mínimos cuadrados y el valor de la gravedad.
+
+\begin{shaded}
+\begin{alltt}
+\footnotesize
+\# Datos importados (i1.csv):
+\input{resources/i1.csv}
+\# Comandos ejecutados (o1.m):
+\input{../../octave/graficar.m}
+\input{../../octave/minimoscuadrados.m}
+\input{resources/o1.m}
+\# Salida del programa (o1.out):
+\input{resources/o1.out}
+\normalsize
+\end{alltt}
+\end{shaded}
 
 \end{document}
 

@@ -7,6 +7,7 @@
 \usepackage[T1]{fontenc}
 \usepackage{textcomp}
 
+\usepackage{framed}
 \usepackage[svgnames]{xcolor}
 \colorlet{shadecolor}{Gainsboro!50}
 
@@ -21,6 +22,7 @@
 \usepackage{siunitx}
 \usepackage{amsmath}
 \usepackage{array}
+\usepackage{alltt}
 
 \usepackage{caption}
 \newcommand{\source}[1]{\vspace{-11pt} \caption*{\small{\textbf{Nota:} {#1}}}}
@@ -60,13 +62,13 @@ con la profundidad}
 \author{Carlos Eduardo Caballero Burgoa \\
     \small{\href{mailto:200201226@est.umss.edu}{200201226@est.umss.edu}}
 }
-\date{\today}
+\date{19 de mayo de 2021}
 
 \begin{document}
 
 \maketitle
 \begin{center}
-    \textbf{Grupo}: J2\\
+    \textbf{Grupo}: J2 (Miércoles)\\
     \textbf{Docente}: Ing. Milka Mónica Torrico Troche\\
     \textbf{Carrera}: Ing. Electromecánica
 \end{center}
@@ -198,7 +200,7 @@ determinará el valor de la densidad ($\rho$) despejándola de la misma ecuació
 \includegraphics[width=0.90\textwidth]{resources/f2.eps}
 \caption{Simulador de presión.}
 \label{figura2}
-\source{Fotografía propia.}
+\source{Captura propia.}
 \end{figure}
 
 Para la realización del experimento, se emplea el simulador \emph{PhET} «Bajo
@@ -271,7 +273,7 @@ $i$ & $h_i [m]$ & $P_i [kPa]$ & $i$ & $h_i [m]$ & $P_i [kPa]$
 
 \begin{figure}
 \centering
-\includegraphics[width=0.80\textwidth]{resources/m1.eps}
+\includegraphics[width=0.75\textwidth]{resources/o1.eps}
 \caption{Gráfica de longitud vs fuerza.}
 \label{figura3}
 \source{Elaboración propia.}
@@ -307,17 +309,33 @@ Considerando que el modelo de ajuste es:
 
 Por tanto la relación funcional entre $P$ y $h$, es:
 
-\begin{equation*}
-    P \propto h
-\end{equation*}
+\begin{center}
+\begin{tabular}{|>{\centering}m{9.2cm}<{\centering}|}
+\hline
+\textbf{Resultado} 
+\tabularnewline \hline
+\\
+$P \propto h$ \tabularnewline
+\\
+\hline
+\end{tabular}
+\end{center}
 \vspace{0.10cm}
 
 Para el calculo de la densidad ($\rho$) se utiliza la
 \textbf{Ecuación \ref{densidad}}, resultando:
 
-\begin{equation*}
-    \rho = (1701.5 \pm 5.8) [kg/m^3]; 0.34\%
-\end{equation*}
+\begin{center}
+\begin{tabular}{|>{\centering}m{9.2cm}<{\centering}|}
+\hline
+\textbf{Resultado} 
+\tabularnewline \hline
+\\
+$\rho = (1701.5 \pm 5.8) [kg/m^3]; 0.34\%$ \tabularnewline
+\\
+\hline
+\end{tabular}
+\end{center}
 \vspace{0.10cm}
 
 \section{Conclusiones}
@@ -342,7 +360,7 @@ Gestión I/2020.
 \end{thebibliography}
 
 \newpage
-\section*{Apéndice: Cálculos adicionales}
+\section*{Apéndice A: Cálculos adicionales}
 
 \subsection{Método de mínimos cuadrados}
 
@@ -358,25 +376,25 @@ con la ayuda de los datos presentados en el \textbf{Cuadro \ref{cuadro2}}.
                   |>{\centering}m{1.8cm}<{\centering}
                   |>{\centering}m{2.1cm}<{\centering}|}
 \hline
-$i$ & $x_i y_i\,(\num{e5})$ & $x^2_i$ & $y^2_i\,(\num{e10})$ &
+$i$ & $x^2_i$ & $y^2_i\,(\num{e10})$ & $x_i y_i\,(\num{e5})$ &
     $Y_i\,(\num{e5})$ & $d_i$ & $d^2_i\,(\num{e4})$
     \tabularnewline \hline \hline
- 1 &      0 &      0 & 1.0267 & 1.0151 & -182.6397 & 3.3357 \tabularnewline \hline
- 2 & 0.2099 & 0.0400 & 1.1018 & 1.0484 &  133.2706 & 1.7761 \tabularnewline \hline
- 3 & 0.4332 & 0.1600 & 1.1730 & 1.0816 &  142.1809 & 2.0215 \tabularnewline \hline
- 4 & 0.6699 & 0.3600 & 1.2464 & 1.1149 &  150.0912 & 2.2527 \tabularnewline \hline
- 5 & 0.9186 & 0.6400 & 1.3184 & 1.1482 &    0.0015 & 0.0000 \tabularnewline \hline
- 6 & 1.1800 & 1.0000 & 1.3923 & 1.1815 & -151.0882 & 2.2828 \tabularnewline \hline
- 7 & 1.4579 & 1.4400 & 1.4761 & 1.2148 &   16.8221 & 0.0283 \tabularnewline \hline
- 8 & 1.7476 & 1.9600 & 1.5582 & 1.2480 &   24.7324 & 0.0612 \tabularnewline \hline
- 9 & 2.0481 & 2.5600 & 1.6386 & 1.2813 & -125.3574 & 1.5714 \tabularnewline \hline
-10 & 2.3613 & 3.2400 & 1.7209 & 1.3146 & -276.4471 & 7.6423 \tabularnewline \hline
-11 & 2.6936 & 4.0000 & 1.8139 & 1.3479 & -108.5368 & 1.1780 \tabularnewline \hline
-12 & 3.0398 & 4.8400 & 1.9092 & 1.3812 &   58.3735 & 0.3407 \tabularnewline \hline
-13 & 3.4001 & 5.7600 & 2.0071 & 1.4144 &  226.2838 & 5.1204 \tabularnewline \hline
-14 & 3.7702 & 6.7600 & 2.1027 & 1.4477 &  234.1941 & 5.4847 \tabularnewline \hline
-15 & 4.1492 & 7.8400 & 2.1959 & 1.4810 &   84.1044 & 0.7074 \tabularnewline \hline
-16 & 4.5361 & 9.0000 & 2.2862 & 1.5143 & -225.9853 & 5.1069 \tabularnewline \hline
+ 1 &      0 & 1.0267 &      0 & 1.0151 & -182.6397 & 3.3357 \tabularnewline \hline
+ 2 & 0.0400 & 1.1018 & 0.2099 & 1.0484 &  133.2706 & 1.7761 \tabularnewline \hline
+ 3 & 0.1600 & 1.1730 & 0.4332 & 1.0816 &  142.1809 & 2.0215 \tabularnewline \hline
+ 4 & 0.3600 & 1.2464 & 0.6699 & 1.1149 &  150.0912 & 2.2527 \tabularnewline \hline
+ 5 & 0.6400 & 1.3184 & 0.9186 & 1.1482 &    0.0015 & 0.0000 \tabularnewline \hline
+ 6 & 1.0000 & 1.3923 & 1.1800 & 1.1815 & -151.0882 & 2.2828 \tabularnewline \hline
+ 7 & 1.4400 & 1.4761 & 1.4579 & 1.2148 &   16.8221 & 0.0283 \tabularnewline \hline
+ 8 & 1.9600 & 1.5582 & 1.7476 & 1.2480 &   24.7324 & 0.0612 \tabularnewline \hline
+ 9 & 2.5600 & 1.6386 & 2.0481 & 1.2813 & -125.3574 & 1.5714 \tabularnewline \hline
+10 & 3.2400 & 1.7209 & 2.3613 & 1.3146 & -276.4471 & 7.6423 \tabularnewline \hline
+11 & 4.0000 & 1.8139 & 2.6936 & 1.3479 & -108.5368 & 1.1780 \tabularnewline \hline
+12 & 4.8400 & 1.9092 & 3.0398 & 1.3812 &   58.3735 & 0.3407 \tabularnewline \hline
+13 & 5.7600 & 2.0071 & 3.4001 & 1.4144 &  226.2838 & 5.1204 \tabularnewline \hline
+14 & 6.7600 & 2.1027 & 3.7702 & 1.4477 &  234.1941 & 5.4847 \tabularnewline \hline
+15 & 7.8400 & 2.1959 & 4.1492 & 1.4810 &   84.1044 & 0.7074 \tabularnewline \hline
+16 & 9.0000 & 2.2862 & 4.5361 & 1.5143 & -225.9853 & 5.1069 \tabularnewline \hline
 \end{tabular}
 \caption{Valores para el método de mínimos cuadrados.}
 \label{cuadro2}
@@ -482,6 +500,30 @@ Resultando:
     \rho = (\num{1.7015e3} \pm \num{2.0910e-4}) [kg/m^3]; \num{1.2289e-5}\%
 \end{equation*}
 \vspace{0.10cm}
+
+\newpage
+\section*{Apéndice B: Cálculos realizados en \emph{Octave}}
+
+A continuación se presenta los cálculos realizados en el programa \emph{Octave}
+para la generación de las gráficas, el calculo de los mínimos cuadrados, el
+valor de la densidad.
+
+\begin{shaded}
+\begin{alltt}
+\footnotesize
+\# Datos importados (i1.csv):
+\input{resources/i1.csv}
+
+\# Comandos ejecutados (o1.m):
+\input{../../octave/graficar.m}
+\input{../../octave/minimoscuadrados.m}
+\input{resources/o1.m}
+
+\# Salida del programa (o1.out):
+\input{resources/o1.out}
+\normalsize
+\end{alltt}
+\end{shaded}
 
 \end{document}
 
