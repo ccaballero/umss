@@ -8294,7 +8294,7 @@
      inkscape:cx="1262.1011"
      inkscape:cy="317.77301"
      inkscape:document-units="px"
-     inkscape:current-layer="layer6"
+     inkscape:current-layer="layer5"
      inkscape:document-rotation="0"
      showgrid="false"
      units="px"
@@ -8503,7 +8503,6 @@
      inkscape:groupmode="layer"
      id="layer3"
      inkscape:label="onda"
-     sodipodi:insensitive="true"
      style="display:none">
     <image
        width="508"
@@ -8574,7 +8573,6 @@
      inkscape:groupmode="layer"
      id="layer4"
      inkscape:label="rapidez"
-     sodipodi:insensitive="true"
      style="display:none">
     <image
        width="508"
@@ -8626,8 +8624,7 @@
      inkscape:groupmode="layer"
      id="layer5"
      inkscape:label="propiedades1"
-     sodipodi:insensitive="true"
-     style="display:none">
+     style="display:inline">
     <line
        x1="6.3499999"
        y1="111.65416"
@@ -16792,7 +16789,8 @@
      inkscape:groupmode="layer"
      id="layer6"
      inkscape:label="propiedades11"
-     style="display:inline">
+     style="display:none"
+     sodipodi:insensitive="true">
     <g
        inkscape:label=""
        transform="matrix(1.5890584,0,0,1.5890584,839.96456,38.465589)"
