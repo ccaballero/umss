@@ -9,60 +9,62 @@ Temperatura
 
 La temperatura es la propiedad física que se refiere a las nociones comunes de "caliente" y "frió" basadas en el sentido del tacto, para medir esta propiedad se utiliza un termómetro.
 Medir la temperatura de un objeto, requiere poner un termómetro en contacto con el, una vez el termómetro se estabiliza el sistema esta en una condición de equilibrio. Esta condición se denomina equilibrio térmico.
-Una manera de probar si dos objetos A y B, separados están en equilibrio térmico es usar un tercer sistema C. Al poner C en contacto con A y luego con B, podríamos saber si A y B están en equilibrio térmico sin poner en contacto directo a A y a B.
-Esto se resume en un postulado llamada la ley cero de la termodinámica que se enuncia como sigue:
+Una manera de probar si dos objetos A y B separados, están en equilibrio térmico es usar un tercer sistema C. Al poner C en contacto con A y luego con B, podríamos saber si A y B están en equilibrio térmico sin poner en contacto directo a A y a B.
+Esto se resume en un postulado llamado la ley cero de la termodinámica que se enuncia como sigue:
 "Si los sistemas A y B están cada uno en equilibrio térmico con un tercer sistema C, entonces A y B están en equilibrio térmico entre si.
 A la ley cero se la ha llamado idea lógica tardía. Salio a la luz en la década de 1930, mucho tiempo después de que la primera y segunda leyes de la termodinámica hubieran sido propuestas y aceptadas.
 Otro postulado de la ley cero, mas riguroso y mas fundamental, es el siguiente:
 Existe una cantidad escalar, llamada temperatura, que es una propiedad de todos los sistemas termodinámicos en equilibrio. Dos sistemas están en equilibrio térmico si y solo si sus temperaturas son iguales.
 La ley cero define entonces el concepto de temperatura y lo especifica como aquella propiedad de un sistema que sera igual a la de otro sistema cuando estén en equilibrio térmico.
-La ley cero nos permite construir y usar los termómetros para medir la temperatura de un sistema, ya que ahora sabemos que un termómetro en contacto térmico con un sistema alcanzara una temperatura común con el sistema.
+La ley cero nos permite construir y usar los termómetros para medir la temperatura de un sistema, ya que ahora sabemos que un termómetro en contacto térmico con un sistema alcanzara una temperatura común con el.
 
 Escalas de temperatura
 
-Existen múltiples escalas para la medición de la temperatura. Las escalas de temperatura Celsius y Fahrenheit se basan en las temperaturas de congelación y de ebullición del agua.
-Usando un termómetro de gas se conoce que la presión de un gas a volumen constante aumenta con la temperatura. Los gases a baja densidad conservados a un volumen constante generan una recta en una gráfica presión contra temperatura, cuando la recta se prolonga al valor de presión cero, se obtiene una temperatura de -273.15 grados Celsius.
-Se usa esta temperatura extrapolada a presión cero como base para una escala de temperatura, con su cero en esta temperatura, la escala de temperatura Kelvin, las unidades tienen el mismo tamaño que las de la escala Celsius, pero el cero se desplaza de modo que 0 Kelvin es igual a menos 273.15 grados Celsius.
-La escala Kelvin se denomina escala de temperatura absoluta y su cero, se llama cero absoluto. En el cero absoluto, teóricamente un sistema de moléculas tiene su energía total (cinética mas potencial) mínima posible. La escala absoluta Kelvin es la escala oficial del sistema internacional de temperatura.
+Existen múltiples escalas para la medición de la temperatura. Las escalas de temperatura Celsius y Fahrenheit estan basados en los puntos de congelación y ebullición del agua.
+Haciendo uso de un termómetro de gas, se conoce, que la presión de un gas a volumen constante aumenta con la temperatura. Los gases a baja densidad conservados a un volumen constante generan una recta en una gráfica presión contra temperatura, cuando la recta se prolonga al valor de presión cero, se obtiene una temperatura de -273.15 grados Celsius.
+Se usa esta temperatura extrapolada a presión cero como base para una escala de temperatura, la escala de temperatura Kelvin, cuyas unidades tienen el mismo tamaño que las de la escala Celsius, pero el cero se desplaza de modo que 0 Kelvin es igual a menos 273.15 grados Celsius.
+La escala Kelvin se denomina escala de temperatura absoluta y su cero, se denomina "cero absoluto". En el cero absoluto, teóricamente un sistema de moléculas tiene su energía total (cinética mas potencial) mínima posible. La escala absoluta Kelvin es la escala oficial para la temperatura del sistema internacional de medidas.
 
 Expansión térmica
 
 Los cambios en las dimensiones y los volúmenes de los materiales son efectos térmicos comunes. La expansión térmica es el resultado de un cambio en la distancia media que separa los átomos de una sustancia.
-La expansión lineal es proporcional al cambio de temperatura, es decir, el cambio en la longitud \Delta L es proporcional a \Delta T, y \Delta L es igual a \alpha L0 \Delta T, en donde \alpha es el coeficiente térmico de expansión lineal. Para la expansión isotrópica, es decir que las propiedades físicas son idénticas en todas las direcciones, el coeficiente de expansión de área es aproximadamente 2\alpha, y el coeficiente térmico de expansión de volumen para los solidos es cerca de 3\alpha.
+La expansión lineal es proporcional al cambio de temperatura, es decir, el cambio en la longitud \Delta L es proporcional a \Delta T,
+y \Delta L es igual a \alpha por la longitud inicial por \Delta T, en donde \alpha es el coeficiente térmico de expansión lineal.
+Para una expansión isotrópica, es decir que las propiedades físicas son idénticas en todas las direcciones, el coeficiente de expansión de área es aproximadamente 2\alpha, y el coeficiente térmico de expansión de volumen para los solidos es cerca de 3\alpha.
 
 Calor
 
 Cuando se juntan dos sistemas cuyas temperaturas son diferentes, la temperatura final que ambos alcanzan tiene un valor comprendido entre las dos temperaturas iniciales. Durante mucho tiempo el hombre ha tratado de entender con mayor claridad tal fenómeno, y hasta principios del siglo XIX, se explicaron postulando que en todos los cuerpos existía una sustancia material: el calórico.
 Se creía que un cuerpo cuya temperatura fuese elevada contenía mas calórico que otro a menor temperatura. Cuando los dos cuerpos se ponían en contacto, el cuerpo rico en calórico cedía algo de el al otro, hasta que la temperatura de ambos cuerpos fuese la misma.
 La teoría del calórico podía describir de una manera satisfactoria muchos procesos, tales como la conducción del calor. Sin embargo, el concepto de que el calor era una sustancia, cuya cantidad total permanecía constante, no pudo en ultima instancia, resistir las pruebas experimentales.
-No obstante, todavía se describe muchos cambios comunes de la temperatura como la transferencia de 'algo' desde un cuerpo a temperatura superior hasta otro cuya temperatura es menor, y a este 'algo' se le llama calor.
-Finalmente se llego a entender por completo la idea de que el calor es una forma de energía y no una sustancia. La primera evidencia concluyente de que el calor no podía ser una sustancia fue dada por Benjamin Thompson, también conocido como Conde Rumbford en 1798.
+No obstante, todavía se describen muchos cambios comunes de la temperatura como la transferencia de 'algo' desde un cuerpo a temperatura superior hasta otro cuya temperatura es menor, y a este 'algo' se le llama calor.
+Finalmente se llego a entender por completo la idea de que el calor es una forma de energía y no una sustancia. La primera evidencia concluyente de que el calor no podía ser una sustancia fue dada por Benjamin Thompson, también conocido como Conde Rumford en 1798.
 Aunque el concepto de la energía y su conservación parece hoy en día evidente en si mismo, fue una idea novedosa nada menos que por los años de 1850, y había eludido a hombres tales como Galileo y Newton.
-El principio de conservación de la energía fue establecido independientemente por Julius Mayer en Alemania, Jame Joule en Inglaterra, Hermann von helmholtz en Alemania, y Ludvig August Colding en Dinamarca. Y después de la publicación póstuma de sus "Reflexiones sobre la potencia motora del fuego" en 1872 resulto claro que Sadi Carnot había llegado al principio de la conservación de la energía antes que los otros.
-Fue Joule quien demostró experimentalmente que cuando una cantidad dada de energía mecánica se convierte en calor, siempre se genera la misma cantidad de calor. Así se demostró definitivamente la equivalencia entre el calor y el trabajo mecánico como dos formas de energía.
+El principio de conservación de la energía fue establecido independientemente por Julius Lothar Meyer en Alemania, James Prescott Joule en Inglaterra, Hermann von Helmholtz en Alemania, y Ludvig August Colding en Dinamarca. Después de la publicación póstuma de sus "Reflexiones sobre la potencia motora del fuego" en 1872 resulto claro que Sadi Carnot había llegado al principio de la conservación de la energía antes que los otros.
+Fue Joule quien demostró experimentalmente que cuando una cantidad dada de energía mecánica se convierte en calor, siempre se genera la misma cantidad de calor. Así demostró definitivamente la equivalencia entre el calor y el trabajo mecánico como dos formas de energía.
 Helmholtz fue el primero que expreso claramente la idea de que no solo el calor y la energía mecánica, sino también otras formas de energía son equivalentes y que una cantidad dada de una forma no puede desaparecer sin que aparezca otra cantidad igual en alguna de las otras formas.
 
 Capacidad calorífica y cambios de fase
 
-La cantidad de calor Q necesaria para elevar la temperatura de una cantidad de material en una cantidad pequeña \Delta T es proporcional a \Delta T.
+La cantidad de calor Q necesaria para elevar la temperatura de una determinada cantidad de material, en una pequeña cantidad \Delta T es proporcional a \Delta T.
 Esta proporcionalidad se puede expresar en términos de la masa m y de una cantidad c, diferente para cada material, llamada calor especifico del material.
-A veces resulta mas útil describir una cantidad de sustancia en términos del numero de moles, en vez de la masa m del material, donde n es el numero de moles, M la masa molar, y C igual a M por c, la capacidad calorífica molar.
+A veces resulta mas útil describir una cantidad de sustancia en términos del numero de moles, en lugar de la masa m del material, donde n es el numero de moles, M la masa molar, y C igual a M por c, la capacidad calorífica molar.
 Para que una masa m de material cambie de fase o estado de materia a una misma temperatura hay que agregarle o quitarle una cantidad de calor, esta cantidad es igual al producto de m y L, siendo L el calor de fusión, vaporización o sublimación.
-La capacidad calorífica molar a volumen constante Cv se puede expresar como múltiplo sencillo de la constante de los gases R en ciertos cases idealizados.
-El gas monotónico ideal es igual a tres medios de R, el gas diatónico ideal es igual a cinco medios de R, y un solido monotónico ideal igual a 3R.
+La capacidad calorífica molar a volumen constante Cv se puede expresar como un múltiplo sencillo de la constante de los gases R en ciertos casos idealizados.
+En un gas monoatómico ideal es igual a tres medios de R, en un gas diatómico ideal es igual a cinco medios de R, y en un solido monoatómico ideal es igual a 3R.
 
 Conducción del calor
 
 A la transferencia de energía causada por la diferencia de temperaturas entre dos partes adyacentes de un cuerpo se le llama conducción de calor.
 El calor se mueve de una región de temperatura superior a una región de temperatura inferior mediante tres mecanismos: conducción, convección y radiación.
-La corriente de calor H o conducción depende del área A por la que fluye el calor, la longitud L del trayecto de flujo de calor, la diferencia de temperatura, y la conductividad térmica k del material.
+La corriente de calor H depende del área A por la que fluye el calor, la longitud L del trayecto de flujo de calor, la diferencia de temperatura, y la conductividad térmica k del material.
 En general, en comparación con los solidos, los líquidos y los gases no son buenos conductores térmicos. La movilidad de las moléculas en los fluidos permite la transferencia de calor mediante otro proceso: la convección.
-La transferencia de calor por convección comprende la transferencia de masa.
+La transferencia de calor por convección implica una transferencia de masa.
 La conducción y la convección requieren de un material como medio de transporte. El tercer mecanismo de transferencia de calor no necesita ningún medio y se denomina radiación. Se refiere a la transferencia de energía por ondas electromagnéticas. Mediante radiación es como se transmite a la tierra el calor proveniente del sol a través del espacio vacío.
 
 Ecuaciones de estado
 
-Las condiciones en que existe un material dado se describen con cantidades físicas como presión, volumen, temperatura, cantidad de sustancia, ya sea la masa o el numero de moles. Estas variables describen el estado del material y se llaman variables de estado.
+Las condiciones en que existe un material dado se describen con cantidades físicas tales como la presión, el volumen, la temperatura, y la cantidad de sustancia, ya sea la masa o el numero de moles. Estas variables describen el estado del material y se llaman variables de estado.
 En algunos casos la relación entre p, V, T y m o n es tan sencilla que es posible expresarla mediante una ecuación de estado.
 Una ecuación de estado sencilla es la del gas ideal, la cual relaciona p, V, T, y el numero de moles n a través de una constante R que es la misma para todos los gases.
 En principio, se puede representar la relación p-V-T gráficamente como una superficie en un espacio tridimensional con coordenadas p, V, y T. Esta representación a veces ayuda a entender el comportamiento global de una sustancia, pero las gráficas bidimensionales ordinarias son mas útiles.
@@ -71,10 +73,16 @@ Una gráfica de este tipo se llama gráfica pV. Cada curva, que representa el co
 Primera ley de la termodinámica
 
 Un sistema termodinámico puede intercambiar energía con su entorno por transferencia de calor o mediante trabajo mecánico.
-Cuando un sistema de presión p cambia su volumen de V1 a V2, efectúa una cantidad de trabajo W dada por la integral de p con respecto al volumen. Esta integral puede ser evaluada gráficamente como el área bajo la curva de un diagrama p-V.
-El trabajo W efectuado por el sistema y el calor Q que pierde o gane el sistema no solo dependen de sus estados inicial y final, sino también de los estados intermedios, es decir de la trayectoria del proceso. A continuación se calcula el valor de Q menos W. Después efectuamos un cambio del sistema desde el mismo estado i hasta el mismo estafo f pero ahora por una trayectoria diferente. Al repetir el proceso una y otra vez recorriendo en cada caso una trayectoria distinta, resulta que la cantidad Q menos W es la misma. Es decir, aun cuando Q y W dependan por separado de la trayectoria seguida, su diferencia Q menos W no depende para nada de la manera en que el sistema pasa desde el estado i hasta el estado f, sino que solo depende de los estados inicial y final. Se concluye que hay una función de las coordenadas termodinámicas cuyo valor final menos su valor inicial es igual al cambio Q menos W durante el proceso. A esta función se le llama función de energía interna.
+Cuando un sistema de presión p cambia su volumen de V1 a V2, efectúa una cantidad de trabajo W dada por la integral de p con respecto al volumen. Esta integral puede ser evaluada gráficamente como el área bajo la curva en un diagrama p-V.
+El trabajo W efectuado por el sistema y el calor Q que pierde o gane el sistema no solo dependen de sus estados inicial y final, sino también de los estados intermedios, es decir de la trayectoria del proceso. 
+Si a continuación se calcula el valor de Q menos W y efectuamos un cambio del sistema desde el mismo estado i hasta el mismo estado f pero ahora por una trayectoria diferente. Al repetir el proceso una y otra vez recorriendo en cada caso una trayectoria distinta, resulta que la cantidad Q menos W es la misma. Es decir, aun cuando Q y W dependan por separado de la trayectoria seguida, su diferencia Q menos W no depende para nada de la manera en que el sistema pasa desde el estado i hasta el estado f, sino que solo depende de los estados inicial y final.
+
+Se concluye que hay una función de las coordenadas termodinámicas cuyo valor final menos su valor inicial es igual al cambio Q menos W durante el proceso. A esta función se le llama función de energía interna.
+
 Siendo Q la energía añadida al sistema por la transferencia de calor y W la energía suministrada por el sistema cuando realiza trabajo, de tal manera que Q menos W representa, por definición, al cambio en la energía interna del sistema, representada por la letra U, entonces la energía interna Uf del sistema en su estado f, menos la energía interna Ui del sistema en el estado i, es sencillamente el cambio de la energía interna del sistema, y esta cantidad tiene un valor definido independientemente de como paso el sistema del estado i al estado f.
+
 Lo mismo que en la energía potencial, lo que interesa en la energía interna es solo su cambio. Si se escoge un cierto valor arbitrario de la energía interna en algún estado de referencia patrón, en cualquier otro estado se le puede asignar un valor definido a dicha energía.
+
 Esta ecuación se conoce como la primera ley de la termodinámica. Al aplicarla se debe recordar que Q se considera positiva cuando entra calor en el sistema y W es positiva cuando el sistema efectúa trabajo. Esta ley también puede plantearse para un proceso infinitesimal.
 La primera ley de la termodinámica se aplica a todo proceso de la naturaleza que comienza en un estado de equilibrio y termina en otro.
 
@@ -90,14 +98,13 @@ Gases ideales
 
 La energía interna de un gas ideal depende únicamente de su temperatura, no de su presión, ni de su volumen.
 En el caso de otras sustancias, la energía interna generalmente depende tanto de la presión como de la temperatura.
-Las capacidades caloríficas molares a volumen constante y a presión constante de un gas ideal difieren por R.
-A el cociente adimensional de capacidades caloríficas Cp sobre Cv, se denota con el símbolo gamma.
-En un proceso adiabático de un gas con comportamiento ideal, el trabajo efectuado puede expresarse en términos de los valores inicial y final de la temperatura, o en términos de los valores inicial y final de la presión y el volumen.
+Las capacidades caloríficas molares a volumen constante y a presión constante de un gas ideal difieren por R, y a el cociente adimensional de capacidades caloríficas Cp sobre Cv, se denota con el símbolo gamma.
+En el proceso adiabático de un gas con comportamiento ideal, el trabajo efectuado puede expresarse en términos de los valores inicial y final de la temperatura, o en términos de los valores inicial y final de la presión y el volumen.
 
 Procesos reversibles e irreversibles
 
 Un proceso es un cambio de estado, o de las coordenadas termodinámicas, de un sistema.
-Esto es, cuando un sistema experimenta un proceso, cambia el conjunto de coordenadas de la gráfica pVT que lo describe. Se dice que los procesos pueden ser reversibles o irreversibles.
+Cuando un sistema experimenta un proceso, cambia el conjunto de coordenadas de la gráfica pVT que lo describe. Se dice que los procesos pueden ser reversibles o irreversibles.
 Un proceso reversible es uno en el que la trayectoria puede invertirse mediante un cambio diferencial en su medio ambiente, todos los demás procesos termodinámicos son irreversibles.
 En la practica todos los procesos son irreversibles, el proceso estrictamente reversible es una abstracción sencilla y útil que guarda una relación con los procesos reales, semejantes a la que la abstracción del gas ideal guarda con los gases reales.
 
@@ -112,16 +119,17 @@ Ciclo de Carnot
 
 Un ciclo reversible importante es el ciclo de Carnot, introducido por Sadi Carnot en 1824.
 El sistema esta formado por una 'sustancia de trabajo', tal como un gas. Y el ciclo consta de dos procesos reversibles isotérmicos y dos adiabáticos. La sustancia de trabajo esta contenida en un cilindro que tiene una base conductora del calor y unas paredes y un embolo no conductores.
-En el paso 1, es gas se expande isotérmicamente a temperatura TH, absorbiendo calor QH.
+En el paso 1, el gas se expande isotérmicamente a temperatura TH, absorbiendo calor QH.
 En el paso 2, el gas se expande adiabáticamente hasta que su temperatura baja a TC.
 En el paso 3, el gas se comprime isotérmicamente a TC, expulsando calor QC.
 En el paso 4, el gas se comprime adiabáticamente hasta su estado inicial a temperatura TH.
 El trabajo neto W efectuado por el sistema durante el ciclo esta representado por el área encerrada por la trayectoria abcd.
 La cantidad de energía calorífica recibida por el sistema en el ciclo es QH - QC, donde QH es el calor absorbido en el paso 1 y QC es el cedido en el paso 3.
-No hay cambio neto en la energía interna U, porque los estados inicial y final son el mismos.
+No hay cambio neto en la energía interna U, porque los estados inicial y final son el mismo.
 Por tanto el trabajo es igual a QH - QC
-la eficiencia térmica 'e' de una maquina térmica mide que tanto del calor absorbido se convierte en trabajo. Por tanto es igual a W sobre QH o QH - QC sobre QH.
-También es posible demostrar que es igual a TH - TC sobre TH.
+
+La eficiencia 'e' en una maquina térmica, mide que tanto del calor absorbido se convierte en trabajo. Por tanto es igual a W sobre QH o QH - QC sobre QH.
+También se puede demostrar que es igual a TH - TC sobre TH.
 
 Refrigerador
 
@@ -145,7 +153,7 @@ No obstante, si es posible expresar esta ley como una relación cuantitativa emp
 La entropía es una medida cuantitativa del desorden de una sistema, donde el cambio de entropía en cualquier proceso reversible depende de la cantidad de flujo de calor y de la temperatura absoluta T.
 La entropía solo depende del estado del sistema, y el cambio de entropía entre un estado inicial y uno final dados es el mismo para todos los procesos que llevan de uno a otro.
 Si un sistema interactúa con su entorno, el cambio total de entropía del sistema y el entorno nunca puede ser negativo. Si la interacción implica sólo procesos reversibles, la entropía total es constante y si hay procesos irreversibles, la entropía total aumenta.
-Con estas bases es podemos definir la segunda ley de la termodinámica como sigue:
+Con estas bases podemos definir la segunda ley de la termodinámica como sigue:
 Un proceso natural que comienza en un estado de equilibrio y termina en otro ocurrirá en la dirección que haga que la entropía del sistema y de su medio ambiente aumente.
 
 Tercera ley de la termodinámica
