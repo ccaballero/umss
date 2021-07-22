@@ -1,0 +1,53 @@
+<ges version='0.4'>
+  <project properties='properties;' metadatas='metadatas, name=(string)&quot;Proyecto\ nuevo&quot;, author=(string)&quot;Carlos\ Caballero&quot;, render-scale=(double)100, format-version=(string)0.4;'>
+    <encoding-profiles>
+      <encoding-profile name='pitivi-profile' description='Perfil de codificación de Pitivi' type='container' preset-name='mp4mux' format='video/quicktime, variant=(string)iso' >
+        <stream-profile parent='pitivi-profile' id='0' type='video' presence='1' format='video/x-h264, framerate=(fraction)[ 0/1, 2147483647/1 ], width=(int)[ 1, 2147483647 ], height=(int)[ 1, 2147483647 ], stream-format=(string){ avc, byte-stream }, alignment=(string)au, profile=(string){ high-4:4:4, high-4:2:2, high-10, high, main, baseline, constrained-baseline, high-4:4:4-intra, high-4:2:2-intra, high-10-intra }' preset='encoder_settings_04723db61d0547959a6911dfe92aae5c' preset-properties='properties, qos=(boolean)false, threads=(uint)0, sliced-threads=(boolean)false, sync-lookahead=(int)-1, pass=(int)0, quantizer=(uint)21, multipass-cache-file=(string)x264.log, byte-stream=(boolean)false, bitrate=(uint)2048, intra-refresh=(boolean)false, vbv-buf-capacity=(uint)600, me=(int)1, subme=(uint)1, analyse=(int)0, dct8x8=(boolean)false, ref=(uint)1, bframes=(uint)0, b-adapt=(boolean)true, b-pyramid=(boolean)false, weightb=(boolean)false, sps-id=(uint)0, aud=(boolean)true, trellis=(boolean)true, key-int-max=(uint)0, cabac=(boolean)true, qp-min=(uint)10, qp-max=(uint)51, qp-step=(uint)4, ip-factor=(float)1.3999999761581421, pb-factor=(float)1.2999999523162842, mb-tree=(boolean)true, rc-lookahead=(int)40, noise-reduction=(uint)0, interlaced=(boolean)false, option-string=(string)&quot;&quot;, speed-preset=(int)6, psy-tune=(int)0, tune=(int)0, frame-packing=(int)-1, insert-vui=(boolean)true;' preset-name='x264enc' restriction='video/x-raw, framerate=(fraction)30/1, width=(int)1920, height=(int)1080, pixel-aspect-ratio=(fraction)1/1' pass='0' variableframerate='0' />
+        <stream-profile parent='pitivi-profile' id='1' type='audio' presence='1' format='audio/x-ac3, channels=(int)[ 1, 6 ], rate=(int){ 48000, 44100, 32000 }' preset='encoder_settings_1608fb9f89ed4f2ca672bc130412a439' preset-properties='properties, perfect-timestamp=(boolean)false, hard-resync=(boolean)false, tolerance=(gint64)40000000, center-mixlev=(float)0.59460353851318359, surround-mixlev=(float)0.5, mixing-level=(int)-1, room-type=(int)-1, per-frame-metadata=(boolean)false, copyright=(int)-1, dialnorm=(int)-31, dsur-mode=(int)-1, original=(int)-1, dmix-mode=(int)-1, ltrt-cmixlev=(float)-1, ltrt-surmixlev=(float)-1, loro-cmixlev=(float)-1, loro-surmixlev=(float)-1, dsurex-mode=(int)-1, dheadphone-mode=(int)-1, ad-conv-type=(int)-1, stereo-rematrixing=(boolean)true, channel-coupling=(int)-1, cpl-start-band=(int)-1, bitrate=(int)0, flags=(int)0, flags2=(int)0, export-side-data=(int)0, ar=(int)0, ac=(int)0, cutoff=(int)0, frame-size=(int)0, strict=(int)0, err-detect=(int)0, maxrate=(gint64)0, minrate=(gint64)0, bufsize=(int)0, debug=(int)0, global-quality=(int)0, threads=(int)1, trellis=(int)0, compression-level=(int)-1, min-prediction-order=(int)-1, max-prediction-order=(int)-1, channel-layout=(guint64)0, ticks-per-frame=(int)1, thread-type=(int)3, audio-service-type=(int)0, side-data-only-packets=(boolean)true, dump-separator=(string)NULL, max-pixels=(gint64)2147483647, max-samples=(gint64)2147483647;' preset-name='avenc_ac3_fixed' restriction='audio/x-raw, rate=(int)44100, channels=(int)1' />
+      </encoding-profile>
+    </encoding-profiles>
+    <ressources>
+      <asset id='file:///home/jacobian/Documentos/UMSS/FIS102/Exposici%C3%B3n%2007/v%C3%ADdeos/ejercicios_noiseless.mkv' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)6, duration=(guint64)3958407000000;' metadatas='metadatas, container-format=(string)Matroska, audio-codec=(string)&quot;MPEG-1\ layer\ 3&quot;, language-code=(string)und, encoder=(string)Lavf58.29.100, extended-comment=(string)&quot;DURATION\=01:05:58\,204000000&quot;, has-crc=(boolean)false, channel-mode=(string)mono, video-codec=(string)H264, file-size=(guint64)999019350;' />
+      <asset id='file:///home/jacobian/Documentos/UMSS/FIS102/Exposici%C3%B3n%2007/v%C3%ADdeos/teoria.mkv' extractable-type-name='GESUriClip' properties='properties, supported-formats=(int)6, duration=(guint64)1555718397997;' metadatas='metadatas, audio-codec=(string)&quot;AC-3\ audio&quot;, bitrate=(uint)101151, datetime=(datetime)2021-07-22T12:44:05Z, container-format=(string)&quot;ISO\ MP4/M4A&quot;, video-codec=(string)&quot;H.264\ /\ AVC&quot;, maximum-bitrate=(uint)2097152, encoder=(string)x264, file-size=(guint64)87361580;' />
+      <asset id='crossfade' extractable-type-name='GESTransitionClip' properties='properties;' metadatas='metadatas, description=(string)GES_VIDEO_STANDARD_TRANSITION_TYPE_CROSSFADE;' />
+    </ressources>
+    <timeline properties='properties, auto-transition=(boolean)true, snapping-distance=(guint64)18050981386;' metadatas='metadatas, duration=(guint64)5512258158186;'>
+      <track caps='video/x-raw(ANY)' track-type='4' track-id='0' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;video/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;video/x-raw\,\ width\=\(int\)1920\,\ height\=\(int\)1080\,\ framerate\=\(fraction\)30/1\,\ pixel-aspect-ratio\=\(fraction\)1/1&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <track caps='audio/x-raw(ANY)' track-type='2' track-id='1' properties='properties, async-handling=(boolean)false, message-forward=(boolean)true, caps=(string)&quot;audio/x-raw\(ANY\)&quot;, restriction-caps=(string)&quot;audio/x-raw\,\ rate\=\(int\)44100\,\ channels\=\(int\)1&quot;, mixing=(boolean)true;' metadatas='metadatas;'/>
+      <layer priority='0' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1;'>
+        <clip id='0' asset-id='file:///home/jacobian/Documentos/UMSS/FIS102/Exposici%C3%B3n%2007/v%C3%ADdeos/teoria.mkv' type-name='GESUriClip' layer-priority='0' track-types='6' start='0' duration='1547105814642' inpoint='0' rate='0' properties='properties, name=(string)uriclip0, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='1' children-properties='properties, GstVolume::mute=(boolean)false, GstVolume::volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000149011612  1547105814642:0.10000000149011612 '/>
+          </source>
+          <source track-id='0' children-properties='properties, GstFramePositioner::alpha=(double)1, GstDeinterlace::fields=(int)0, GstFramePositioner::height=(int)1080, GstDeinterlace::mode=(int)0, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstDeinterlace::tff=(int)0, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1920;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  1547105814642:1 '/>
+          </source>
+        </clip>
+        <clip id='1' asset-id='clock-cw6' type-name='GESTransitionClip' layer-priority='0' track-types='4' start='1545238574831' duration='1867239811' inpoint='0' rate='0' properties='properties, name=(string)transitionclip3;' metadatas='metadatas;' children-properties='properties, GESVideoTransition::border=(uint)0, GESVideoTransition::invert=(boolean)false;'>
+        </clip>
+        <clip id='2' asset-id='crossfade' type-name='GESTransitionClip' layer-priority='0' track-types='2' start='1545238574831' duration='1867239811' inpoint='0' rate='0' properties='properties, name=(string)transitionclip2;' metadatas='metadatas;' children-properties='properties;'>
+        </clip>
+        <clip id='3' asset-id='file:///home/jacobian/Documentos/UMSS/FIS102/Exposici%C3%B3n%2007/v%C3%ADdeos/ejercicios_noiseless.mkv' type-name='GESUriClip' layer-priority='0' track-types='6' start='1545238574831' duration='3958407000000' inpoint='0' rate='0' properties='properties, name=(string)uriclip1, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='1' children-properties='properties, GstVolume::mute=(boolean)false, GstVolume::volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 0:0.10000000000000001  3958407000000:0.10000000000000001 '/>
+          </source>
+          <source track-id='0' children-properties='properties, GstFramePositioner::alpha=(double)1, GstDeinterlace::fields=(int)0, GstFramePositioner::height=(int)1080, GstDeinterlace::mode=(int)0, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstDeinterlace::tff=(int)0, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1920;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 0:1  3958407000000:1 '/>
+          </source>
+        </clip>
+        <clip id='4' asset-id='file:///home/jacobian/Documentos/UMSS/FIS102/Exposici%C3%B3n%2007/v%C3%ADdeos/teoria.mkv' type-name='GESUriClip' layer-priority='0' track-types='6' start='5503645574831' duration='8612583355' inpoint='1547105814642' rate='0' properties='properties, name=(string)uriclip2, mute=(boolean)false, is-image=(boolean)false;' metadatas='metadatas;'>
+          <source track-id='0' children-properties='properties, GstFramePositioner::alpha=(double)1, GstDeinterlace::fields=(int)0, GstFramePositioner::height=(int)1080, GstDeinterlace::mode=(int)0, GstFramePositioner::posx=(int)0, GstFramePositioner::posy=(int)0, GstDeinterlace::tff=(int)0, GstVideoDirection::video-direction=(int)8, GstFramePositioner::width=(int)1920;'>
+            <binding type='direct' source_type='interpolation' property='alpha' mode='1' track_id='0' values =' 1547105814642:1  1555718397997:1 '/>
+          </source>
+          <source track-id='1' children-properties='properties, GstVolume::mute=(boolean)false, GstVolume::volume=(double)1;'>
+            <binding type='direct' source_type='interpolation' property='volume' mode='1' track_id='1' values =' 1547105814642:0.10000000149011612  1555718397997:0.10000000000000001 '/>
+          </source>
+        </clip>
+      </layer>
+      <layer priority='1' properties='properties, auto-transition=(boolean)true;' metadatas='metadatas, volume=(float)1;'>
+      </layer>
+      <groups>
+      </groups>
+    </timeline>
+</project>
+</ges>
