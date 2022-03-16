@@ -124,6 +124,9 @@ package-lock.json
 *.wav
 *.m4a
 *.flac
+*.au
+*.aup
+*.mp3
 
 # video
 *.MOV

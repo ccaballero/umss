@@ -1,0 +1,76 @@
+\chapter{Series de \emph{Fourier}}
+
+\section{Funciones periodicas}
+
+\begin{figure}
+    \centering
+    \input{figura_01.tex}
+    \caption{Función periodica}
+    \label{figura_01}
+\end{figure}
+
+Una funcion periodica es aquella cuya grafica se repite infinitas veces, cada
+cierto intervalo (\textbf{Figura \ref{figura_01}}).
+
+El menor intervalo de repetición se llama \emph{periodo} ($T$).
+
+Matematicamente una funcion periodica es aquella que verifica:
+
+\begin{equation}
+    f(t) = f(t + nT); n \in \mathbb{Z}
+\end{equation}
+
+Donde $T$ es el periodo (la menor constante que verifica la igualdad).
+
+\section{Propiedades de la funciones periodicas}
+
+Si: $f(t) = f(t+nT)$.
+
+\subsection{Propiedad 1}
+\begin{equation}
+    \int_a^b f(t)\,dt = \int_{a+nT}^{b+nT} f(t)\,dt \quad n \in \mathbb{Z}
+\end{equation}
+
+\underline{Prueba}:
+\begin{equation*}
+    \int_a^b f(t)\,dt = \int_{a}^{b} f(t+nT)\,dt
+\end{equation*}
+\begin{equation*}
+    \tau = t + nT
+\end{equation*}
+\begin{equation*}
+    d\tau = dt
+\end{equation*}
+\begin{equation*}
+    \int_a^b f(t)\,dt = \int_{a+nT}^{b+nT} f(\tau)\,d\tau
+\end{equation*}
+
+Puede verse graficamente en la \textbf{Figura \ref{figura_02}}.
+
+\begin{figure}
+    \centering
+    \input{figura_02.tex}
+    \caption{Demostración grafica}
+    \label{figura_02}
+\end{figure}
+
+\subsection{Propiedad 2}
+
+\begin{equation}
+    \int_0^b f(t)\,dt = \int_{a+nT}^{b+nT} f(t)\,dt \quad n \in \mathbb{Z}
+\end{equation}
+
+\underline{Prueba}:
+\begin{equation*}
+    \int_a^b f(t)\,dt = \int_{a}^{b} f(t+nT)\,dt
+\end{equation*}
+\begin{equation*}
+    \tau = t + nT
+\end{equation*}
+\begin{equation*}
+    d\tau = dt
+\end{equation*}
+\begin{equation*}
+    \int_a^b f(t)\,dt = \int_{a+nT}^{b+nT} f(\tau)\,d\tau
+\end{equation*}
+
