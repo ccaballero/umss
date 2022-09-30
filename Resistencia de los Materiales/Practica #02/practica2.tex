@@ -632,10 +632,10 @@ Se hallan las tensiones:
 \end{equation*}
 
 \begin{equation*}
-    T_{ca} = 178
-\end{equation*}
-\begin{equation*}
-    T_{ab} = 500 - 178 = 437.5
+    \begin{cases}
+        T_{ca} = 178 \\
+        T_{ab} = 437.5
+    \end{cases}
 \end{equation*}
 
 \begin{figure}[H]
@@ -647,10 +647,7 @@ Se hallan las tensiones:
     \sum{F_x} = 0
 \end{equation*}
 \begin{equation*}
-    T_{bc}\,\left(\frac{1.5}{\sqrt{1.5^2+4^2}}\right) = 437.5
-\end{equation*}
-\begin{equation*}
-    T_{bc} = 1246
+    T_{bc}\,\left(\frac{1.5}{\sqrt{1.5^2+4^2}}\right) - T_{ab} = 0
 \end{equation*}
 
 \begin{equation*}
@@ -658,6 +655,13 @@ Se hallan las tensiones:
 \end{equation*}
 \begin{equation*}
     T_{bc}\,\left(\frac{4}{\sqrt{1.5^2+4^2}}\right) = 1167.7
+\end{equation*}
+
+\begin{equation*}
+    \begin{cases}
+        T_{bc} = 1246 \\
+        T_{ab} = 437.50
+    \end{cases}
 \end{equation*}
 
 \begin{figure}[H]
@@ -678,6 +682,20 @@ Se hallan las tensiones:
 \begin{equation*}
     1000 + T_{ca}\,\left(\frac{4}{\sqrt{1.5^2+4^2}}\right) + T_{bc}\,\left(\frac{4}{\sqrt{1.5^2+4^2}}\right) = 0
 \end{equation*}
+
+\begin{equation*}
+    \begin{cases}
+        T_{bc} = -1246 \\
+        T_{ca} = 178
+    \end{cases}
+\end{equation*}
+
+Por tanto, las tensiones son:
+
+\begin{figure}[H]
+\centering
+\includegraphics[scale=1.8]{resources/x0404.eps}
+\end{figure}
 
 \textbf{$\text{\O}_{ab}$ (Tensión de tracción):}
 
