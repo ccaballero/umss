@@ -17,7 +17,7 @@ set yrange [-3:1]
 set arrow from 0,-3 to 0,1.5, graph 1 filled head
 
 set label '$t$'    at 3,0
-set label '$f(t)$' at 0.45,3.4
+set label '$f(t)$' at 0.45,1.4
 
 set label '$k\delta(t-t_0)$' at 1.4,-2.0
 set label '$k<0$' at 1.4,-1.4

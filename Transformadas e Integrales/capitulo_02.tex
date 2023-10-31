@@ -2,11 +2,9 @@
 
 \section{Funciones pares e impares}
 Una función es \textbf{par} si:
-
 \begin{equation}
     f(-t)=f(t)
 \end{equation}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_01.tex}
@@ -30,11 +28,9 @@ Una función es \textbf{par} si:
 \end{equation*}
 
 Una función es \textbf{impar} si:
-
 \begin{equation}
     f(-t)=-f(t)
 \end{equation}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_02.tex}
@@ -73,14 +69,12 @@ Una función es \textbf{impar} si:
     \end{aligned}\right\}
     =f(t)
 \end{equation*}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_03.tex}
 \end{figure}
 
 \subsection{Propiedades de las funciones pares e impares}
-
 \subsubsection*{Propiedad 1}
 Si $f(t)$ es \textbf{par} y $g(t)$ es \textbf{par}, entonces $h(t)=f(t)g(t)$ es
 \textbf{par}.
@@ -92,7 +86,6 @@ Si $f(t)$ es \textbf{par} y $g(t)$ es \textbf{par}, entonces $h(t)=f(t)g(t)$ es
     &g(-t)=g(t)\\
 \end{cases}
 \end{equation*}
-
 \begin{equation*}
 \begin{split}
     h(-t)
@@ -114,16 +107,6 @@ es \textbf{par}.
 \end{cases}
 \end{equation*}
 
-\begin{equation*}
-\begin{split}
-    h(-t)
-        &=f(-t)g(-t)\\
-        &=(-f(t))(-g(t))\\
-        &=f(t)g(t)\\
-        &=h(t)\\
-\end{split}
-\end{equation*}
-
 \subsubsection*{Propiedad 3}
 Si $f(t)$ es \textbf{par} y $g(t)$ es \textbf{impar}, entonces $h(t)=f(t)g(t)$
 es \textbf{impar}.
@@ -135,7 +118,6 @@ es \textbf{impar}.
     &g(-t)=-g(t)\\
 \end{cases}
 \end{equation*}
-
 \begin{equation*}
 \begin{split}
     h(-t)
@@ -151,7 +133,6 @@ Si $f(t)$ es \textbf{par}, entonces:
 \begin{equation}
     \int_{-a}^a f(t)\,dt=2\int_0^a f(t)\,dt
 \end{equation}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_04.tex}
@@ -185,7 +166,6 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation}
     \int_{-a}^a f(t)\,dt=0
 \end{equation}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_05.tex}
@@ -215,7 +195,6 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \end{equation*}
 
 \subsection{Evaluación de coeficientes de \emph{Fourier}}
-
 \subsubsection{Simetría par}
 \begin{equation*}
 \begin{split}
@@ -229,7 +208,6 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation}
     a_0=\frac{4}{T}\int_0^{T/2} f(t)\,dt
 \end{equation}
-
 \begin{equation*}
 \begin{split}
     a_n
@@ -241,7 +219,6 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation}
     a_n=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0 t)\,dt
 \end{equation}
-
 \begin{equation*}
 \begin{split}
     b_n
@@ -265,7 +242,6 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation}
     a_0=0
 \end{equation}
-
 \begin{equation*}
 \begin{split}
     a_n
@@ -276,7 +252,6 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation}
     a_n=0
 \end{equation}
-
 \begin{equation*}
 \begin{split}
     b_n
@@ -291,11 +266,9 @@ Si $f(t)$ es \textbf{impar}, entonces:
 
 \section{Simetría de media onda (S.M.O.)}
 $f(t)$ tiene simetría de media onda si:
-
 \begin{equation*}
     f(t)=-f(t\pm\frac{T}{2})
 \end{equation*}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_06.tex}
@@ -335,7 +308,6 @@ $f(t)$ tiene simetría de media onda si:
 \begin{equation}
     a_0=0
 \end{equation}
-
 \begin{equation*}
 \begin{split}
     a_n
@@ -413,7 +385,6 @@ $f(t)$ tiene simetría de media onda si:
     n: \text{impar} &a_n=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0 t)\,dt\\
 \end{cases}
 \end{equation}
-
 \begin{equation*}
 \begin{split}
     b_n
@@ -493,15 +464,12 @@ $f(t)$ tiene simetría de media onda si:
 \end{equation}
 
 \section{Simetría de cuarto de onda (S.C.O.)}
-
 \subsection{Simetría de cuarto de onda par}
 Una función $f(t)$ tiene simetría de cuarto de onda \textbf{par} cuando:
-
 \begin{itemize}
     \item $f(t)$ es \textbf{par}.
     \item $f(t)$ tiene simetría de media onda.
 \end{itemize}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_07.tex}
@@ -509,28 +477,23 @@ Una función $f(t)$ tiene simetría de cuarto de onda \textbf{par} cuando:
 
 \subsection{Simetría de cuarto de onda impar}
 Una función $f(t)$ tiene simetría de cuarto de onda \textbf{impar} cuando:
-
 \begin{itemize}
     \item $f(t)$ es \textbf{impar}.
     \item $f(t)$ tiene simetría de media onda.
 \end{itemize}
-
 \begin{figure}[H]
     \centering
     \input{figura_02_08.tex}
 \end{figure}
 
 \subsection{Evaluación de coeficientes de \emph{Fourier}}
-
 \subsubsection{Simetría de cuarto de onda par}
 Como la función $f(t)$ tiene simetría de media onda:
-
 \begin{equation}
     a_0=0
 \end{equation}
 
 Como la función $f(t)$ es una función par:
-
 \begin{equation}
     b_n=0
 \end{equation}
@@ -538,7 +501,6 @@ Como la función $f(t)$ es una función par:
 Como la función $f(t)$ tiene simetría de media onda: $a_n=0$ cuando $n$ es par.
 
 Para $n$ impar:
-
 \begin{equation*}
 \begin{split}
     a_n
@@ -601,7 +563,6 @@ Para $n$ impar:
         &=\frac{8}{T}\int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt\\
 \end{split}
 \end{equation*}
-
 \begin{equation}
 \begin{cases}
     n: \text{par}   &a_n=0\\
@@ -611,13 +572,11 @@ Para $n$ impar:
 
 \subsubsection{Simetría de cuarto de onda impar}
 Como la función $f(t)$ tiene simetría de media onda:
-
 \begin{equation}
     a_0=0
 \end{equation}
 
 Como la función $f(t)$ es una función impar:
-
 \begin{equation}
     a_n=0
 \end{equation}
@@ -625,7 +584,6 @@ Como la función $f(t)$ es una función impar:
 Como la función $f(t)$ tiene simetría de media onda: $b_n=0$ cuando $n$ es par.
 
 Para $n$ impar:
-
 \begin{equation*}
 \begin{split}
     b_n
@@ -689,7 +647,6 @@ Para $n$ impar:
         &=\frac{8}{T}\int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt\\
 \end{split}
 \end{equation*}
-
 \begin{equation}
 \begin{cases}
     n: \text{par}   &b_n=0\\
@@ -699,14 +656,12 @@ Para $n$ impar:
 
 \section{Expansión periódica de funciones definidas en intervalos finitos}
 Sea $f(t)$ una función no periódica:
-
 \begin{figure}[H]
     \centering
     \input{figura_02_09.tex}
 \end{figure}
 
 $f(t)$ se convierte en periódica al repetirla un intervalo $T\geq M$.
-
 \begin{figure}[H]
     \centering
     \input{figura_02_10.tex}
