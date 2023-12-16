@@ -79,19 +79,19 @@ Partiendo de la serie trigonométrica de \emph{Fourier}:
 \begin{equation*}
     f(t)=\frac{a_0}{2}+
     \sum_{n=1}^{\infty}\left[
-        a_n\cos(n\omega_0 t)+
-        b_n\sen(n\omega_0 t)
+        a_n\cos(n\omega_0\,t)+
+        b_n\sen(n\omega_0\,t)
     \right]
 \end{equation*}
 \begin{equation*}
     f(t)=\frac{a_0}{2}+
     \sum_{n=1}^{\infty}\left[
         a_n\left(
-            \frac{e^{jn\omega_0 t}+e^{-jn\omega_0 t}
+            \frac{e^{jn\omega_0\,t}+e^{-jn\omega_0\,t}
             }{2}
         \right)+
         b_n\left(
-            \frac{e^{jn\omega_0 t}+e^{-jn\omega_0 t}
+            \frac{e^{jn\omega_0\,t}+e^{-jn\omega_0\,t}
             }{2j}
         \right)
     \right]
@@ -103,11 +103,11 @@ Partiendo de la serie trigonométrica de \emph{Fourier}:
     f(t)=\frac{a_0}{2}+
     \sum_{n=1}^{\infty}\left[
         a_n\left(
-            \frac{e^{jn\omega_0 t}+e^{-jn\omega_0 t}
+            \frac{e^{jn\omega_0\,t}+e^{-jn\omega_0\,t}
             }{2}
         \right)-
         jb_n\left(
-            \frac{e^{jn\omega_0 t}+e^{-jn\omega_0 t}
+            \frac{e^{jn\omega_0\,t}+e^{-jn\omega_0\,t}
             }{2}
         \right)
     \right]
@@ -115,41 +115,41 @@ Partiendo de la serie trigonométrica de \emph{Fourier}:
 \begin{equation*}
     f(t)=\frac{a_0}{2}+
     \sum_{n=1}^{\infty}\left[
-        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0 t}+
-        \left(\frac{a_n+jb_n}{2}\right)e^{-jn\omega_0 t}
+        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0\,t}+
+        \left(\frac{a_n+jb_n}{2}\right)e^{-jn\omega_0\,t}
     \right]
 \end{equation*}
 \begin{equation*}
     f(t)=\frac{a_0}{2}+
     \sum_{n=1}^{\infty}\left[
-        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0 t}
+        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0\,t}
     \right]+
     \sum_{n=1}^{\infty}\left[
-        \left(\frac{a_n+jb_n}{2}\right)e^{-jn\omega_0 t}
+        \left(\frac{a_n+jb_n}{2}\right)e^{-jn\omega_0\,t}
     \right]
 \end{equation*}
 \begin{equation*}
     f(t)=\frac{a_0}{2}+
     \sum_{n=1}^{\infty}\left[
-        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0 t}
+        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0\,t}
     \right]+
     \sum_{-n=1}^{\infty}\left[
-        \left(\frac{a_{-n}+jb_{-n}}{2}\right)e^{jn\omega_0 t}
+        \left(\frac{a_{-n}+jb_{-n}}{2}\right)e^{jn\omega_0\,t}
     \right]
 \end{equation*}
 \begin{equation*}
     f(t)=\frac{a_0}{2}+
     \sum_{n=1}^{\infty}\left[
-        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0 t}
+        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0\,t}
     \right]+
     \sum_{n=-1}^{-\infty}\left[
-        \left(\frac{a_n+jb_n}{2}\right)e^{jn\omega_0 t}
+        \left(\frac{a_n+jb_n}{2}\right)e^{jn\omega_0\,t}
     \right]
 \end{equation*}
 \begin{equation*}
     f(t)=\frac{a_0}{2}+
     \sum_{\substack{n=-\infty\\n\neq0}}^{\infty}
-        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0 t}
+        \left(\frac{a_n-jb_n}{2}\right)e^{jn\omega_0\,t}
 \end{equation*}
 
 Sean los coeficientes complejos de \emph{Fourier}:
@@ -162,10 +162,10 @@ Sean los coeficientes complejos de \emph{Fourier}:
 
 Entonces:
 \begin{equation*}
-    f(t)=c_0+\sum_{\substack{n=-\infty\\n\neq0}}^{\infty}c_n e^{jn\omega_0 t}
+    f(t)=c_0+\sum_{\substack{n=-\infty\\n\neq0}}^{\infty}c_n\,e^{jn\omega_0\,t}
 \end{equation*}
 \begin{equation}
-    f(t)=\sum_{n=-\infty}^{\infty}c_n e^{jn\omega_0 t}
+    f(t)=\sum_{n=-\infty}^{\infty}c_n\,e^{jn\omega_0\,t}
 \end{equation}
 
 \subsection{Evaluación del coeficiente complejo de \emph{Fourier}}
@@ -174,22 +174,22 @@ Entonces:
     c_n
         &=\frac{a_n-jb_n}{2}\\
         &=\frac{1}{2}\left[
-            \frac{2}{T}\int_0^T f(t)\cos(n\omega_0 t)\,dt
-            -j\frac{2}{T}\int_0^T f(t)\sen(n\omega_0 t)\,dt
+            \frac{2}{T}\int_0^T\,f(t)\cos(n\omega_0\,t)\,dt
+            -j\frac{2}{T}\int_0^T\,f(t)\sen(n\omega_0\,t)\,dt
         \right]\\
-        &=\frac{1}{T}\int_0^T f(t)\left[
-            \cos(n\omega_0 t)-j\sen(n\omega_0 t)
+        &=\frac{1}{T}\int_0^T\,f(t)\left[
+            \cos(n\omega_0\,t)-j\sen(n\omega_0\,t)
         \right]dt\\
-        &=\frac{1}{T}\int_0^T f(t)\,e^{-jn\omega_0 t}\,dt\\
+        &=\frac{1}{T}\int_0^T\,f(t)\,e^{-jn\omega_0\,t}\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation}
-    c_n=\frac{1}{T}\int_0^T f(t)\,e^{-jn\omega_0 t}\,dt
+    c_n=\frac{1}{T}\int_0^T\,f(t)\,e^{-jn\omega_0\,t}\,dt
 \end{equation}
 
 En particular:
 \begin{equation}
-    c_0=\frac{1}{T}\int_0^T f(t)\,dt
+    c_0=\frac{1}{T}\int_0^T\,f(t)\,dt
 \end{equation}
 
 \subsection{Relación entre el coeficiente complejo y los coeficientes
@@ -215,8 +215,8 @@ trigonométricos}
 \subsection{Rectificación de media onda}
 \begin{equation*}
     f(t)=\begin{cases}
-        A\sen(\omega_0 t) & 0<t<T/2\\
-        0                 & T/2<t<T\\
+        A\sen(\omega_0\,t)&0<t<T/2\\
+        0&T/2<t<T\\
     \end{cases}
 \end{equation*}
 \begin{equation*}
@@ -231,7 +231,7 @@ El periodo de la onda rectificada es el mismo que de la onda original.
 
 \subsection{Rectificación de onda completa}
 \begin{equation*}
-    f(t)=A\,|\sen(\omega_0 t)|
+    f(t)=A\,|\sen(\omega_0\,t)|
 \end{equation*}
 \begin{figure}[H]
     \centering
@@ -243,8 +243,8 @@ El periodo de la onda rectificada es la mitad del periodo de la onda original.
 \section{Función escalón unitario}
 \begin{equation}
     u(t)=\begin{cases}
-        0 & t<0\\
-        1 & t>0\\
+        0&t<0\\
+        1&t>0\\
     \end{cases}
 \end{equation}
 \begin{figure}[H]
@@ -255,8 +255,8 @@ El periodo de la onda rectificada es la mitad del periodo de la onda original.
 Una variante es:
 \begin{equation*}
     u(-t)=\begin{cases}
-        1 & t<0\\
-        0 & t>0\\
+        1&t<0\\
+        0&t>0\\
     \end{cases}
 \end{equation*}
 \begin{figure}[H]
@@ -267,8 +267,8 @@ Una variante es:
 De manera general:
 \begin{equation}
     k\,u(t-t_0)=\begin{cases}
-        0 & t<t_0\\
-        k & t>t_0\\
+        0&t<t_0\\
+        k&t>t_0\\
     \end{cases}
 \end{equation}
 \begin{figure}[H]
@@ -283,8 +283,8 @@ Si: $\phi(t)$ es una función de prueba:
 \end{figure}
 \begin{equation}
     \phi(t)u(t-t_0)=\begin{cases}
-        0       & t<t_0\\
-        \phi(t) & t>t_0\\
+        0&t<t_0\\
+        \phi(t)&t>t_0\\
     \end{cases}
 \end{equation}
 \begin{figure}[H]
@@ -293,8 +293,8 @@ Si: $\phi(t)$ es una función de prueba:
 \end{figure}
 \begin{equation*}
     \phi(t)(u(t-t_1)-u(t-t_2))=\begin{cases}
-        0       & t\notin[t_1,t_2]\\
-        \phi(t) & t\in[t_1,t_2]\\
+        0&t\notin[t_1,t_2]\\
+        \phi(t)&t\in[t_1,t_2]\\
     \end{cases}
 \end{equation*}
 \begin{figure}[H]
@@ -316,21 +316,21 @@ Si $\xi\to0$, entonces $\frac{1}{2\xi}\to\infty$.
 \end{figure}
 \begin{equation*}
     \delta(t)=\begin{cases}
-        0      & t\neq0\\
-        \infty & t=0\\
+        0&t\neq0\\
+        \infty&t=0\\
     \end{cases}
 \end{equation*}
 
 Tal que:
 \begin{equation*}
-    \int_{-\xi}^{\xi} \delta(t)\,dt=1
+    \int_{-\xi}^{\xi}\delta(t)\,dt=1
 \end{equation*}
 
 Por tanto:
 \begin{equation}
     k\delta(t)=\begin{cases}
-        0         & t\neq0\\
-        \pm\infty & t=0\\
+        0&t\neq0\\
+        \pm\infty&t=0\\
     \end{cases}
 \end{equation}
 \begin{figure}[H]
@@ -367,9 +367,9 @@ Para $t=0$
 \subsection{Propiedades de la función impulso}
 \subsubsection*{Propiedad 1}
 \begin{equation*}
-    \int_a^b \delta(t-t_0)\,dt=\begin{cases}
-        1 & t_0\in[a,b] \\
-        0 & t_0\notin[a,b] \\
+    \int_a^b\delta(t-t_0)\,dt=\begin{cases}
+        1&t_0\in[a,b]\\
+        0&t_0\notin[a,b]\\
     \end{cases}
 \end{equation*}
 
@@ -380,9 +380,9 @@ En general:
 
 \subsubsection*{Propiedad 2}
 \begin{equation*}
-    \int_a^b \phi(t)\,\delta(t-t_0)\,dt=\begin{cases}
-        \phi(t_0) & t_0\in[a,b] \\
-        0 & t_0\notin[a,b] \\
+    \int_a^b\phi(t)\,\delta(t-t_0)\,dt=\begin{cases}
+        \phi(t_0)&t_0\in[a,b]\\
+        0&t_0\notin[a,b]\\
     \end{cases}
 \end{equation*}
 
@@ -406,7 +406,7 @@ En general:
     \int_{-\infty}^{\infty}\phi(t)\,\delta(at)\,dt
         =\frac{1}{|a|}\int_{-\infty}^{\infty}
             \phi\left(\frac{t}{a}\right)\delta(t)\,dt
-        =\frac{\phi(0)}{|a|}; a\neq0
+        =\frac{\phi(0)}{|a|};a\neq0
 \end{equation}
 
 \underline{Prueba}:
@@ -438,8 +438,8 @@ Para $a<0$:
 Como:
 \begin{equation*}
     |a|=\begin{cases}
-        -a & a<0 \\
-         a & a>0 \\
+        -a&a<0\\
+        a&a>0\\
     \end{cases}
 \end{equation*}
 \begin{equation*}
@@ -489,7 +489,7 @@ Para $a=-1$:
     t\,\delta(t)=0
 \end{equation*}
 \begin{equation}
-    t^n\,\delta(t)=0; n\in\mathbb{N}
+    t^n\,\delta(t)=0;n\in\mathbb{N}
 \end{equation}
 
 \underline{Prueba}:
@@ -648,47 +648,47 @@ arriba y hacia abajo, respectivamente.
 \section{Series de \emph{Fourier} por el método de diferenciación}
 \begin{minipage}{.5\linewidth}
     \begin{equation*}
-        f(t)=\sum_{n=-\infty}^{\infty}c_n\,e^{jn\omega_0 t}
+        f(t)=\sum_{n=-\infty}^{\infty}c_n\,e^{jn\omega_0\,t}
     \end{equation*}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
     \begin{equation*}
-        c_n=\frac{1}{T}\int_0^T f(t)\,e^{-jn\omega_0 t}\,dt
+        c_n=\frac{1}{T}\int_0^T\,f(t)\,e^{-jn\omega_0\,t}\,dt
     \end{equation*}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
     \begin{equation*}
-        f^\prime(t)=\sum_{n=-\infty}^{\infty}jn\omega_0 c_n\,e^{jn\omega_0 t}
+        f^\prime(t)=\sum_{n=-\infty}^{\infty}jn\omega_0\,c_n\,e^{jn\omega_0\,t}
     \end{equation*}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
-    \begin{equation*}
-        \gamma^\prime_n=\frac{1}{T}\int_0^T f^\prime(t)\,e^{-jn\omega_0 t}\,dt
-    \end{equation*}
+    \begin{equation}
+        \gamma^\prime_n=\frac{1}{T}\int_0^T\,f^\prime(t)\,e^{-jn\omega_0\,t}\,dt
+    \end{equation}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
     \begin{equation*}
         f^{\prime\prime}(t)
-            =\sum_{n=-\infty}^{\infty}{(jn\omega_0)}^2 c_n\,e^{jn\omega_0 t}
+            =\sum_{n=-\infty}^{\infty}{(jn\omega_0)}^2\,c_n\,e^{jn\omega_0\,t}
     \end{equation*}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
-    \begin{equation*}
+    \begin{equation}
         \gamma^{\prime\prime}_n
-            =\frac{1}{T}\int_0^T f^{\prime\prime}(t)\,e^{-jn\omega_0 t}\,dt
-    \end{equation*}
+            =\frac{1}{T}\int_0^T\,f^{\prime\prime}(t)\,e^{-jn\omega_0\,t}\,dt
+    \end{equation}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
     \begin{equation*}
         f^{(k)}(t)
-            =\sum_{n=-\infty}^{\infty}{(jn\omega_0)}^k c_n\,e^{jn\omega_0 t}
+            =\sum_{n=-\infty}^{\infty}{(jn\omega_0)}^k\,c_n\,e^{jn\omega_0\,t}
     \end{equation*}
 \end{minipage}
 \begin{minipage}{.5\linewidth}
-    \begin{equation*}
+    \begin{equation}
         \gamma^{(k)}_n
-            =\frac{1}{T}\int_0^T f^{(k)}(t)\,e^{-jn\omega_0 t}\,dt
-    \end{equation*}
+            =\frac{1}{T}\int_0^T\,f^{(k)}(t)\,e^{-jn\omega_0\,t}\,dt
+    \end{equation}
 \end{minipage}
 
 \begin{itemize}
@@ -717,7 +717,7 @@ Los espectros de frecuencia serán gráficas discretas de modulo y argumento del
 coeficiente complejo de \emph{Fourier} en función de múltiplos de la frecuencia:
 $\omega_0$.
 \begin{equation*}
-    f(t)=\sum_{n=-\infty}^\infty c_n\,e^{jn\omega_0 t}
+    f(t)=\sum_{n=-\infty}^\infty\,c_n\,e^{jn\omega_0\,t}
 \end{equation*}
 \begin{equation*}
     c_n=A_n+jB_n
@@ -727,7 +727,7 @@ $\omega_0$.
     |c_n|&=\sqrt{A_n^2+B_n^2}\\
     \theta_n&=\arctan\left(\frac{B_n}{A_n}\right)\\
 \end{aligned}\right\}
-\text{funciones discretas de }n\omega_0\quad n\in\mathbb{Z}
+\text{funciones discretas de }n\omega_0\quad\,n\in\mathbb{Z}
 \end{equation*}
 \begin{figure}[H]
     \centering
@@ -751,22 +751,22 @@ Dadas dos funciones periódicas con el mismo periodo $T$: $f_1(t)$ y $f_2(t)$.
 Donde: $c_1n$ y $c_2n$, son los respectivos coeficientes complejos de
 \emph{Fourier}.
 \begin{equation}
-    \frac{1}{T}\int_0^T f_1(t)f_2(t)\,dt
-        =\sum_{n={-\infty}}^\infty c_{1(n)}\,c_{2(-n)}
-        =\sum_{n={-\infty}}^\infty c_{1(-n)}\,c_{2(n)}
+    \frac{1}{T}\int_0^T\,f_1(t)f_2(t)\,dt
+        =\sum_{n={-\infty}}^\infty\,c_1(n)\,c_2(-n)
+        =\sum_{n={-\infty}}^\infty\,c_1(-n)\,c_2(n)
 \end{equation}
 
 \underline{Prueba}:
 
 \begin{equation*}
 \begin{split}
-    \frac{1}{T}\int_0^T f_1(t)f_2(t)\,dt
+    \frac{1}{T}\int_0^T\,f_1(t)f_2(t)\,dt
         &=\frac{1}{T}\int_0^T\left[
-            \sum_{n={-\infty}}^\infty c_{1(n)}\,e^{jn\omega_0 t}
+            \sum_{n={-\infty}}^\infty\,c_1(n)\,e^{jn\omega_0\,t}
         \right]\,f_2(t)\,dt\\
-        &=\sum_{n={-\infty}}^\infty c_{1(n)}\,\frac{1}{T}
-            \int_0^T f_2(t)\,e^{jn\omega_0 t}\,dt\\
-        &=\sum_{n={-\infty}}^\infty c_{1(n)}c_{2(-n)}
+        &=\sum_{n={-\infty}}^\infty\,c_1(n)\,\frac{1}{T}
+            \int_0^T\,f_2(t)\,e^{jn\omega_0\,t}\,dt\\
+        &=\sum_{n={-\infty}}^\infty\,c_1(n)c_2(-n)
 \end{split}
 \end{equation*}
 
@@ -777,35 +777,35 @@ $c_1(n)=c_2(n)=c_n$:
 Partiendo del teorema de multiplicación:
 \begin{equation*}
 \begin{split}
-    \frac{1}{T}\int_0^T f^2(t)\,dt
-        &=\sum_{n={-\infty}}^\infty c_{(n)}\,c_{(-n)}\\
-        &=\sum_{n={-\infty}}^\infty c_{(n)}\,c_{(n)}^*\\
-        &=\sum_{n={-\infty}}^\infty {|c_n|}^2\\
-        &=c_0^2+\sum_{\substack{n=-\infty\\n\neq0}}^\infty {|c_n|}^2\\
+    \frac{1}{T}\int_0^T\,f^2(t)\,dt
+        &=\sum_{n={-\infty}}^\infty\,c_{(n)}\,c_{(-n)}\\
+        &=\sum_{n={-\infty}}^\infty\,c_{(n)}\,c_{(n)}^*\\
+        &=\sum_{n={-\infty}}^\infty\,{|c_n|}^2\\
+        &=c_0^2+\sum_{\substack{n=-\infty\\n\neq0}}^\infty\,{|c_n|}^2\\
 \end{split}
 \end{equation*}
 \begin{equation*}
     c_n=\frac{a_n-jb_n}{2}
 \end{equation*}
 \begin{equation*}
-    {|c_n|}^2=\frac{a_n^2+jb_n^2}{4}
+    {|c_n|}^2=\frac{a_n^2+b_n^2}{4}
 \end{equation*}
 \begin{equation*}
 \begin{split}
-    \frac{1}{T}\int_0^T f^2(t)\,dt
+    \frac{1}{T}\int_0^T\,f^2(t)\,dt
         &=c_0^2+\sum_{\substack{n=-\infty\\n\neq0}}^\infty
-            \frac{a_n^2+jb_n^2}{4}\\
-        &=c_0^2+\frac{1}{4}\sum_{n=1}^\infty(a_n^2+jb_n^2)
-            +\frac{1}{4}\sum_{n=-1}^{-\infty}(a_n^2+jb_n^2)\\
+            \frac{a_n^2+b_n^2}{4}\\
+        &=c_0^2+\frac{1}{4}\sum_{n=1}^\infty(a_n^2+b_n^2)
+            +\frac{1}{4}\sum_{n=-1}^{-\infty}(a_n^2+b_n^2)\\
 \end{split}
 \end{equation*}
 
 Cambiando $n$ por $-n$:
 \begin{equation*}
 \begin{split}
-    \frac{1}{T}\int_0^T f^2(t)\,dt
-        &=c_0^2+\frac{1}{4}\sum_{n=1}^\infty(a_n^2+jb_n^2)
-            +\frac{1}{4}\sum_{-n=-1}^{-\infty}(a_{(-n)}^2+jb_{(-n)}^2)\\
+    \frac{1}{T}\int_0^T\,f^2(t)\,dt
+        &=c_0^2+\frac{1}{4}\sum_{n=1}^\infty(a_n^2+b_n^2)
+            +\frac{1}{4}\sum_{-n=-1}^{-\infty}(a_{(-n)}^2+b_{(-n)}^2)\\
 \end{split}
 \end{equation*}
 
@@ -818,15 +818,15 @@ Sabiendo que:
 \end{equation*}
 \begin{equation*}
 \begin{split}
-    \frac{1}{T}\int_0^T f^2(t)\,dt
-        &=c_0^2+\frac{1}{4}\sum_{n=1}^\infty(a_n^2+jb_n^2)
-            +\frac{1}{4}\sum_{n=1}^\infty(a_n^2+jb_n^2)\\
-        &=c_0^2+\frac{1}{2}\sum_{n=1}^\infty(a_n^2+jb_n^2)
+    \frac{1}{T}\int_0^T\,f^2(t)\,dt
+        &=c_0^2+\frac{1}{4}\sum_{n=1}^\infty(a_n^2+b_n^2)
+            +\frac{1}{4}\sum_{n=1}^\infty(a_n^2+b_n^2)\\
+        &=c_0^2+\frac{1}{2}\sum_{n=1}^\infty(a_n^2+b_n^2)
 \end{split}
 \end{equation*}
 
 \begin{equation}
-    \frac{1}{T}\int_0^T f^2(t)\,dt
-        =c_0^2+\frac{1}{2}\sum_{n=1}^\infty(a_n^2+jb_n^2)
+    \frac{1}{T}\int_0^T\,f^2(t)\,dt
+        =c_0^2+\frac{1}{2}\sum_{n=1}^\infty(a_n^2+b_n^2)
 \end{equation}
 

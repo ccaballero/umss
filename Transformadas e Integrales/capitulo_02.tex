@@ -58,14 +58,14 @@ Una función es \textbf{impar} si:
 \textbf{Ejemplo 5:}
 \begin{equation*}
     f(t)=\begin{cases}
-        e^t &t<0\\
-        e^{-t} &t>0\\
+        e^t&t<0\\
+        e^{-t}&t>0\\
     \end{cases}
 \end{equation*}
 \begin{equation*}
     f(-t)=\left\{\!\begin{aligned}
-    &e^{-t} &-t<0 \rightarrow t>0\\
-    &e^{t}  &-t>0 \rightarrow t<0\\
+    &e^{-t}&-t<0\rightarrow\,t>0\\
+    &e^{t}&-t>0\rightarrow\,t<0\\
     \end{aligned}\right\}
     =f(t)
 \end{equation*}
@@ -131,7 +131,7 @@ es \textbf{impar}.
 \subsubsection*{Propiedad 4}
 Si $f(t)$ es \textbf{par}, entonces:
 \begin{equation}
-    \int_{-a}^a f(t)\,dt=2\int_0^a f(t)\,dt
+    \int_{-a}^a\,f(t)\,dt=2\int_0^a\,f(t)\,dt
 \end{equation}
 \begin{figure}[H]
     \centering
@@ -141,9 +141,9 @@ Si $f(t)$ es \textbf{par}, entonces:
 \underline{Prueba}:
 \begin{equation*}
 \begin{split}
-    \int_{-a}^a f(t)\,dt
-        &=\int_{-a}^0 f(t)\,dt+\int_0^a f(t)\,dt\\
-        &=\int_{-a}^0 f(-t)\,dt+\int_0^a f(t)\,dt\\
+    \int_{-a}^a\,f(t)\,dt
+        &=\int_{-a}^0\,f(t)\,dt+\int_0^a\,f(t)\,dt\\
+        &=\int_{-a}^0\,f(-t)\,dt+\int_0^a\,f(t)\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation*}
@@ -154,17 +154,17 @@ Si $f(t)$ es \textbf{par}, entonces:
 \end{equation*}
 \begin{equation*}
 \begin{split}
-    \int_{-a}^a f(t)\,dt
-        &=\int_a^0 f(\tau)\,(-d\tau)+\int_0^a f(t)\,dt\\
-        &=\int_0^a f(\tau)\,d\tau+\int_0^a f(t)\,dt\\
-        &=2\int_0^a f(t)\,dt\\
+    \int_{-a}^a\,f(t)\,dt
+        &=\int_a^0\,f(\tau)\,(-d\tau)+\int_0^a\,f(t)\,dt\\
+        &=\int_0^a\,f(\tau)\,d\tau+\int_0^a\,f(t)\,dt\\
+        &=2\int_0^a\,f(t)\,dt\\
 \end{split}
 \end{equation*}
 
 \subsubsection*{Propiedad 5}
 Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation}
-    \int_{-a}^a f(t)\,dt=0
+    \int_{-a}^a\,f(t)\,dt=0
 \end{equation}
 \begin{figure}[H]
     \centering
@@ -174,9 +174,9 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \underline{Prueba}:
 \begin{equation*}
 \begin{split}
-    \int_{-a}^a f(t)\,dt
-        &=\int_{-a}^0 f(t)\,dt+\int_0^a f(t)\,dt\\
-        &=\int_{-a}^0 -f(-t)\,dt+\int_0^a f(t)\,dt\\
+    \int_{-a}^a\,f(t)\,dt
+        &=\int_{-a}^0\,f(t)\,dt+\int_0^a\,f(t)\,dt\\
+        &=\int_{-a}^0\,-f(-t)\,dt+\int_0^a\,f(t)\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation*}
@@ -187,9 +187,9 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \end{equation*}
 \begin{equation*}
 \begin{split}
-    \int_{-a}^a f(t)\,dt
-        &=-\int_a^0 f(\tau)\,(-d\tau)+\int_0^a f(t)\,dt\\
-        &=-\int_0^a f(\tau)\,d\tau+\int_0^a f(t)\,dt\\
+    \int_{-a}^a\,f(t)\,dt
+        &=-\int_a^0\,f(\tau)\,(-d\tau)+\int_0^a\,f(t)\,dt\\
+        &=-\int_0^a\,f(\tau)\,d\tau+\int_0^a\,f(t)\,dt\\
         &=0\\
 \end{split}
 \end{equation*}
@@ -199,30 +199,30 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation*}
 \begin{split}
     a_0
-        &=\frac{2}{T}\int_0^T f(t)\,dt\\
-        &=\frac{2}{T}\int_{-T/2}^{T/2} f(t)\,dt\\
-        &=\frac{2}{T}\left(2\int_0^{T/2} f(t)\,dt\right)\\
-        &=\frac{4}{T}\int_0^{T/2} f(t)\,dt\\
+        &=\frac{2}{T}\int_0^T\,f(t)\,dt\\
+        &=\frac{2}{T}\int_{-T/2}^{T/2}\,f(t)\,dt\\
+        &=\frac{2}{T}\left(2\int_0^{T/2}\,f(t)\,dt\right)\\
+        &=\frac{4}{T}\int_0^{T/2}\,f(t)\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation}
-    a_0=\frac{4}{T}\int_0^{T/2} f(t)\,dt
+    a_0=\frac{4}{T}\int_0^{T/2}\,f(t)\,dt
 \end{equation}
 \begin{equation*}
 \begin{split}
     a_n
-        &=\frac{2}{T}\int_{-T/2}^{T/2} f(t)\cos(n\omega_0 t)\,dt\\
-        &=\frac{2}{T}\left(2\int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt\right)\\
-        &=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0 t)\,dt\\
+        &=\frac{2}{T}\int_{-T/2}^{T/2}f(t)\cos(n\omega_0\,t)\,dt\\
+        &=\frac{2}{T}\left(2\int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt\right)\\
+        &=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation}
-    a_n=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0 t)\,dt
+    a_n=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt
 \end{equation}
 \begin{equation*}
 \begin{split}
     b_n
-        &=\frac{2}{T}\int_{-T/2}^{T/2} f(t)\sen(n\omega_0 t)\,dt\\
+        &=\frac{2}{T}\int_{-T/2}^{T/2}f(t)\sen(n\omega_0\,t)\,dt\\
         &=0\\
 \end{split}
 \end{equation*}
@@ -234,8 +234,8 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation*}
 \begin{split}
     a_0
-        &=\frac{2}{T}\int_0^T f(t)\,dt\\
-        &=\frac{2}{T}\int_{-T/2}^{T/2} f(t)\,dt\\
+        &=\frac{2}{T}\int_0^T\,f(t)\,dt\\
+        &=\frac{2}{T}\int_{-T/2}^{T/2}\,f(t)\,dt\\
         &=0\\
 \end{split}
 \end{equation*}
@@ -245,7 +245,7 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation*}
 \begin{split}
     a_n
-        &=\frac{2}{T}\int_{-T/2}^{T/2} f(t)\cos(n\omega_0 t)\,dt\\
+        &=\frac{2}{T}\int_{-T/2}^{T/2}\,f(t)\cos(n\omega_0\,t)\,dt\\
         &=0\\
 \end{split}
 \end{equation*}
@@ -255,13 +255,13 @@ Si $f(t)$ es \textbf{impar}, entonces:
 \begin{equation*}
 \begin{split}
     b_n
-        &=\frac{2}{T}\int_{-T/2}^{T/2} f(t)\sen(n\omega_0 t)\,dt\\
-        &=\frac{2}{T}\left(2\int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt\right)\\
-        &=\frac{4}{T}\int_0^{T/2}f(t)\sen(n\omega_0 t)\,dt\\
+        &=\frac{2}{T}\int_{-T/2}^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt\\
+        &=\frac{2}{T}\left(2\int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt\right)\\
+        &=\frac{4}{T}\int_0^{T/2}f(t)\sen(n\omega_0\,t)\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation}
-    b_n=\frac{4}{T}\int_0^{T/2}f(t)\sen(n\omega_0 t)\,dt
+    b_n=\frac{4}{T}\int_0^{T/2}f(t)\sen(n\omega_0\,t)\,dt
 \end{equation}
 
 \section{Simetría de media onda (S.M.O.)}
@@ -280,10 +280,10 @@ $f(t)$ tiene simetría de media onda si:
 \begin{equation*}
 \begin{split}
     a_0
-        &=\frac{2}{T}\int_0^T f(t)\,dt\\
-        &=\frac{2}{T}\left[\int_0^{T/2} f(t)\,dt+\int_{T/2}^T f(t)\,dt\right]\\
+        &=\frac{2}{T}\int_0^T\,f(t)\,dt\\
+        &=\frac{2}{T}\left[\int_0^{T/2}f(t)\,dt+\int_{T/2}^T\,f(t)\,dt\right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\,dt-\int_{t=T/2}^{t=T} f(t-\frac{T}{2})\,dt
+            \int_0^{T/2}f(t)\,dt-\int_{t=T/2}^{t=T}f(t-\frac{T}{2})\,dt
         \right]\\
 \end{split}
 \end{equation*}
@@ -297,11 +297,11 @@ $f(t)$ tiene simetría de media onda si:
 \begin{split}
     a_0
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\,dt-
-            \int_{\tau=T/2-T/2}^{\tau=T-T/2} f(\tau)\,d\tau
+            \int_0^{T/2}f(t)\,dt-
+            \int_{\tau=T/2-T/2}^{\tau=T-T/2}f(\tau)\,d\tau
         \right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\,dt-\int_0^{T/2} f(\tau)\,d\tau
+            \int_0^{T/2}f(t)\,dt-\int_0^{T/2}f(\tau)\,d\tau
         \right]\\
 \end{split}
 \end{equation*}
@@ -311,14 +311,14 @@ $f(t)$ tiene simetría de media onda si:
 \begin{equation*}
 \begin{split}
     a_n
-        &=\frac{2}{T}\int_0^T f(t)\cos(n\omega_0 t)\,dt\\
+        &=\frac{2}{T}\int_0^T\,f(t)\cos(n\omega_0\,t)\,dt\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt+
-            \int_{T/2}^T f(t)\cos(n\omega_0 t)\,dt
+            \int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt+
+            \int_{T/2}^T\,f(t)\cos(n\omega_0\,t)\,dt
         \right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt-
-            \int_{T/2}^T f(t-\frac{T}{2})\cos(n\omega_0 t)\,dt
+            \int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt-
+            \int_{T/2}^T\,f(t-\frac{T}{2})\cos(n\omega_0\,t)\,dt
         \right]\\
 \end{split}
 \end{equation*}
@@ -332,13 +332,13 @@ $f(t)$ tiene simetría de media onda si:
 \begin{split}
     a_n
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt-
+            \int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt-
             \int_{\tau=T/2-T/2}^{\tau=T-T/2}
                 f(\tau)\cos(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt-
-            \int_0^{T/2} f(\tau)\cos(n\omega_0(\tau+\frac{T}{2}))\,d\tau
+            \int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt-
+            \int_0^{T/2}f(\tau)\cos(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
 \end{split}
 \end{equation*}
@@ -361,41 +361,41 @@ $f(t)$ tiene simetría de media onda si:
 \begin{split}
     a_n
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt-
-            \int_0^{T/2} f(\tau)\cos(n\omega_0\tau)\cos(n\pi)\,d\tau
+            \int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt-
+            \int_0^{T/2}f(\tau)\cos(n\omega_0\tau)\cos(n\pi)\,d\tau
         \right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt-\cos(n\pi)\int_0^{T/2}
+            \int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt-\cos(n\pi)\int_0^{T/2}
                 f(\tau)\cos(n\omega_0\tau)\,d\tau
         \right]\\
-        &=\frac{2}{T}(1-\cos(\pi n))\left(
-            \int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt
+        &=\frac{2}{T}(1-\cos(\pi\,n))\left(
+            \int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt
         \right)\\
 \end{split}
 \end{equation*}
 \begin{equation*}
-    \cos(\pi n)=\begin{cases}
-        1 &n: \text{par}\\
-        -1 &n: \text{impar}\\
+    \cos(\pi\,n)=\begin{cases}
+        1&n:\text{par}\\
+        -1&n:\text{impar}\\
     \end{cases}
 \end{equation*}
 \begin{equation}
 \begin{cases}
-    n: \text{par}   &a_n=0\\
-    n: \text{impar} &a_n=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0 t)\,dt\\
+    n:\text{par}&a_n=0\\
+    n:\text{impar}&a_n=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt\\
 \end{cases}
 \end{equation}
 \begin{equation*}
 \begin{split}
     b_n
-        &=\frac{2}{T}\int_0^T f(t)\sen(n\omega_0 t)\,dt\\
+        &=\frac{2}{T}\int_0^T\,f(t)\sen(n\omega_0\,t)\,dt\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt+
-            \int_{T/2}^T f(t)\sen(n\omega_0 t)\,dt
+            \int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt+
+            \int_{T/2}^T\,f(t)\sen(n\omega_0\,t)\,dt
         \right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt-
-            \int_{T/2}^T f(t-\frac{T}{2})\sen(n\omega_0 t)\,dt
+            \int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt-
+            \int_{T/2}^T\,f(t-\frac{T}{2})\sen(n\omega_0\,t)\,dt
         \right]\\
 \end{split}
 \end{equation*}
@@ -409,13 +409,13 @@ $f(t)$ tiene simetría de media onda si:
 \begin{split}
     b_n
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt-
+            \int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt-
             \int_{\tau=T/2-T/2}^{\tau=T-T/2}
                 f(\tau)\sen(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt-
-            \int_0^{T/2} f(\tau)\sen(n\omega_0(\tau+\frac{T}{2}))\,d\tau
+            \int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt-
+            \int_0^{T/2}\,f(\tau)\sen(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
 \end{split}
 \end{equation*}
@@ -438,28 +438,28 @@ $f(t)$ tiene simetría de media onda si:
 \begin{split}
     b_n
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt-
-            \int_0^{T/2} f(\tau)\sen(n\omega_0\tau)\cos(n\pi)\,d\tau
+            \int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt-
+            \int_0^{T/2}\,f(\tau)\sen(n\omega_0\tau)\cos(n\pi)\,d\tau
         \right]\\
         &=\frac{2}{T}\left[
-            \int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt-
-            \cos(n\pi)\int_0^{T/2} f(\tau)\sen(n\omega_0\tau)\,d\tau
+            \int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt-
+            \cos(n\pi)\int_0^{T/2}\,f(\tau)\sen(n\omega_0\tau)\,d\tau
         \right]\\
-        &=\frac{2}{T}(1-\cos(\pi n))\left(
-            \int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt
+        &=\frac{2}{T}(1-\cos(\pi\,n))\left(
+            \int_0^{T/2}\,f(t)\sen(n\omega_0\,t)\,dt
         \right)\\
 \end{split}
 \end{equation*}
 \begin{equation*}
-    \cos(\pi n)=\begin{cases}
-        1 &n: \text{par}\\
-        -1 &n: \text{impar}\\
+    \cos(\pi\,n)=\begin{cases}
+        1&n:\text{par}\\
+        -1&n:\text{impar}\\
     \end{cases}
 \end{equation*}
 \begin{equation}
 \begin{cases}
-    n: \text{par}   &b_n=0\\
-    n: \text{impar} &b_n=\frac{4}{T}\int_0^{T/2}f(t)\sen(n\omega_0 t)\,dt\\
+    n:\text{par}&b_n=0\\
+    n:\text{impar}&b_n=\frac{4}{T}\int_0^{T/2}f(t)\sen(n\omega_0\,t)\,dt\\
 \end{cases}
 \end{equation}
 
@@ -504,14 +504,14 @@ Para $n$ impar:
 \begin{equation*}
 \begin{split}
     a_n
-        &=\frac{4}{T}\int_0^{T/2} f(t)\cos(n\omega_0 t)\,dt\\
+        &=\frac{4}{T}\int_0^{T/2}f(t)\cos(n\omega_0\,t)\,dt\\
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt+
-            \int_{T/4}^{T/2} f(t)\cos(n\omega_0 t)\,dt
+            \int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt+
+            \int_{T/4}^{T/2}f(t)\cos(n\omega_0\,t)\,dt
         \right]\\
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt-
-            \int_{T/4}^{T/2} f(t-\frac{T}{2})\cos(n\omega_0 t)\,dt
+            \int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt-
+            \int_{T/4}^{T/2}f(t-\frac{T}{2})\cos(n\omega_0\,t)\,dt
         \right]\\
 \end{split}
 \end{equation*}
@@ -525,13 +525,13 @@ Para $n$ impar:
 \begin{split}
     a_n
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt-
+            \int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt-
             \int_{\tau=T/4-T/2}^{\tau=T/2-T/2}
                 f(\tau)\cos(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt-
-            \int_{-T/4}^{0} f(\tau)\cos(n\omega_0(\tau+\frac{T}{2}))\,d\tau
+            \int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt-
+            \int_{-T/4}^{0}f(\tau)\cos(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
 \end{split}
 \end{equation*}
@@ -555,18 +555,18 @@ Para $n$ impar:
 \begin{split}
     a_n
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt+
-            \int_{-T/4}^0 f(\tau)\cos(n\omega_0\tau)\,d\tau
+            \int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt+
+            \int_{-T/4}^0\,f(\tau)\cos(n\omega_0\tau)\,d\tau
         \right]\\
-        &=\frac{4}{T}\left[\int_{-T/4}^{T/4} f(t)\cos(n\omega_0 t)\,dt\right]\\
-        &=\frac{4}{T}\left(2\int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt\right)\\
-        &=\frac{8}{T}\int_0^{T/4} f(t)\cos(n\omega_0 t)\,dt\\
+        &=\frac{4}{T}\left[\int_{-T/4}^{T/4}f(t)\cos(n\omega_0\,t)\,dt\right]\\
+        &=\frac{4}{T}\left(2\int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt\right)\\
+        &=\frac{8}{T}\int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation}
 \begin{cases}
-    n: \text{par}   &a_n=0\\
-    n: \text{impar} &a_n=\frac{8}{T}\int_0^{T/4}f(t)\cos(n\omega_0 t)\,dt\\
+    n:\text{par}&a_n=0\\
+    n:\text{impar}&a_n=\frac{8}{T}\int_0^{T/4}f(t)\cos(n\omega_0\,t)\,dt\\
 \end{cases}
 \end{equation}
 
@@ -587,14 +587,14 @@ Para $n$ impar:
 \begin{equation*}
 \begin{split}
     b_n
-        &=\frac{4}{T}\int_0^{T/2} f(t)\sen(n\omega_0 t)\,dt\\
+        &=\frac{4}{T}\int_0^{T/2}f(t)\sen(n\omega_0\,t)\,dt\\
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt+
-            \int_{T/4}^{T/2} f(t)\sen(n\omega_0 t)\,dt
+            \int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt+
+            \int_{T/4}^{T/2}f(t)\sen(n\omega_0\,t)\,dt
         \right]\\
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt-
-            \int_{T/4}^{T/2} f(t-\frac{T}{2})\sen(n\omega_0 t)\,dt
+            \int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt-
+            \int_{T/4}^{T/2}f(t-\frac{T}{2})\sen(n\omega_0\,t)\,dt
         \right]\\
 \end{split}
 \end{equation*}
@@ -608,12 +608,12 @@ Para $n$ impar:
 \begin{split}
     b_n
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt-
+            \int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt-
             \int_{\tau=T/4-T/2}^{\tau=T/2-T/2}
                 f(\tau)\sen(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt-
+            \int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt-
             \int_{-T/4}^{0}
                 f(\tau)\sen(n\omega_0(\tau+\frac{T}{2}))\,d\tau
         \right]\\
@@ -639,18 +639,18 @@ Para $n$ impar:
 \begin{split}
     b_n
         &=\frac{4}{T}\left[
-            \int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt+
-            \int_{-T/4}^0 f(\tau)\sen(n\omega_0\tau)\,d\tau
+            \int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt+
+            \int_{-T/4}^0\,f(\tau)\sen(n\omega_0\tau)\,d\tau
         \right]\\
-        &=\frac{4}{T}\left[\int_{-T/4}^{T/4} f(t)\sen(n\omega_0 t)\,dt\right]\\
-        &=\frac{4}{T}\left(2\int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt\right)\\
-        &=\frac{8}{T}\int_0^{T/4} f(t)\sen(n\omega_0 t)\,dt\\
+        &=\frac{4}{T}\left[\int_{-T/4}^{T/4}f(t)\sen(n\omega_0\,t)\,dt\right]\\
+        &=\frac{4}{T}\left(2\int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt\right)\\
+        &=\frac{8}{T}\int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt\\
 \end{split}
 \end{equation*}
 \begin{equation}
 \begin{cases}
-    n: \text{par}   &b_n=0\\
-    n: \text{impar} &b_n=\frac{8}{T}\int_0^{T/4}f(t)\sen(n\omega_0 t)\,dt\\
+    n:\text{par}&b_n=0\\
+    n:\text{impar}&b_n=\frac{8}{T}\int_0^{T/4}f(t)\sen(n\omega_0\,t)\,dt\\
 \end{cases}
 \end{equation}
 

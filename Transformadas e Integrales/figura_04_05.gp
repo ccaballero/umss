@@ -1,4 +1,4 @@
-set terminal epslatex size 4in,2in font ',8'
+set terminal epslatex size 3in,1.4in font ',8'
 set output 'figura_04_05.tex'
 set border 0
 

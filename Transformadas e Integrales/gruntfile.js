@@ -1,5 +1,6 @@
 const path=require('path'),
-    base='apuntes';
+    //base='apuntes';
+    base='formulario';
 
 module.exports=(grunt)=>{
     require('time-grunt')(grunt);
@@ -27,7 +28,12 @@ module.exports=(grunt)=>{
         },
         watch:{
             report:{
-                files:['apuntes.tex','capitulo_*.tex','figura_*.tex'],
+                files:[
+                    'formulario.tex',
+                    'apuntes.tex',
+                    'capitulo_*.tex',
+                    'figura_*.tex'
+                ],
                 tasks:['shell:report']
             },
             figure:{
