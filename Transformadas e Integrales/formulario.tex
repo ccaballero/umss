@@ -80,6 +80,16 @@
 \begin{equation*}
     \cos({2\pi}n)=1;\quad{n}\in\mathbb{N}
 \end{equation*}
+
+\textbf{DERIVADAS ÚTILES:}
+\begin{equation*}
+    \frac{d}{dt}[\arctan(t)]=\frac{1}{t^2+1}t'
+\end{equation*}
+\begin{equation*}
+    \frac{d}{dt}[\ln(t)]=\frac{1}{t}t'
+\end{equation*}
+
+\textbf{INTEGRALES ÚTILES:}
 \begin{equation*}
     \int{e}^{at}{dt}=\frac{1}{a}e^{at}
 \end{equation*}
@@ -87,16 +97,46 @@
     \int{t}{e}^{at}{dt}=\frac{t}{a}{e}^{at}-\frac{1}{a^2}{e}^{at}
 \end{equation*}
 \begin{equation*}
-    \int\sen(at){dt}=-\frac{\cos(at)}{a}
+    \int{t^2}{e}^{at}{dt}=\frac{t^2}{a}{e}^{at}-\frac{2t}{a^2}{e}^{at}+\frac{2}{a^3}e^{at}
 \end{equation*}
 \begin{equation*}
-    \int\cos(at){dt}=\frac{\sen(at)}{a}
+    \int\sen(at){dt}=-\frac{\cos(at)}{a}
 \end{equation*}
 \begin{equation*}
     \int{t}\sen(at){dt}=-\frac{t}{a}\cos(at)+\frac{1}{a^2}\sen(at)
 \end{equation*}
 \begin{equation*}
+    \int{t^2}\sen(at){dt}=-\frac{t^2}{a}\cos(at)+\frac{2t}{a^2}\sen(at)+\frac{2}{a^3}\cos(at)
+\end{equation*}
+\begin{equation*}
+    \int\cos(at){dt}=\frac{\sen(at)}{a}
+\end{equation*}
+\begin{equation*}
     \int{t}\cos(at){dt}=\frac{t}{a}\sen(at)+\frac{1}{a^2}\cos(at)
+\end{equation*}
+\begin{equation*}
+    \int{t^2}\cos(at){dt}=\frac{t^2}{a}\sen(at)+\frac{2t}{a^2}\cos(at)-\frac{2}{a^3}\sen(at)
+\end{equation*}
+\begin{equation*}
+    \int\frac{1}{t^2+a^2}dt=\frac{1}{a}\arctan\left(\frac{t}{a}\right)
+\end{equation*}
+\begin{equation*}
+    \int\frac{1}{t^2-a^2}dt=\frac{1}{2a}\ln\left(\frac{t-a}{t+a}\right)
+\end{equation*}
+\begin{equation*}
+    \int\frac{t}{t^2+a^2}dt=\frac{1}{2}\ln(t^2+a^2)
+\end{equation*}
+\begin{equation*}
+    \int\frac{t}{t^2-a^2}dt=\frac{1}{2}\ln(t^2-a^2)
+\end{equation*}
+\begin{equation*}
+    \int\ln(t)dt=t\ln|t|-t
+\end{equation*}
+\begin{equation*}
+    \int{e}^{at}\sen(bt){dt}=\frac{e^{at}}{a^2+b^2}[a\sen(bt)-b\cos(bt)]
+\end{equation*}
+\begin{equation*}
+    \int{e}^{at}\cos(bt){dt}=\frac{e^{at}}{a^2+b^2}[a\cos(bt)+b\sen(bt)]
 \end{equation*}
 
 \textbf{SIMETRÍAS DE ONDA:}
@@ -344,6 +384,28 @@ f(t)=\sum_{n=-\infty}^{\infty}{c_n}e^{jn{\omega_0}t}
 \end{equation*}
 \begin{equation*}
     \cos(3x)=4\cos^3(a)-3\cos(x)
+\end{equation*}
+
+\textbf{FUNCIONES TRIGONOMÉTRICAS DE LA SUMA DE ARCOS:}
+\begin{equation*}
+    \sen({a}\pm{b})=\sen(a)\cos(b)\pm\sen(b)\cos(a)
+\end{equation*}
+\begin{equation*}
+    \cos({a}\pm{b})=\cos(a)\cos(b)\mp\sen(b)\cos(a)
+\end{equation*}
+
+\textbf{FUNCIONES TRIGONOMÉTRICAS DE SUMA A PRODUCTO:}
+\begin{equation*}
+    \sen(a)+\sen(b)=2\sen\left(\frac{a+b}{2}\right)\cos\left(\frac{a-b}{2}\right)
+\end{equation*}
+\begin{equation*}
+    \sen(a)-\sen(b)=2\cos\left(\frac{a+b}{2}\right)\sen\left(\frac{a-b}{2}\right)
+\end{equation*}
+\begin{equation*}
+    \cos(a)+\cos(b)=2\cos\left(\frac{a+b}{2}\right)\cos\left(\frac{a-b}{2}\right)
+\end{equation*}
+\begin{equation*}
+    \cos(a)-\cos(b)=-2\sen\left(\frac{a+b}{2}\right)\sen\left(\frac{a-b}{2}\right)
 \end{equation*}
 
 \textbf{TRANSFORMADA INVERSA DE \emph{FOURIER}:}
@@ -614,6 +676,11 @@ f(t)=\sum_{n=-\infty}^{\infty}{c_n}e^{jn{\omega_0}t}
         +\frac{{A_2}s+B_2}{s^2+{a_2}s+b_2}
 \end{equation*}
 
+\textbf{CONVOLUCIÓN:}
+\begin{equation*}
+    f(t)=f_1(t)*f_2(t)=\int_{0}^{t}f_1(\tau)f_2(t-\tau){d\tau}
+\end{equation*}
+
 \textbf{TRANSFORMADA DE \emph{LAPLACE} Y CONVOLUCIÓN:}
 \begin{equation*}
     \mathcal{L}\{f_1(t)*f_2(t)\}=F_1(s)F_2(s)
@@ -632,6 +699,15 @@ f(t)=\sum_{n=-\infty}^{\infty}{c_n}e^{jn{\omega_0}t}
 \begin{equation*}
     \mathcal{L}\{f^{\prime\prime\prime}(t)\}=s^3F(s)-f(0)s^2-f^{\prime}(0)s-f^{\prime\prime}(0)
 \end{equation*}
+
+\textbf{CIRCUITOS RLC:}
+\begin{equation*}
+    L\left(\frac{d^{2}q}{dt^2}\right)+R\left(\frac{dq}{dt}\right)+\frac{1}{C}(q)=V(t)
+\end{equation*}
+\begin{equation*}
+    L\left(\frac{di}{dt}\right)+R(i)+\frac{1}{C}\left(\int_0^{t}{i}\,dt\right)+V_C(0)=V(t)
+\end{equation*}
+
 
 \end{document}
 
